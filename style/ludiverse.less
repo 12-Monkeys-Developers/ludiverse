@@ -1,0 +1,325 @@
+@largeur-colonne: 250px;
+
+@font-face {
+  font-family: "Simulacres";
+  src: url("../fonts/SimulactesBats.ttf") format("truetype");
+}
+
+.ludiverse.sheet.actor.pj {
+  .editor {
+    width: 100%;
+    height: 100%;
+    background-color: #f9f6f1;
+    background: var(--background_base);
+    box-shadow: inset 0 0 6px black;
+    font-family: "garamondpro";
+    font-size: 1.2em;
+    text-align: justify;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    min-height: 5em;
+  }
+  .editor-content {
+    min-height: 5em;
+  }
+  .pj-sheet {
+    display: grid;
+    gap: 5px;
+    grid-template-rows: 1fr 2fr;
+  }
+  .pj-header {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(4, @largeur-colonne);
+    grid-template-rows: 50px 160px 140px;
+    .charname {
+      grid-row: 1 / 2;
+      grid-column: 1 / span 4;
+      font-size: 64px;
+      text-align: left;
+      input {
+        border: none;
+        height: 100%;
+      }
+    }
+    .description {
+      grid-row: 2 / span 2;
+      grid-column: 1 / span 2;
+      margin: 0 5px 0 5px;
+    }
+    .indications {
+      display: flex;
+      flex-direction: column;
+      margin: 0 5px 0 5px;
+      label {
+        text-transform: uppercase;
+        font-weight: bold;
+        font-style: italic;
+      }
+    }
+    .composantes {
+      grid-row: 2 / 4;
+      grid-column: 3 / 4;
+      display: grid;
+      grid-template-rows: 30px 1fr;
+      text-align: center;
+      font-size: larger;
+      .composantes-titre {
+        text-transform: uppercase;
+        font-weight: bold;
+      }
+      .composantes-details {
+        display: flex;
+
+        /* Tous les enfants de .composantes-details */
+        > * {
+          display: flex;
+          flex-direction: column;
+          flex: 0 0 80px;
+          padding: 5px;
+          align-items: center;
+          text-align: center;
+          font-size: medium;
+
+          input {
+            border: none;
+            outline: none;
+            width: 50px;
+            height: 50px;
+            border-radius: 0;
+            clip-path: polygon(25% 0, 75% 0, 100% 25%, 100% 75%, 75% 100%, 25% 100%, 0 75%, 0 25%);
+            padding: 5px;
+            background-color: white;
+            text-align: center;
+            font-size: x-large;
+          }
+
+          label {
+            padding: 5px;
+
+          }
+
+          img {
+            border: none;
+          }
+        }
+      }
+    }
+    .moyens {
+      grid-row: 2 / 4;
+      grid-column: 4 / 5;
+      display: grid;
+      grid-template-rows: 30px 1fr;
+      text-align: center;
+      font-size: larger;
+      .moyens-titre {
+        text-transform: uppercase;
+        font-weight: bold;
+      }
+      .moyens-details {
+        display: flex;
+        /* Tous les enfants de .moyens-details */
+        > * {
+          display: flex;
+          flex-direction: column;
+          flex: 0 0 80px;
+          padding: 5px;
+          align-items: center;
+          text-align: center;
+          font-size: medium;
+
+          input {
+            border: none;
+            outline: none;
+            width: 50px;
+            height: 50px;
+            position: relative;
+            padding: 5px;
+            background-color: white;
+            text-align: center;
+            font-size: x-large;
+          }
+
+          label {
+            padding: 5px;
+          }
+
+          img {
+            border: none;
+          }
+        }
+      }
+    }
+    .metier {
+      grid-row: 3 / 4;
+      grid-column: 3 / 4;      
+      .metier-titre {
+        text-transform: uppercase;
+        font-weight: bold;
+        text-align: center;
+        font-size: larger;
+      }
+      .metier-details {
+        display: flex;
+        flex: 1;
+        padding: 5px;
+        align-items: center;
+        text-align: center;
+        font-size: medium;
+        .nom {
+          margin: 5px;
+        }
+        .valeur {
+          width: 20px;
+        }
+      }
+    }
+    .talents {
+      grid-row: 3 / 4;
+      grid-column: 4 / 5;
+
+      .talents-titre {
+        text-transform: uppercase;
+        font-weight: bold;
+        text-align: center;
+        font-size: larger;
+      }
+      .talents-details {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        padding: 5px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-size: medium;
+        .nom {
+          margin: 5px;
+        }
+        .valeur {
+          width: 20px;
+          margin: 5px;
+        }
+        /* Tous les talents  */
+        > * {
+          display: flex;        
+          align-items: center;
+          justify-content: center;
+        }
+      }
+    }
+  }
+  .pj-main {
+    display: grid;
+    gap: 5px;
+    grid-template-columns: repeat(4, @largeur-colonne);
+    grid-template-rows: 30px 60px 200px 300px;
+
+    .points {
+      grid-row: 2 / 3;
+      grid-column: 1 / 3;
+      display: flex;
+      flex-direction: column;
+
+      .points-vie,
+      .points-souffle {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        flex: 1;
+        align-items: center;
+        text-align: center;
+
+        label {
+          text-transform: uppercase;
+          font-size: larger;
+          text-align: right;
+        }
+
+        input[type="checkbox"] {
+          width: 20px; /* Largeur de l'input */
+          height: 20px; /* Hauteur de l'input */
+          -webkit-appearance: none; /* Supprime l'apparence par défaut pour WebKit/Blink */
+          appearance: none; /* Supprime l'apparence par défaut */
+          border-radius: 50%; /* Rend l'élément rond */
+          border: 1px solid grey; /* Bordure pour l'input */
+          background-color: white; /* Couleur de fond */
+
+          &:checked {
+            background-color: black; /* Couleur de fond lorsque l'input est coché */
+          }
+        }
+      }
+    }
+
+    .equipement {
+      grid-row: 3 / 4;
+      grid-column: 1 / 3;
+      .equipement-titre {
+        font-size: x-large;
+        margin-bottom: 5px;
+      }
+    }
+
+    .capacites {
+      grid-row: 4 / 5;
+      grid-column: 1 / 3;
+      .capacites-titre {
+        font-size: x-large;
+        margin-bottom: 5px;
+        display: flex;
+      }
+      .capacites-details {
+        display: flex;
+        flex-direction: column;
+        > * {
+          display: flex;
+          flex-direction: column;
+          .titre {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+          }
+          .nom {
+            margin: 5px;
+          }
+          .cout {
+            width: 20px;
+            margin: 5px;
+          }
+        }
+      }
+    }
+
+    .image {
+      grid-row: 1 / 6;
+      grid-column: 3 / 5;
+      justify-content: center; /* Centre horizontalement l'image dans la div */
+      align-items: center; /* Centre verticalement l'image dans la div */
+      img {
+        border: none;
+        max-width: 100%; /* Assure que l'image ne dépasse pas la largeur de la div */
+        height: auto; /* Garde le ratio de l'image */
+      }
+      .regles {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        .titre {
+          font-size: larger;
+          margin-bottom: 5px;
+          font-weight: bold;
+          text-transform: uppercase;
+          padding-top: 10px;
+        }
+        .details {
+          font-size: medium;
+          margin-bottom: 5px;
+        }
+      }
+    }
+  }
+}
