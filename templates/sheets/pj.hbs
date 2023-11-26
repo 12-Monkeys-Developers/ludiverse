@@ -84,7 +84,7 @@
           <label>Points de vie</label>
           <div classe="ligne-vie">
             {{#times system.pv.max}}
-              <input type="checkbox" value="{{@index}}" />
+              <a class="pts-vie" data-index="{{@index}}">{{#if (gte system.pv.valeur @index)}}<i class="fas fa-circle"></i>{{else}}<i class="far fa-circle"></i>{{/if}}</a>
             {{/times}}
           </div>
         </div>
@@ -92,7 +92,7 @@
           <label>Points de souffle</label>
           <div classe="ligne-souffle">
             {{#times system.ps.max}}
-              <input type="checkbox" value="{{@index}}" />
+              <a class="pts-souffle" data-index="{{@index}}">{{#if (gte system.ps.valeur @index)}}<i class="fas fa-circle"></i>{{else}}<i class="far fa-circle"></i>{{/if}}</a>
             {{/times}}
           </div>
         </div>
