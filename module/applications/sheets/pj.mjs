@@ -25,8 +25,19 @@ export default class PJSheet extends LudiverseActorSheet {
     super.activateListeners(html);
     // Cocher dégâts
     html.find(".pts-vie").click(this._onCocherPv.bind(this));
-    // Cocher dégâts
+    // Cocher souffle
     html.find(".pts-souffle").click(this._onCocherPs.bind(this));
+    // Jet d'action
+    html.find(".roll-elem").click(this._onJetAction.bind(this));
+  }
+
+  _onJetAction(event) {
+    event.preventDefault();
+    const dataset = event.currentTarget.dataset;
+    let elem= dataset.elem;
+    if(SYSTEM.COMPOSANTES.hasOwnProperty(elem)) return this.actor.rollAction(elem, "action");
+    else if(SYSTEM.MOYENS.hasOwnProperty(elem)) return this.actor.rollAction("corps", elem);
+    else return;
   }
 
   async _onCocherPv(event) {

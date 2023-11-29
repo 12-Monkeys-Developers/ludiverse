@@ -1,0 +1,23 @@
+{{!log "chat standard check roll" this}}
+<div class="action-roll-chat {{cssClass}}">
+  <div class="intro">
+    {{#if (ne data.actingCharImg "icons/svg/mystery-man.svg")}}
+      <div class="introImg">
+        <img src="{{data.actingCharImg}}" title="{{data.actingCharName}}" />
+      </div>
+    {{/if}}
+    <div class="intro_right">
+      <p class="introText">{{{data.introText}}}</p>
+      <div class="ligne_img">
+      <img src={{imgComp}} title={{data.composanteValeur}} />
+      <img src={{imgMoyen}} title={{data.moyenValeur}} />
+    </div></div>
+  </div>
+  <div class="dice-result">
+    <div class="result-tooltip">
+      <p>Résultat du jet de dés : {{{data.result}}}</p>
+      <span class="tooltiptext">{{{data.diceTooltip}}}</span>
+    </div>
+    <p class="finalText">{{{data.finalText}}}</p>
+  </div>
+</div>

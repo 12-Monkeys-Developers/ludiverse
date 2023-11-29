@@ -1,0 +1,69 @@
+{{!log 'standard check dialog' this}}
+<form class="dialog-jet-action">
+  <section class="content">
+    <div class="dialog-grid">
+      <div class="comp-block">
+        <div class="comp-titre">Choisir une composante :</div>
+        <div class="comp-elem">
+          <img src="/systems/ludiverse/assets/corps.png" title="Corps" />
+        </div>
+        <div class="comp-elem">
+          <img src="/systems/ludiverse/assets/coeur.png" title="Coeur" />
+        </div>
+        <div class="comp-elem">
+          <img src="/systems/ludiverse/assets/esprit.png" title="Esprit" />
+        </div>
+        <div class="choix">
+          <label class="labelchk">{{radioBoxes groupName_comp choices_composante checked=composante localize=true}}</label>
+        </div>
+      </div>
+      <div class="comp-block">
+        <div class="comp-titre">Choisir un moyen :</div>
+        <div class="comp-elem">
+          <img src="/systems/ludiverse/assets/action.png" title="Action" />
+        </div>
+        <div class="comp-elem">
+          <img src="/systems/ludiverse/assets/perception.png" title="Perception" />
+        </div>
+        <div class="comp-elem">
+          <img src="/systems/ludiverse/assets/resistance.png" title="Résistance" />
+        </div>
+        <div class="choix">
+          <label class="labelchk">{{radioBoxes groupName_moyen choices_moyen checked=moyen localize=true}}</label>
+        </div>
+      </div>
+      <div class="metier-talent-block">
+        <div style="grid-column: 1 / 2;grid-row: 1 / 2;" class="metier-titre">
+          {{actorData.metier.nom}} :
+        </div>
+        <div style="grid-column: 2 / 3;grid-row: 1 / 2;" class="metier-titre">
+          {{actorData.metier.valeur}}
+        </div>
+        <div style="grid-column: 1 / 2;grid-row: 2 / 3;" class="metier-titre">
+          {{actorData.talent1.nom}} :
+        </div>
+        <div style="grid-column: 2 / 3;grid-row: 2 / 3;" class="metier-titre">
+          {{actorData.talent1.valeur}}
+        </div>
+        <div style="grid-column: 1 / 2;grid-row: 3 / 4;" class="metier-titre">
+          {{actorData.talent2.nom}} :
+        </div>
+        <div style="grid-column: 2 / 3;grid-row: 3 / 4;" class="metier-titre">
+          {{actorData.talent2.valeur}}
+        </div>
+        <div style="grid-column: 1 / 2;grid-row: 4 / 5;" class="metier-titre">
+          {{actorData.talent3.nom}} :
+        </div>
+        <div style="grid-column: 2 / 3;grid-row: 4 / 5;" class="metier-titre">
+          {{actorData.talent3.valeur}}
+        </div>
+        <p style="grid-column: 3 / 4;grid-row: 1 / 3;" class="metier-titre">Un métier ou talent correspond à l'action ?</p>
+          <div style="grid-column: 3 / 4;grid-row: 3 / 5;" class="metier-titre">
+            <label class="labelchk">{{radioBoxes groupName_metier choices_metier checked=metier localize=true}}</label>
+          </div>
+      </div></div>
+      <button type="button" class="dialog-button" data-button="ok">
+          <label>Lancer les dés</label>
+      </button>
+  </section>
+</form>

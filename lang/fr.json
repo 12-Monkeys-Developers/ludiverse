@@ -1,5 +1,17 @@
 {
-    "LUDIVERSE":{
-        
+  "LUDIVERSE": {
+    "chatmessage": {
+      "introActionStd": "{actingCharName} tente une action"
+    },
+    "COMPOSANTE": {
+      "corps": "Corps",
+      "coeur": "Cœur",
+      "esprit": "Esprit"
+    },
+    "MOYEN": {
+      "action": "Action",
+      "perception": "Perception",
+      "resistance": "Résistance"
     }
+  }
 }

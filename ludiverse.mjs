@@ -4,6 +4,7 @@ globalThis.SYSTEM = SYSTEM;
 
 // Import modules
 import * as applications from "./module/applications/_module.mjs";
+import * as dice from "./module/dice/_module.mjs";
 import * as documents from "./module/documents/_module.mjs";
 import * as models from "./module/data/_module.mjs";
 
@@ -17,6 +18,9 @@ Hooks.once("init", async function () {
   };
   Actors.unregisterSheet("core", ActorSheet);
   Actors.registerSheet(SYSTEM.id, applications.PJSheet, { types: ["pj"], makeDefault: true });
+  // Dice system configuration
+  
+  CONFIG.Dice.rolls.push(dice.StandardCheck);
 
   Handlebars.registerHelper("times", function (n, block) {
     var accum = "";
