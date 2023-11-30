@@ -5,12 +5,14 @@
     <header class="pj-header">
       <div class="charname">
         <input name="name" type="text" value="{{actor.name}}" />
+        <a class="change-lock" title="{{localize 'LUDIVERSE.label.unlockSheet'}}">
+          {{#if unlocked}}<i class="fas fa-lock-open"></i>{{else}}<i class="fas fa-lock" ></i>{{/if}}</a>
       </div>
       <div class="description">
         {{editor descriptionHTML target="system.description" button=true engine="prosemirror" owner=owner editable=editable}}
          <div class="indications">
           <label>Indications pour jouer :</label>
-          <input type="text" name="system.indications" value="{{system.indications}}" />
+          <input type="text" name="system.indications" value="{{system.indications}}" {{#unless unlocked}}readonly{{/unless}}/>
         </div>
       </div>     
       <div class="composantes">
@@ -19,17 +21,29 @@
           <div class="composantes-corps">
             <img class="roll-elem" data-elem="corps" src="/systems/ludiverse/assets/corps.png" title="Corps" />
             <label>Corps</label>
-            <input type="text" name="system.composantes.corps.valeur" value="{{system.composantes.corps.valeur}}" />
+            {{#if unlocked}}
+              <input type="text" name="system.composantes.corps.valeur" value="{{system.composantes.corps.valeur}}" />
+            {{else}}
+              <label class="valeur">{{system.composantes.corps.valeur}}</label>
+            {{/if}}
           </div>
           <div class="composantes-coeur">
             <img class="roll-elem" data-elem="coeur" src="/systems/ludiverse/assets/coeur.png" title="Coeur" />
             <label>Coeur</label>
+            {{#if unlocked}}
             <input type="text" name="system.composantes.coeur.valeur" value="{{system.composantes.coeur.valeur}}" />
+            {{else}}
+              <label class="valeur">{{system.composantes.coeur.valeur}}</label>
+            {{/if}}
           </div>
           <div class="composantes-esprit">
             <img class="roll-elem" data-elem="esprit" src="/systems/ludiverse/assets/esprit.png" title="Esprit" />
             <label>Esprit</label>
+            {{#if unlocked}}
             <input type="text" name="system.composantes.esprit.valeur" value="{{system.composantes.esprit.valeur}}" />
+            {{else}}
+              <label class="valeur">{{system.composantes.esprit.valeur}}</label>
+            {{/if}}
           </div>
         </div>
       </div>
@@ -39,41 +53,53 @@
           <div class="moyens-action">
             <img class="roll-elem" data-elem="action" src="/systems/ludiverse/assets/action.png" title="Action" />
             <label>Action</label>
-            <input type="text" name="system.moyens.action.valeur" value="{{system.moyens.action.valeur}}" />
+            {{#if unlocked}}
+              <input type="text" name="system.moyens.action.valeur" value="{{system.moyens.action.valeur}}" />
+            {{else}}
+              <label class="valeur">{{system.moyens.action.valeur}}</label>
+            {{/if}}            
           </div>
           <div class="moyens-perception">
             <img class="roll-elem" data-elem="perception" src="/systems/ludiverse/assets/perception.png" title="Perception" />
             <label>Perception</label>
-            <input type="text" name="system.moyens.perception.valeur" value="{{system.moyens.perception.valeur}}" />
+            {{#if unlocked}}
+              <input type="text" name="system.moyens.perception.valeur" value="{{system.moyens.perception.valeur}}" />
+            {{else}}
+              <label class="valeur">{{system.moyens.perception.valeur}}</label>
+            {{/if}}
           </div>
           <div class="moyens-résistance">
             <img class="roll-elem" data-elem="resistance" src="/systems/ludiverse/assets/resistance.png" title="Résistance" />
             <label>Résistance</label>
-            <input type="text" name="system.moyens.resistance.valeur" value="{{system.moyens.resistance.valeur}}" />
+            {{#if unlocked}}
+              <input type="text" name="system.moyens.resistance.valeur" value="{{system.moyens.resistance.valeur}}" />
+            {{else}}
+              <label class="valeur">{{system.moyens.resistance.valeur}}</label>
+            {{/if}}            
           </div>
         </div>
       </div>
       <div class="metier">
         <div class="metier-titre">Métier</div>
-        <div class="metier-details">
-          <input class="nom" type="text" name="system.metier.nom" value="{{system.metier.nom}}" />
-          <input class="valeur" type="text" name="system.metier.valeur" value="{{system.metier.valeur}}" />
+        <div class="metier-details">        
+            <input class="nom" type="text" name="system.metier.nom" value="{{system.metier.nom}}" {{#unless unlocked}}readonly{{/unless}}/>
+            <input class="valeur" type="text" name="system.metier.valeur" value="{{system.metier.valeur}}" {{#unless unlocked}}readonly{{/unless}}/>
         </div>
       </div>
       <div class="talents">
         <div class="talents-titre">Talents</div>
         <div class="talents-details">
           <div class="talent1">
-            <input class="nom" type="text" name="system.talent1.nom" value="{{system.talent1.nom}}" />
-            <input class="valeur" type="text" name="system.talent1.valeur" value="{{system.talent1.valeur}}" />
+              <input class="nom" type="text" name="system.talent1.nom" value="{{system.talent1.nom}}" {{#unless unlocked}}readonly{{/unless}}/>
+              <input class="valeur" type="text" name="system.talent1.valeur" value="{{system.talent1.valeur}}" {{#unless unlocked}}readonly{{/unless}}/>
           </div>
           <div class="talent2">
-            <input class="nom" type="text" name="system.talent2.nom" value="{{system.talent2.nom}}" />
-            <input class="valeur" type="text" name="system.talent2.valeur" value="{{system.talent2.valeur}}" /> 
+              <input class="nom" type="text" name="system.talent2.nom" value="{{system.talent2.nom}}" {{#unless unlocked}}readonly{{/unless}}/>
+              <input class="valeur" type="text" name="system.talent2.valeur" value="{{system.talent2.valeur}}" {{#unless unlocked}}readonly{{/unless}}/>
           </div>
           <div class="talent3">
-            <input class="nom" type="text" name="system.talent3.nom" value="{{system.talent3.nom}}" />
-            <input class="valeur" type="text" name="system.talent3.valeur" value="{{system.talent3.valeur}}" />
+              <input class="nom" type="text" name="system.talent3.nom" value="{{system.talent3.nom}}" {{#unless unlocked}}readonly{{/unless}}/>
+              <input class="valeur" type="text" name="system.talent3.valeur" value="{{system.talent3.valeur}}" {{#unless unlocked}}readonly{{/unless}}/>
           </div>  
       </div>
     </header>
@@ -105,27 +131,27 @@
       </div>
       <div class="capacites">
         <div class="capacites-titre">
-          <input class="capacites-nom" type="text" name="system.capacites.nom" value="{{system.capacites.nom}}" />
+          <input class="capacites-nom" type="text" name="system.capacites.nom" value="{{system.capacites.nom}}" {{#unless unlocked}}readonly{{/unless}}/>
         </div>
         <div class="capacites-details">
           <div class="capacites1-details">
             <div class="titre">
-                <input class="nom" type="text" name="system.capacites.capacite1.nom" value="{{system.capacites.capacite1.nom}}" />
-                (<input class="cout" type="number" name="system.capacites.capacite1.cout" value="{{system.capacites.capacite1.cout}}" /> PS)
+                <input class="nom" type="text" name="system.capacites.capacite1.nom" value="{{system.capacites.capacite1.nom}}" {{#unless unlocked}}readonly{{/unless}}/>
+                ({{#if unlocked}} <input class="cout" type="number" name="system.capacites.capacite1.cout" value="{{system.capacites.capacite1.cout}}"/> {{else}}&nbsp;<label class="valeur">{{system.capacites.capacite1.cout}}</label>{{/if}}&nbsp;PS)
             </div>
             {{editor capacites1HTML target="system.capacites.capacite1.description" button=true engine="prosemirror" owner=owner editable=editable}}
           </div>
           <div class="capacites2-details">
             <div class="titre">
-                <input class="nom" type="text" name="system.capacites.capacite2.nom" value="{{system.capacites.capacite2.nom}}" />
-                (<input class="cout" type="number" name="system.capacites.capacite2.cout" value="{{system.capacites.capacite2.cout}}" /> PS)
+                <input class="nom" type="text" name="system.capacites.capacite2.nom" value="{{system.capacites.capacite2.nom}}" {{#unless unlocked}}readonly{{/unless}}/>
+                ({{#if unlocked}} <input class="cout" type="number" name="system.capacites.capacite2.cout" value="{{system.capacites.capacite2.cout}}"/> {{else}}&nbsp;<label class="valeur">{{system.capacites.capacite2.cout}}</label>{{/if}}&nbsp;PS)
             </div>
             {{editor capacites2HTML target="system.capacites.capacite2.description" button=true engine="prosemirror" owner=owner editable=editable}}
           </div>
           <div class="capacites3-details">
             <div class="titre">
-              <input class="nom" type="text" name="system.capacites.capacite3.nom" value="{{system.capacites.capacite3.nom}}" />
-              (<input class="cout" type="number" name="system.capacites.capacite3.cout" value="{{system.capacites.capacite3.cout}}" /> PS)
+              <input class="nom" type="text" name="system.capacites.capacite3.nom" value="{{system.capacites.capacite3.nom}}" {{#unless unlocked}}readonly{{/unless}} />
+              ({{#if unlocked}} <input class="cout" type="number" name="system.capacites.capacite3.cout" value="{{system.capacites.capacite3.cout}}"/> {{else}}&nbsp;<label class="valeur">{{system.capacites.capacite3.cout}}</label>{{/if}}&nbsp;PS)
             </div>
             {{editor capacites3HTML target="system.capacites.capacite3.description" button=true engine="prosemirror" owner=owner editable=editable}}
           </div>

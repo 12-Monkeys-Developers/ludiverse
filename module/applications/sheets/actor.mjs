@@ -31,7 +31,7 @@ export default class LudiverseActorSheet extends ActorSheet {
     super.activateListeners(html);
 
     // Lock/Unlock la fiche
-    html.find(".sheet-change-lock").click(this._onSheetChangelock.bind(this));
+    html.find(".change-lock").click(this._onSheetChangelock.bind(this));
   }
 
   /**

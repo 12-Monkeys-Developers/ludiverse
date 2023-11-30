@@ -12,6 +12,13 @@
       "action": "Action",
       "perception": "Perception",
       "resistance": "Résistance"
+    },
+    "MENU": {
+      "lock": "Verrouiller",
+      "unlock": "Déverrouiller"
+    },
+    "label": {
+      "unlockSheet": "Verrouiller/Déverrouiller la feuille"
     }
   }
 }

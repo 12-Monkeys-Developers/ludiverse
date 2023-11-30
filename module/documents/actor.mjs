@@ -1,5 +1,10 @@
 import StandardCheck from "../dice/standard-check.mjs";
 export default class LudiverseActor extends Actor {
+  get isUnlocked() {
+    if (this.getFlag(game.system.id, "SheetUnlocked")) return true;
+    return false;
+  }
+
   /**
    * Roll a skill check for a given skill ID.
    *
