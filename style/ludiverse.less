@@ -7,12 +7,12 @@
   src: url("../fonts/SimulactesBats.ttf") format("truetype");
 }
 
-/** Mixins */
+/** Mixins **/
 .details {
   display: flex;
   flex-direction: column;
   flex: 0 0 80px;
-  padding: 5px;
+  gap: 10px;
   align-items: center;
   text-align: center;
   font-size: medium;
@@ -44,9 +44,12 @@
   padding: 5px;
 }
 
-/** ***/
+/** Fin Mixins **/
 
 .ludiverse.sheet.actor.pj {
+  .window-content {
+    overflow: hidden;
+  }
   .editor {
     width: 100%;
     height: 100%;
@@ -54,16 +57,14 @@
     background: var(--background_base);
     box-shadow: inset 0 0 6px black;
     font-family: "garamondpro";
-    font-size: 1.2em;
     text-align: justify;
     padding-left: 5px;
     padding-right: 5px;
-    margin-top: 0px;
-    margin-bottom: 0px;
     min-height: 5em;
   }
   .editor-content {
     min-height: 5em;
+    margin: 0px 5px 0px 5px;
   }
   .pj-sheet {
     display: grid;
@@ -116,6 +117,7 @@
       display: flex;
       flex-direction: column;
       margin: 0 5px 0 5px;
+      padding-top: 10px;
       label {
         text-transform: uppercase;
         font-weight: bold;
@@ -135,6 +137,7 @@
       }
       .composantes-details {
         display: flex;
+        gap: 10px;
 
         /* Tous les enfants de .composantes-details */
         > * {
@@ -167,6 +170,8 @@
       }
       .moyens-details {
         display: flex;
+        gap: 10px;
+
         /* Tous les enfants de .moyens-details */
         > * {
           .details;
@@ -263,13 +268,20 @@
         grid-template-columns: 1fr 1fr;
         flex: 1;
         align-items: center;
-        text-align: center;
-
+        .ligne-vie, .ligne-souffle {
+          margin-left: 25px;
+        }
+           
         label {
           text-transform: uppercase;
           font-size: larger;
           text-align: right;
-        }
+
+          .max {
+            width: 25px;
+            text-align: center;
+          }
+        }       
 
         input[type="checkbox"] {
           width: 20px; /* Largeur de l'input */

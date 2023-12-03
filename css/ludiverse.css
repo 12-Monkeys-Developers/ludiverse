@@ -2,12 +2,12 @@
   font-family: "Simulacres";
   src: url("../fonts/SimulactesBats.ttf") format("truetype");
 }
-/** Mixins */
+/** Mixins **/
 .details {
   display: flex;
   flex-direction: column;
   flex: 0 0 80px;
-  padding: 5px;
+  gap: 10px;
   align-items: center;
   text-align: center;
   font-size: medium;
@@ -35,7 +35,10 @@
   font-size: x-large;
   padding: 5px;
 }
-/** ***/
+/** Fin Mixins **/
+.ludiverse.sheet.actor.pj .window-content {
+  overflow: hidden;
+}
 .ludiverse.sheet.actor.pj .editor {
   width: 100%;
   height: 100%;
@@ -43,16 +46,14 @@
   background: var(--background_base);
   box-shadow: inset 0 0 6px black;
   font-family: "garamondpro";
-  font-size: 1.2em;
   text-align: justify;
   padding-left: 5px;
   padding-right: 5px;
-  margin-top: 0px;
-  margin-bottom: 0px;
   min-height: 5em;
 }
 .ludiverse.sheet.actor.pj .editor-content {
   min-height: 5em;
+  margin: 0px 5px 0px 5px;
 }
 .ludiverse.sheet.actor.pj .pj-sheet {
   display: grid;
@@ -106,6 +107,7 @@
   display: flex;
   flex-direction: column;
   margin: 0 5px 0 5px;
+  padding-top: 10px;
 }
 .ludiverse.sheet.actor.pj .pj-header .indications label {
   text-transform: uppercase;
@@ -126,13 +128,14 @@
 }
 .ludiverse.sheet.actor.pj .pj-header .composantes .composantes-details {
   display: flex;
+  gap: 10px;
   /* Tous les enfants de .composantes-details */
 }
 .ludiverse.sheet.actor.pj .pj-header .composantes .composantes-details > * {
   display: flex;
   flex-direction: column;
   flex: 0 0 80px;
-  padding: 5px;
+  gap: 10px;
   align-items: center;
   text-align: center;
   font-size: medium;
@@ -177,13 +180,14 @@
 }
 .ludiverse.sheet.actor.pj .pj-header .moyens .moyens-details {
   display: flex;
+  gap: 10px;
   /* Tous les enfants de .moyens-details */
 }
 .ludiverse.sheet.actor.pj .pj-header .moyens .moyens-details > * {
   display: flex;
   flex-direction: column;
   flex: 0 0 80px;
-  padding: 5px;
+  gap: 10px;
   align-items: center;
   text-align: center;
   font-size: medium;
@@ -289,13 +293,23 @@
   grid-template-columns: 1fr 1fr;
   flex: 1;
   align-items: center;
-  text-align: center;
+}
+.ludiverse.sheet.actor.pj .pj-main .points .points-vie .ligne-vie,
+.ludiverse.sheet.actor.pj .pj-main .points .points-souffle .ligne-vie,
+.ludiverse.sheet.actor.pj .pj-main .points .points-vie .ligne-souffle,
+.ludiverse.sheet.actor.pj .pj-main .points .points-souffle .ligne-souffle {
+  margin-left: 25px;
 }
 .ludiverse.sheet.actor.pj .pj-main .points .points-vie label,
 .ludiverse.sheet.actor.pj .pj-main .points .points-souffle label {
   text-transform: uppercase;
   font-size: larger;
   text-align: right;
+}
+.ludiverse.sheet.actor.pj .pj-main .points .points-vie label .max,
+.ludiverse.sheet.actor.pj .pj-main .points .points-souffle label .max {
+  width: 25px;
+  text-align: center;
 }
 .ludiverse.sheet.actor.pj .pj-main .points .points-vie input[type="checkbox"],
 .ludiverse.sheet.actor.pj .pj-main .points .points-souffle input[type="checkbox"] {
