@@ -23,6 +23,7 @@ export default class PJSheet extends LudiverseActorSheet {
     context.capacites3HTML = TextEditor.enrichHTML(this.actor.system.capacites.capacite3.description, { async: false });
     context.unlocked = this.actor.isUnlocked;
     context.locked = !this.actor.isUnlocked;
+    
 
     return context;
   }

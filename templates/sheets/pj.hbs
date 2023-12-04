@@ -18,27 +18,27 @@
       <div class="composantes">
         <div class="composantes-titre">composantes</div>
         <div class="composantes-details">
-          <div class="composantes-corps">
+          <div class="composantes-block">
             <img class="roll-elem" data-elem="corps" src="/systems/ludiverse/assets/corps.png" title="Corps" />
-            <label>Corps</label>
+            <div class="comp-lbl">Corps</div>
             {{#if unlocked}}
               <input type="text" name="system.composantes.corps.valeur" value="{{system.composantes.corps.valeur}}" />
             {{else}}
-              <label class="valeur">{{system.composantes.coeur.valeur}}</label>
+              <label class="valeur">{{system.composantes.corps.valeur}}</label>
             {{/if}}            
           </div>
-          <div class="composantes-coeur">
+          <div class="composantes-block">
             <img class="roll-elem" data-elem="coeur" src="/systems/ludiverse/assets/coeur.png" title="Coeur" />
-            <label>Coeur</label>
+            <div class="comp-lbl">Coeur</div>
             {{#if unlocked}}
             <input type="text" name="system.composantes.coeur.valeur" value="{{system.composantes.coeur.valeur}}" />
             {{else}}
               <label class="valeur">{{system.composantes.coeur.valeur}}</label>
             {{/if}}
           </div>
-          <div class="composantes-esprit">
+          <div class="composantes-block">
             <img class="roll-elem" data-elem="esprit" src="/systems/ludiverse/assets/esprit.png" title="Esprit" />
-            <label>Esprit</label>
+            <div class="comp-lbl">Esprit</div>
             {{#if unlocked}}
             <input type="text" name="system.composantes.esprit.valeur" value="{{system.composantes.esprit.valeur}}" />
             {{else}}
@@ -48,29 +48,29 @@
         </div>
       </div>
       <div class="moyens">
-        <div class="moyens-titre">moyens</div>
-        <div class="moyens-details">
-          <div class="moyens-action">
+        <div class="composantes-titre">moyens</div>
+        <div class="composantes-details">
+          <div class="composantes-block">
             <img class="roll-elem" data-elem="action" src="/systems/ludiverse/assets/action.png" title="Action" />
-            <label>Action</label>
+            <div class="comp-lbl">Action</div>
             {{#if unlocked}}
               <input type="text" name="system.moyens.action.valeur" value="{{system.moyens.action.valeur}}" />
             {{else}}
               <label class="valeur">{{system.moyens.action.valeur}}</label>
             {{/if}}            
           </div>
-          <div class="moyens-perception">
+          <div class="composantes-block">
             <img class="roll-elem" data-elem="perception" src="/systems/ludiverse/assets/perception.png" title="Perception" />
-            <label>Perception</label>
+            <div class="comp-lbl">Perception</div>
             {{#if unlocked}}
               <input type="text" name="system.moyens.perception.valeur" value="{{system.moyens.perception.valeur}}" />
             {{else}}
               <label class="valeur">{{system.moyens.perception.valeur}}</label>
             {{/if}}
           </div>
-          <div class="moyens-résistance">
+          <div class="composantes-block">
             <img class="roll-elem" data-elem="resistance" src="/systems/ludiverse/assets/resistance.png" title="Résistance" />
-            <label>Résistance</label>
+            <div class="comp-lbl">Résistance</div>
             {{#if unlocked}}
               <input type="text" name="system.moyens.resistance.valeur" value="{{system.moyens.resistance.valeur}}" />
             {{else}}

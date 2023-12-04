@@ -3,7 +3,7 @@ export default class LudiverseActorSheet extends ActorSheet {
   static get defaultOptions() {
     const options = super.defaultOptions;
     return Object.assign(options, {
-      width: 1100,
+      width: 800,
       height: 1200,
       classes: [SYSTEM.id, "sheet", "actor", this.actorType],
       template: `systems/${SYSTEM.id}/templates/sheets/${this.actorType}.hbs`,

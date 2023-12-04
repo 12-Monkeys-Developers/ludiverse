@@ -1,12 +1,60 @@
 @font-face {
-  font-family: "Simulacres";
-  src: url("../fonts/SimulactesBats.ttf") format("truetype");
+  font-family: "garamond";
+  src: url("../fonts/garamond.otf") format("truetype");
+}
+@font-face {
+  font-family: "garamond";
+  src: url("../fonts/garamond-ita.otf") format("truetype");
+  font-style: italic;
+}
+@font-face {
+  font-family: "garamond";
+  src: url("../fonts/garamond-bd.otf") format("truetype");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "garamond";
+  src: url("../fonts/garamond-bdita.otf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: "simulacres";
+  src: url("../fonts/simulacresbats.ttf") format("truetype");
+}
+@font-face {
+  font-family: "philosopher";
+  src: url("../fonts/philosopher-bolditalic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "ovidius";
+  src: url("../fonts/ovidiusdemi.ttf") format("truetype");
+}
+@font-face {
+  font-family: "codebold";
+  src: url("../fonts/codebold.otf") format("truetype");
+}
+:root {
+  --font-pj-color: black;
+  --background_pj: none;
+  --font-pj-name: 40px "garamond";
+  --font-pj-name-color: black;
+  --font-pj-indications: 10px "garamond";
+  --font-pj-indications-color: black;
+  --font-pj-titre: 10px "garamond";
+  --font-pj-titre-color: black;
+  --font-pj-pv: 10px "garamond";
+  --font-pj-pv-color: black;
+  --font-pj-label: 10px "garamond";
+  --font-pj-label-color: black;
+  --font-pj-comp-lbl-color: black;
+  --font-pj-nb: 20px "garamond";
+  --font-pj-nb-color: black;
 }
 /** Mixins **/
 .details {
   display: flex;
   flex-direction: column;
-  flex: 0 0 80px;
   gap: 10px;
   align-items: center;
   text-align: center;
@@ -36,16 +84,13 @@
   padding: 5px;
 }
 /** Fin Mixins **/
-.ludiverse.sheet.actor.pj .window-content {
-  overflow: hidden;
-}
 .ludiverse.sheet.actor.pj .editor {
   width: 100%;
   height: 100%;
   background-color: #f9f6f1;
   background: var(--background_base);
   box-shadow: inset 0 0 6px black;
-  font-family: "garamondpro";
+  font-family: "garamond";
   text-align: justify;
   padding-left: 5px;
   padding-right: 5px;
@@ -56,23 +101,26 @@
   margin: 0px 5px 0px 5px;
 }
 .ludiverse.sheet.actor.pj .pj-sheet {
+  background: var(--background_pj);
   display: grid;
   gap: 5px;
   grid-template-rows: 1fr 2fr;
+  color: var(--font-pj-color);
 }
 .ludiverse.sheet.actor.pj .pj-header {
   display: grid;
   gap: 20px;
-  grid-template-columns: repeat(4, 250px);
-  grid-template-rows: 50px 160px 140px;
+  grid-template-columns: 320px 190px 190px;
+  grid-template-rows: 45px 160px 140px;
 }
 .ludiverse.sheet.actor.pj .pj-header .charname {
   grid-row: 1 / 2;
-  grid-column: 1 / span 4;
+  grid-column: 1 / span 3;
   display: flex;
 }
 .ludiverse.sheet.actor.pj .pj-header .charname input {
-  font-size: 48px;
+  font: var(--font-pj-name);
+  color: var(--font-pj-name-color);
   text-align: left;
   border: none;
   height: 100%;
@@ -98,7 +146,7 @@
 }
 .ludiverse.sheet.actor.pj .pj-header .description {
   grid-row: 2 / span 2;
-  grid-column: 1 / span 2;
+  grid-column: 1 / 2;
   margin: 0 5px 0 5px;
   display: flex;
   flex-direction: column;
@@ -109,38 +157,34 @@
   margin: 0 5px 0 5px;
   padding-top: 10px;
 }
+.ludiverse.sheet.actor.pj .pj-header .indications input {
+  color: var(--font-pj-color);
+}
 .ludiverse.sheet.actor.pj .pj-header .indications label {
+  font: var(--font-pj-indications);
+  color: var(--font-pj-indications-color);
   text-transform: uppercase;
   font-weight: bold;
   font-style: italic;
 }
-.ludiverse.sheet.actor.pj .pj-header .composantes {
-  grid-row: 2 / 4;
-  grid-column: 3 / 4;
+.ludiverse.sheet.actor.pj .pj-header .comp-lbl {
+  font-size: 0.8em;
+  color: var(--font-pj-comp-lbl-color);
+}
+.ludiverse.sheet.actor.pj .pj-header .composantes-details {
   display: grid;
-  grid-template-rows: 30px 1fr;
-  text-align: center;
-  font-size: larger;
-}
-.ludiverse.sheet.actor.pj .pj-header .composantes .composantes-titre {
-  text-transform: uppercase;
-  font-weight: bold;
-}
-.ludiverse.sheet.actor.pj .pj-header .composantes .composantes-details {
-  display: flex;
-  gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr;
   /* Tous les enfants de .composantes-details */
 }
-.ludiverse.sheet.actor.pj .pj-header .composantes .composantes-details > * {
+.ludiverse.sheet.actor.pj .pj-header .composantes-details > * {
   display: flex;
   flex-direction: column;
-  flex: 0 0 80px;
   gap: 10px;
   align-items: center;
   text-align: center;
   font-size: medium;
 }
-.ludiverse.sheet.actor.pj .pj-header .composantes .composantes-details > * input {
+.ludiverse.sheet.actor.pj .pj-header .composantes-details > * input {
   border: none;
   outline: none;
   width: 50px;
@@ -152,7 +196,7 @@
   text-align: center;
   font-size: x-large;
 }
-.ludiverse.sheet.actor.pj .pj-header .composantes .composantes-details > * .valeur {
+.ludiverse.sheet.actor.pj .pj-header .composantes-details > * .valeur {
   border: none;
   outline: none;
   width: 50px;
@@ -163,66 +207,51 @@
   font-size: x-large;
   padding: 5px;
 }
-.ludiverse.sheet.actor.pj .pj-header .composantes .composantes-details > * img {
+.ludiverse.sheet.actor.pj .pj-header .composantes-details > * img {
   border: none;
+}
+.ludiverse.sheet.actor.pj .pj-header .composantes-titre {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: var(--font-pj-label-color);
+}
+.ludiverse.sheet.actor.pj .pj-header .composantes-block {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  text-align: center;
+  font-size: medium;
+}
+.ludiverse.sheet.actor.pj .pj-header .composantes-block label {
+  font: var(--font-pj-nb);
+  color: var(--font-pj-nb-color);
+}
+.ludiverse.sheet.actor.pj .pj-header .composantes {
+  grid-row: 2 / 4;
+  grid-column: 2 / 3;
+  display: grid;
+  grid-template-rows: 30px 1fr;
+  text-align: center;
+  font-size: larger;
 }
 .ludiverse.sheet.actor.pj .pj-header .moyens {
   grid-row: 2 / 4;
-  grid-column: 4 / 5;
+  grid-column: 3 / 4;
   display: grid;
   grid-template-rows: 30px 1fr;
   text-align: center;
   font-size: larger;
 }
-.ludiverse.sheet.actor.pj .pj-header .moyens .moyens-titre {
-  text-transform: uppercase;
-  font-weight: bold;
-}
-.ludiverse.sheet.actor.pj .pj-header .moyens .moyens-details {
-  display: flex;
-  gap: 10px;
-  /* Tous les enfants de .moyens-details */
-}
-.ludiverse.sheet.actor.pj .pj-header .moyens .moyens-details > * {
-  display: flex;
-  flex-direction: column;
-  flex: 0 0 80px;
-  gap: 10px;
-  align-items: center;
-  text-align: center;
-  font-size: medium;
-}
-.ludiverse.sheet.actor.pj .pj-header .moyens .moyens-details > * input {
-  border: none;
-  outline: none;
-  width: 50px;
-  height: 50px;
-  border-radius: 0;
-  clip-path: polygon(25% 0, 75% 0, 100% 25%, 100% 75%, 75% 100%, 25% 100%, 0 75%, 0 25%);
-  padding: 5px;
-  background-color: white;
-  text-align: center;
-  font-size: x-large;
-}
-.ludiverse.sheet.actor.pj .pj-header .moyens .moyens-details > * .valeur {
-  border: none;
-  outline: none;
-  width: 50px;
-  height: 50px;
-  border-radius: 0;
-  clip-path: polygon(25% 0, 75% 0, 100% 25%, 100% 75%, 75% 100%, 25% 100%, 0 75%, 0 25%);
-  text-align: center;
-  font-size: x-large;
-  padding: 5px;
-}
-.ludiverse.sheet.actor.pj .pj-header .moyens .moyens-details > * img {
-  border: none;
-}
 .ludiverse.sheet.actor.pj .pj-header .metier {
   grid-row: 3 / 4;
-  grid-column: 3 / 4;
+  grid-column: 2 / 3;
+}
+.ludiverse.sheet.actor.pj .pj-header .metier input {
+  color: var(--font-pj-color);
 }
 .ludiverse.sheet.actor.pj .pj-header .metier .metier-titre {
+  color: var(--font-pj-label-color);
   text-transform: uppercase;
   font-weight: bold;
   text-align: center;
@@ -244,9 +273,13 @@
 }
 .ludiverse.sheet.actor.pj .pj-header .talents {
   grid-row: 3 / 4;
-  grid-column: 4 / 5;
+  grid-column: 3 / 4;
+}
+.ludiverse.sheet.actor.pj .pj-header .talents input {
+  color: var(--font-pj-color);
 }
 .ludiverse.sheet.actor.pj .pj-header .talents .talents-titre {
+  color: var(--font-pj-label-color);
   text-transform: uppercase;
   font-weight: bold;
   text-align: center;
@@ -278,7 +311,7 @@
 .ludiverse.sheet.actor.pj .pj-main {
   display: grid;
   gap: 5px;
-  grid-template-columns: repeat(4, 250px);
+  grid-template-columns: 160px 160px 190px 190px;
   grid-template-rows: 60px 200px 300px;
 }
 .ludiverse.sheet.actor.pj .pj-main .points {
@@ -303,8 +336,9 @@
 .ludiverse.sheet.actor.pj .pj-main .points .points-vie label,
 .ludiverse.sheet.actor.pj .pj-main .points .points-souffle label {
   text-transform: uppercase;
-  font-size: larger;
   text-align: right;
+  font: var(--font-pj-pv);
+  color: var(--font-pj-pv-color);
 }
 .ludiverse.sheet.actor.pj .pj-main .points .points-vie label .max,
 .ludiverse.sheet.actor.pj .pj-main .points .points-souffle label .max {
@@ -338,7 +372,8 @@
   grid-column: 1 / 3;
 }
 .ludiverse.sheet.actor.pj .pj-main .equipement .equipement-titre {
-  font-size: x-large;
+  font: var(--font-pj-titre);
+  color: var(--font-pj-titre-color);
   margin-bottom: 5px;
 }
 .ludiverse.sheet.actor.pj .pj-main .capacites {
@@ -346,9 +381,13 @@
   grid-column: 1 / 3;
 }
 .ludiverse.sheet.actor.pj .pj-main .capacites .capacites-titre {
-  font-size: x-large;
+  font: var(--font-pj-titre);
+  color: var(--font-pj-titre-color);
   margin-bottom: 5px;
   display: flex;
+}
+.ludiverse.sheet.actor.pj .pj-main .capacites .capacites-titre input {
+  color: var(--font-pj-titre-color);
 }
 .ludiverse.sheet.actor.pj .pj-main .capacites .capacites-details {
   display: flex;
@@ -362,6 +401,10 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+  color: var(--font-pj-color);
+}
+.ludiverse.sheet.actor.pj .pj-main .capacites .capacites-details > * .titre input {
+  color: var(--font-pj-color);
 }
 .ludiverse.sheet.actor.pj .pj-main .capacites .capacites-details > * .nom {
   margin: 5px;
