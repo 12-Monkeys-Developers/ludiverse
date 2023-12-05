@@ -18,7 +18,15 @@
     "esmodules": ["ludiverse.mjs"],
     "scripts": [],
     "styles": ["css/ludiverse.css"],
-    "packs": [],
+    "packs": [
+    {
+      "name": "personnages",
+      "label": "Personnages pour Ludiverse",
+      "type": "Actor",
+      "path": "packs/personnages",
+      "system": "ludiverse"
+    }
+  ],
     "languages": [
        {
         "lang": "fr",
