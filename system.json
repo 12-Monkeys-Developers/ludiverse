@@ -2,7 +2,7 @@
     "id": "ludiverse",
     "title": "Ludiverse",
     "description": "Ludiverse",
-    "version": "0.1.0",
+    "version": "#{VERSION}#",
     "compatibility": {
       "minimum": "11",
       "verified": "11"
@@ -58,8 +58,8 @@
     "gridUnits": "m",
     "primaryTokenAttribute": "",
     "initiative": "",
-    "url": "",
-    "manifest": "",
-    "download": "",
+    "url": "#{URL}#",
+    "manifest": "#{MANIFEST}#",
+    "download": "#{DOWNLOAD}#",
     "license": ""
   }

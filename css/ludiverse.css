@@ -111,7 +111,7 @@
   display: grid;
   gap: 20px;
   grid-template-columns: 320px 190px 190px;
-  grid-template-rows: 45px 160px 140px;
+  grid-template-rows: 45px 160px 180px;
 }
 .ludiverse.sheet.actor.pj .pj-header .charname {
   grid-row: 1 / 2;
@@ -323,7 +323,7 @@
 .ludiverse.sheet.actor.pj .pj-main .points .points-vie,
 .ludiverse.sheet.actor.pj .pj-main .points .points-souffle {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1.1fr 1fr;
   flex: 1;
   align-items: center;
 }
