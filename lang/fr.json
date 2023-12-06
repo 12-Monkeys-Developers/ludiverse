@@ -23,7 +23,8 @@
   },
   "TYPES": {
     "Actor": {
-      "pj": "PJ"
+      "pj": "PJ",
+      "pnj": "PNJ"
     }
   }
 }

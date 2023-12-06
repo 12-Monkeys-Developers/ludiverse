@@ -15,11 +15,13 @@ Hooks.once("init", async function () {
   CONFIG.Actor.documentClass = documents.LudiverseActor;
   CONFIG.Actor.dataModels = {
     pj: models.LudiversePJ,
+    pnj: models.LudiversePNJ,
   };
   Actors.unregisterSheet("core", ActorSheet);
   Actors.registerSheet(SYSTEM.id, applications.PJSheet, { types: ["pj"], makeDefault: true });
+  Actors.registerSheet(SYSTEM.id, applications.PNJSheet, { types: ["pnj"], makeDefault: true });
+  
   // Dice system configuration
-
   CONFIG.Dice.rolls.push(dice.StandardCheck);
 
   Handlebars.registerHelper("times", function (n, block) {
