@@ -1,24 +1,9 @@
 import StandardCheckDialog from "./standard-check-dialog.mjs";
 
 /**
- * @typedef {Object} DiceCheckBonuses
- * @property {number} [aspectValeur=0]
- * @property {number} [acquisValeur=0]
- * @property {number} [attributValeur=0]
- * @property {number} [perisprit=0]
- * @property {number} [bonus=0]
- * @property {number} [malus=0]
- * @property {string} [rollMode]
- */
-
-/**
  * @typedef {DiceCheckBonuses} StandardCheckData
  * @property {string} actorId                         L'ID de l'acteur a l'origine du jet
- * @property {Object} actorData                       Le contenu de system de l'acteur, de type
- * @property {string} qualite                         L'ID de la qualité, par exemple courage
- * @property {{name, valeur}[]} listeAcquis           Les acquis de l'esprit et les acquis collectifs du cabinet
- * @property {number} diff                            The target difficulty of the check
- * @property {string} type                            The type of check being performed : classique, opposition, libre
+ * @property {Object} actorData                       Le contenu de system de l'acteur
  */
 
 /**

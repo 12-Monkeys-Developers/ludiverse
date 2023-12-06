@@ -15,11 +15,7 @@ export default class LudiverseActorSheet extends ActorSheet {
   /** @override */
   async getData(options) {
     const context = {};
-
-    //const isEditable = this.actor.isUnlocked;
-    //context.cssClass = isEditable ? "editable" : "locked";
     context.editable = true;
-
     context.actor = this.document;
     context.system = this.document.system;
 

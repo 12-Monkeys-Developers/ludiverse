@@ -20,5 +20,10 @@
     "label": {
       "unlockSheet": "Verrouiller/Déverrouiller la feuille"
     }
+  },
+  "TYPES": {
+    "Actor": {
+      "pj": "PJ"
+    }
   }
 }

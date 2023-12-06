@@ -25,6 +25,13 @@
       "type": "Actor",
       "path": "packs/personnages",
       "system": "ludiverse"
+    },
+    {
+      "name": "sortileges",
+      "label": "Sortilèges pour Ludiverse",
+      "type": "JournalEntry",
+      "path": "packs/sortileges",
+      "system": "ludiverse"
     }
   ],
     "languages": [

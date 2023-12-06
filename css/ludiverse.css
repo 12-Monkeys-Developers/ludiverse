@@ -34,6 +34,12 @@
   font-family: "codebold";
   src: url("../fonts/codebold.otf") format("truetype");
 }
+.prosemirror menu {
+  font-size: 0.8em;
+}
+.prosemirror menu li {
+  margin: 0px 0px;
+}
 :root {
   --font-pj-color: black;
   --background_pj: none;
@@ -139,10 +145,6 @@
   width: 100%;
   height: 100%;
   border: none;
-  background-color: white;
-}
-.ludiverse.sheet.actor.pj .pj-header .charname .change-lock i:hover {
-  background-color: #f9f6f1;
 }
 .ludiverse.sheet.actor.pj .pj-header .description {
   grid-row: 2 / span 2;
@@ -312,7 +314,7 @@
   display: grid;
   gap: 5px;
   grid-template-columns: 160px 160px 190px 190px;
-  grid-template-rows: 60px 200px 300px;
+  grid-template-rows: 80px 200px 300px;
 }
 .ludiverse.sheet.actor.pj .pj-main .points {
   grid-row: 1 / 2;
