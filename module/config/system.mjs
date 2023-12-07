@@ -5,37 +5,37 @@ export const SYSTEM_ID = "ludiverse";
 export const DIFFICULTES = Object.freeze({
     tresdifficile : {
         id: "tresdifficile",
-        label: "LUDIVERSE.COMPOSANTE.tresdifficile",
+        label: "LUDIVERSE.DIFFICULTE.tresdifficile",
         modificateur: -4
     },
     difficile : {
         id: "difficile",
-        label: "LUDIVERSE.COMPOSANTE.difficile",
+        label: "LUDIVERSE.DIFFICULTE.difficile",
         modificateur: -2
     },
     malaisee : {
         id: "malaisee",
-        label: "LUDIVERSE.COMPOSANTE.malaisee",
+        label: "LUDIVERSE.DIFFICULTE.malaisee",
         modificateur: -1
     },
     normale : {
         id: "normale",
-        label: "LUDIVERSE.COMPOSANTE.normale",
+        label: "LUDIVERSE.DIFFICULTE.normale",
         modificateur: 0
     },
     aisee : {
         id: "aisee",
-        label: "LUDIVERSE.COMPOSANTE.aisee",
+        label: "LUDIVERSE.DIFFICULTE.aisee",
         modificateur: 1
     },
     facile : {
         id: "facile",
-        label: "LUDIVERSE.COMPOSANTE.facile",
+        label: "LUDIVERSE.DIFFICULTE.facile",
         modificateur: 2
     },
     tresfacile : {
         id: "tresfacile",
-        label: "LUDIVERSE.COMPOSANTE.tresfacile",
+        label: "LUDIVERSE.DIFFICULTE.tresfacile",
         modificateur: 4
     }
 });

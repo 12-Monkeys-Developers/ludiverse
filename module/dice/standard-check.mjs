@@ -1,3 +1,4 @@
+import { SYSTEM } from "../config/system.mjs";
 import StandardCheckDialog from "./standard-check-dialog.mjs";
 
 /**
@@ -38,11 +39,15 @@ export default class StandardCheck extends Roll {
     moyen: "action",
     moyenValeur: 0,
     metierOuTalent: false,
-    critique: false,
+    reussiteCritique: false,
+    echecCritique: false,
     choices_composante: { corps: "Corps", coeur: "Coeur", esprit: "Esprit" },
     groupName_comp: "composante",
     choices_moyen: { action: "Action", perception: "Perception", resistance: "Résistance" },
     groupName_moyen: "moyen",
+    difficultes: SYSTEM.DIFFICULTES,
+    difficulte: undefined,
+    difficulteValeur: 0,
     choices_metier: { non: "Non", oui: "Oui" },
     metier: "non",
     groupName_metier: "metier",
@@ -83,17 +88,23 @@ export default class StandardCheck extends Roll {
    * @returns {object}        The configured data object
    */
   static #configureData(data) {
+    let difficulteToolTip = "";
     data.metierOuTalent = data.metier === "oui";
     const composante = data.composante ? data.actorData.composantes[data.composante] : data.actorData.composantes.corps;
     data.composanteValeur = composante.valeur;
+    difficulteToolTip += data.composanteValeur.toString();
     const moyen = data.moyen ? data.actorData.moyens[data.moyen] : data.actorData.moyens.action;
     data.moyenValeur = moyen.valeur;
+    difficulteToolTip += " + " + data.moyenValeur.toString();
     const actingChar = game.actors.get(data.actorId);
     data.actingCharImg = actingChar.img;
     data.actingCharName = actingChar.name;
-    data.introText = game.i18n.format("LUDIVERSE.chatmessage.introActionStd", { actingCharName: actingChar.name }) + (data.metier === "oui" ? " qui correspond à son métier ou ses talents" :"");
-    data.finalText = "Le jet est critique !";
-    if (!data.critique) {
+    data.introText =
+      game.i18n.format("LUDIVERSE.CHATMESSAGE.introActionStd", { actingCharName: actingChar.name }) + (data.metier === "oui" ? " qui correspond à son métier ou ses talents" : "");
+    data.finalText = "";
+
+    if (data.metierOuTalent) difficulteToolTip += " + 1";
+    if (!data.reussiteCritique && !data.echecCritique && (data.difficulte === "" || data.difficulte === undefined)) {
       data.target = data.composanteValeur + data.moyenValeur + (data.metierOuTalent ? 1 : 0);
       data.finalText = "Action réussie si difficulté " + data.target.toString();
 
@@ -105,6 +116,20 @@ export default class StandardCheck extends Roll {
       else if (data.target - data.result > -3) data.finalText = "Action réussie contre une difficulté <em>facile</em> ou moins";
       else if (data.target - data.result > -5) data.finalText = "Action réussie contre une difficulté <em>très facile</em> ou moins";
       else data.finalText = "Action ratée même contre une difficulté <em>très facile</em>";
+    } else if (!data.reussiteCritique && !data.echecCritique && data.difficulte !== "" && data.difficulte !== undefined) {
+      difficulteToolTip += data.difficulteValeur > 0 ? " + " + data.difficulteValeur : " " + data.difficulteValeur;
+      data.difficulteValeur = parseInt(SYSTEM.DIFFICULTES[data.difficulte].modificateur);
+      data.difficulteLabel = game.i18n.localize(SYSTEM.DIFFICULTES[data.difficulte].label);
+      data.target = data.composanteValeur + data.moyenValeur + (data.metierOuTalent ? 1 : 0) + data.difficulteValeur;
+      difficulteToolTip += " = " + data.target.toString();
+      if (data.result > data.target) data.finalText = "Action ratée contre une difficulté " + data.difficulteLabel;
+      else data.finalText = "Action réussie contre une difficulté " + data.difficulteLabel;
+
+      data.difficulteToolTip = difficulteToolTip;
+    } else if (data.reussiteCritique) {
+      data.finalText = "Le jet est un succès critique !";
+    } else if (data.echecCritique) {
+      data.finalText = "Le jet est un échec critique !";
     }
   }
 
@@ -185,8 +210,9 @@ export default class StandardCheck extends Roll {
   /** @override */
   async evaluate({ minimize = false, maximize = false, async = true } = {}) {
     await super.evaluate({ minimize, maximize, async });
-    if (this._total === 2) this.data.critique = true;
-    else if (this.data.metierOuTalent && this._total === 3) this.data.critique = true;
+    if (this._total === 2) this.data.reussiteCritique = true;
+    else if (this.data.metierOuTalent && this._total === 3) this.data.reussiteCritique = true;
+    else if (this._total === 12) this.data.echecCritique = true;
     this.data.diceTooltip = await this.getTooltip();
     this.data.result = this._total;
     return this;

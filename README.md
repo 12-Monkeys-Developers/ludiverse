@@ -1,8 +1,6 @@
 
 <h2>System <em>Ludiverse</em> for Foundry Virtual Tabletop</h2>
 
-<p style="margin-left: 10%;"> <img src="/assets/thumb_cdm.webp" alt="" width="700" height="405" /></p>
-
 <div align="center">
 
 ![Supported Foundry VTT versions](https://img.shields.io/endpoint?url=https%3A%2F%2Ffoundryshields.com%2Fversion%3Fstyle%3Dflat%26url%3Dhttps%3A%2F%2Fraw.githubusercontent.com%2F12-Monkeys-Developers%2Fludiverse%2Fmaster%2Fsystem.json)
@@ -15,19 +13,19 @@
 
 <p>Ceci est un programme qui permet de jouer à des jeux de rôle basés sur le système "<em>Ludiverse</em>" sur la plateforme de jeu Foundry Virtual Tabletop.</p>
 
-<p style="margin-left: 10%;"> <img src="/assets/image/system-exemple1.webp" alt="" width="700" height="511" /></p>
+<p style="margin-left: 10%;"> <img src="/assets/system-exemple1.webp" /></p>
 
 <h2>Disclaimer</h2>
 <p>"<em>Ludiverse</em>" is a role-playing game edited by GEEK Magazine with Les XII Singes and Mnémos, based on Simulacres created by Pierre Rosenthal.</p>
 
-<p>Every label, design and other assets are trademarks of ReSpell SARL.L. and used with their authorization.</p>
+<p>Every label, design and other assets are trademarks of ReSpell SARL. and used with their authorization.</p>
 
 <p>"<em>Ludiverse</em>" est un jeu de rôle conçu GEEK Magazine, Les XII Singes et Mnémos, à partir de Simulacres créé par Pierre Rosenthal.</p>
 
 <p>Toutes les marques, logo et illustrations utilisés sont la propriété de ReSpell SAR et utilisés avec autorisation.</p>
 
 <h2>Contributors</h2>
-<p>This sytem has been designed and coded by Kristov et Khaali, and permitted by the editing company ReSpell SARL.
+<p>This sytem has been designed and coded by Kristov and Khaali, and permitted by the editing company ReSpell SARL.
 <p>Ce système est développé par Kristov et Khaali, et publié avec l'accord des auteurs et ayants droits.</p>
 
 <h2>Community</h2>

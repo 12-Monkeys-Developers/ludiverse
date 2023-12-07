@@ -15,7 +15,7 @@ export default class ActionDialog extends Dialog {
   static get defaultOptions() {
     return foundry.utils.mergeObject(super.defaultOptions, {
       width: 500,
-      height: 360,
+      height: 400,
       classes: ["ludiverse", "roll"],
       template: `systems/${SYSTEM.id}/templates/dice/standard-check-dialog.hbs`,
       submitOnChange: true,

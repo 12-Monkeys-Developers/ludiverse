@@ -108,9 +108,23 @@ Hooks.once("ready", async function () {
       await r.style.setProperty("--font-pj-nb-color", "black");
       break;
   }
-  console.log("LUDIVERSE - Initialisation du système fini");
-
-
-
+  console.log("LUDIVERSE - Initialisation du système finie");
 
 });
+
+Hooks.once("i18nInit", function () {
+  // Prélocalisation des objets de configuration
+  preLocalizeConfig();
+});
+
+function preLocalizeConfig() {
+  const localizeConfigObject = (obj, keys) => {
+    for (let o of Object.values(obj)) {
+      for (let k of keys) {
+        o[k] = game.i18n.localize(o[k]);
+      }
+    }
+  };
+
+  localizeConfigObject(SYSTEM.DIFFICULTES, ["label"]);
+}

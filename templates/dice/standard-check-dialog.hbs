@@ -1,4 +1,4 @@
-{{!log 'standard check dialog' this}}
+{{log "standard check dialog" this}}
 <form class="dialog-jet-action">
   <section class="content">
     <div class="dialog-grid">
@@ -34,36 +34,47 @@
       </div>
       <div class="metier-talent-block">
         <div style="grid-column: 1 / 2;grid-row: 1 / 2;" class="metier-titre">
-          {{actorData.metier.nom}} :
+          {{actorData.metier.nom}}
+          :
         </div>
         <div style="grid-column: 2 / 3;grid-row: 1 / 2;" class="metier-titre">
           {{actorData.metier.valeur}}
         </div>
         <div style="grid-column: 1 / 2;grid-row: 2 / 3;" class="metier-titre">
-          {{actorData.talent1.nom}} :
+          {{actorData.talent1.nom}}
+          :
         </div>
         <div style="grid-column: 2 / 3;grid-row: 2 / 3;" class="metier-titre">
           {{actorData.talent1.valeur}}
         </div>
         <div style="grid-column: 1 / 2;grid-row: 3 / 4;" class="metier-titre">
-          {{actorData.talent2.nom}} :
+          {{actorData.talent2.nom}}
+          :
         </div>
         <div style="grid-column: 2 / 3;grid-row: 3 / 4;" class="metier-titre">
           {{actorData.talent2.valeur}}
         </div>
         <div style="grid-column: 1 / 2;grid-row: 4 / 5;" class="metier-titre">
-          {{actorData.talent3.nom}} :
+          {{actorData.talent3.nom}}
+          :
         </div>
         <div style="grid-column: 2 / 3;grid-row: 4 / 5;" class="metier-titre">
           {{actorData.talent3.valeur}}
         </div>
         <p style="grid-column: 3 / 4;grid-row: 1 / 3;" class="metier-titre">Un métier ou talent correspond à l'action ?</p>
-          <div style="grid-column: 3 / 4;grid-row: 3 / 5;" class="metier-titre">
-            <label class="labelchk">{{radioBoxes groupName_metier choices_metier checked=metier localize=true}}</label>
-          </div>
-      </div></div>
-      <button type="button" class="dialog-button" data-button="ok">
-          <label>Lancer les dés</label>
-      </button>
+        <div style="grid-column: 3 / 4;grid-row: 3 / 5;" class="metier-titre">
+          <label class="labelchk">{{radioBoxes groupName_metier choices_metier checked=metier localize=true}}</label>
+        </div>
+      </div>
+    </div>
+    <div class="difficulte">
+      <label>Difficulté (optionnelle)</label>
+      <select name="difficulte">
+        {{selectOptions difficultes selected=difficulte nameAttr="id" labelAttr="label" blank=""}}
+      </select>
+    </div>
+    <button type="button" class="dialog-button" data-button="ok">
+      <label>Lancer les dés</label>
+    </button>
   </section>
 </form>

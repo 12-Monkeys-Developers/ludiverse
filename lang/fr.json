@@ -1,6 +1,6 @@
 {
   "LUDIVERSE": {
-    "chatmessage": {
+    "CHATMESSAGE": {
       "introActionStd": "{actingCharName} tente une action"
     },
     "COMPOSANTE": {
@@ -17,8 +17,17 @@
       "lock": "Verrouiller",
       "unlock": "Déverrouiller"
     },
-    "label": {
+    "LABEL": {
       "unlockSheet": "Verrouiller/Déverrouiller la feuille"
+    },
+    "DIFFICULTE": {
+      "tresfacile": "Très facile",
+      "facile": "Facile",
+      "aisee": "Aisée",
+      "normale": "Normale",
+      "malaisee": "Malaisée",
+      "difficile": "Difficile",
+      "tresdifficile": "Très difficile"
     }
   },
   "TYPES": {
