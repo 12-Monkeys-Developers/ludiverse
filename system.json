@@ -20,17 +20,10 @@
     "styles": ["css/ludiverse.css"],
     "packs": [
     {
-      "name": "personnages",
+      "name": "ludiverse",
       "label": "Personnages pour Ludiverse",
-      "type": "Actor",
-      "path": "packs/personnages",
-      "system": "ludiverse"
-    },
-    {
-      "name": "sortileges",
-      "label": "Sortilèges pour Ludiverse",
-      "type": "JournalEntry",
-      "path": "packs/sortileges",
+      "type": "Adventure",
+      "path": "packs/ludiverse",
       "system": "ludiverse"
     }
   ],
