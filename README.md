@@ -16,16 +16,16 @@
 <p style="margin-left: 10%;"> <img src="/assets/system-exemple1.webp" /></p>
 
 <h2>Disclaimer</h2>
-<p>"<em>Ludiverse</em>" is a role-playing game edited by GEEK Magazine with Les XII Singes and Mnémos, based on Simulacres created by Pierre Rosenthal.</p>
+<p>"<em>Ludiverse</em>" is a role-playing game made by Les XII Singes, based on Simulacres created by Pierre Rosenthal.</p>
 
-<p>Every label, design and other assets are trademarks of ReSpell SARL. and used with their authorization.</p>
+<p>Every label, design and other assets are trademarks of ReSpell SAS. and used with their authorization.</p>
 
-<p>"<em>Ludiverse</em>" est un jeu de rôle conçu GEEK Magazine, Les XII Singes et Mnémos, à partir de Simulacres créé par Pierre Rosenthal.</p>
+<p>"<em>Ludiverse</em>" est un jeu de rôle conçu par Les XII Singes, à partir de Simulacres créé par Pierre Rosenthal.</p>
 
-<p>Toutes les marques, logo et illustrations utilisés sont la propriété de ReSpell SAR et utilisés avec autorisation.</p>
+<p>Toutes les marques, logo et illustrations utilisés sont la propriété de ReSpell SAS et utilisés avec autorisation.</p>
 
 <h2>Contributors</h2>
-<p>This system has been designed and coded by Kristov and Khaali, and permitted by the editing company ReSpell SARL.
+<p>This system has been designed and coded by Kristov and Khaali, and permitted by the editing company ReSpell SAS.
 <p>Ce système est développé par Kristov et Khaali, et publié avec l'accord des auteurs et ayants droits.</p>
 
 <h2>Community</h2>
