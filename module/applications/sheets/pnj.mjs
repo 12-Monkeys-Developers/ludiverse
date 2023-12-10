@@ -11,10 +11,6 @@ export default class PJSheet extends LudiverseActorSheet {
     return Object.assign(options, {
       width: 800,
       height: 180,
-      classes: [SYSTEM.id, "sheet", "actor", this.actorType],
-      template: `systems/${SYSTEM.id}/templates/sheets/${this.actorType}.hbs`,
-      resizable: true,
-      scrollY: [],
     });
   }
   /**

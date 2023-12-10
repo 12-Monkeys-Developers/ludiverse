@@ -61,7 +61,7 @@ Hooks.once("ready", async function () {
       await r.style.setProperty("--font-pj-name", "50px 'philosopher'");
       await r.style.setProperty("--font-pj-name-color", "#00508C");
       await r.style.setProperty("--background_pj", "no-repeat url('/systems/ludiverse/assets/background-renaissance.webp')");
-      await r.style.setProperty("--font-pj-indications", "20px 'philosopher'");
+      await r.style.setProperty("--font-pj-indications", "15px 'philosopher'");
       await r.style.setProperty("--font-pj-indications-color", "#00508C");
       await r.style.setProperty("--font-pj-titre", "30px 'philosopher'");
       await r.style.setProperty("--font-pj-titre-color", "#00508C");
@@ -75,10 +75,10 @@ Hooks.once("ready", async function () {
       break;
     case "sf":
       await r.style.setProperty("--font-pj-color", "white");
-      await r.style.setProperty("--font-pj-name", "40px 'codebold'");
+      await r.style.setProperty("--font-pj-name", "50px 'codebold'");
       await r.style.setProperty("--font-pj-name-color", "#FBB911");
       await r.style.setProperty("--background_pj", "no-repeat url('/systems/ludiverse/assets/background-sf.webp')");
-      await r.style.setProperty("--font-pj-indications", "20px 'philosopher'");
+      await r.style.setProperty("--font-pj-indications", "15px 'philosopher'");
       await r.style.setProperty("--font-pj-indications-color", "#F49C6A");
       await r.style.setProperty("--font-pj-titre", "30px 'codebold'");
       await r.style.setProperty("--font-pj-titre-color", "#FBB911");
@@ -95,9 +95,9 @@ Hooks.once("ready", async function () {
       await r.style.setProperty("--font-pj-name", "50px 'ovidius'");
       await r.style.setProperty("--font-pj-name-color", "#24A59A");
       await r.style.setProperty("--background_pj", "no-repeat url('/systems/ludiverse/assets/background-sp.webp')");
-      await r.style.setProperty("--font-pj-indications", "20px 'philosopher'");
+      await r.style.setProperty("--font-pj-indications", "15px 'philosopher'");
       await r.style.setProperty("--font-pj-indications-color", "#885430");
-      await r.style.setProperty("--font-pj-titre", "36px 'ovidius'");
+      await r.style.setProperty("--font-pj-titre", "30px 'ovidius'");
       await r.style.setProperty("--font-pj-titre-color", "#24A59A");
       await r.style.setProperty("--font-pj-pv", "15px 'philosopher'");
       await r.style.setProperty("--font-pj-pv-color", "#885430");

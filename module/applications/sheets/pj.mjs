@@ -5,6 +5,15 @@ import LudiverseActorSheet from "./actor.mjs";
  * Extends the LudiverseActorSheet class.
  */
 export default class PJSheet extends LudiverseActorSheet {
+  /** @inheritdoc */
+  static get defaultOptions() {
+    const options = super.defaultOptions;
+    return Object.assign(options, {
+      width: 800,
+      height: 1200,
+    });
+  }
+
   /**
    * The type of actor that this sheet displays.
    * @type {string}
@@ -23,7 +32,6 @@ export default class PJSheet extends LudiverseActorSheet {
     context.capacites3HTML = TextEditor.enrichHTML(this.actor.system.capacites.capacite3.description, { async: false });
     context.unlocked = this.actor.isUnlocked;
     context.locked = !this.actor.isUnlocked;
-    
 
     return context;
   }
