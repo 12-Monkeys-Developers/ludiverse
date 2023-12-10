@@ -60,6 +60,5 @@
     "initiative": "",
     "url": "#{URL}#",
     "manifest": "#{MANIFEST}#",
-    "download": "#{DOWNLOAD}#",
-    "license": ""
+    "download": "#{DOWNLOAD}#"
   }
