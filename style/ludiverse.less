@@ -99,8 +99,8 @@
 /** Fin Mixins **/
 
 .ludiverse.sheet.actor.pj {
-  .window-content {
-    overflow-y: hidden;
+  .window-content{
+    background: var(--background_pj);
   }
   .editor {
     width: 100%;
@@ -119,10 +119,8 @@
     margin: 0px 5px 0px 5px;
   }
   .pj-sheet {
-    background: var(--background_pj);
     display: grid;
     gap: 5px;
-    grid-template-rows: 1fr 2fr;
     color: var(--font-pj-color);
   }
   .pj-header {
@@ -308,7 +306,7 @@
     display: grid;
     gap: 5px;
     grid-template-columns: 160px 160px 190px 190px;
-    grid-template-rows: 100px 140px 300px;
+    grid-template-rows: 100px 140px;
 
     .points {
       grid-row: 1 / 2;
