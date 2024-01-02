@@ -20,7 +20,7 @@ Hooks.once("init", async function () {
   Actors.unregisterSheet("core", ActorSheet);
   Actors.registerSheet(SYSTEM.id, applications.PJSheet, { types: ["pj"], makeDefault: true });
   Actors.registerSheet(SYSTEM.id, applications.PNJSheet, { types: ["pnj"], makeDefault: true });
-  
+
   // Dice system configuration
   CONFIG.Dice.rolls.push(dice.StandardCheck);
 
@@ -107,6 +107,8 @@ Hooks.once("ready", async function () {
       await r.style.setProperty("--font-pj-nb", "20px 'garamond'");
       await r.style.setProperty("--font-pj-nb-color", "black");
       break;
+
+
   }
   console.log("LUDIVERSE - Initialisation du système finie");
 
