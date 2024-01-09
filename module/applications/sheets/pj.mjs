@@ -10,7 +10,7 @@ export default class PJSheet extends LudiverseActorSheet {
     const options = super.defaultOptions;
     return Object.assign(options, {
       width: 800,
-      height: 1200,
+      height: 1150,
     });
   }
 
