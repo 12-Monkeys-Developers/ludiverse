@@ -50,11 +50,19 @@ Hooks.once("init", async function () {
     },
     onChange: () => debouncedReload(),
   });
+
+  game.settings.register("ludiverse", "worldKey", {
+    name: "Unique world key",
+    scope: "world",
+    config: false,
+    type: String,
+    default: "",
+  });
 });
 
 Hooks.once("ready", async function () {
   let aspect = game.settings.get("ludiverse", "univers_graphique");
-  let r = document.querySelector(':root');
+  let r = document.querySelector(":root");
   switch (aspect) {
     case "renaissance":
       await r.style.setProperty("--font-pj-color", "black");
@@ -107,11 +115,13 @@ Hooks.once("ready", async function () {
       await r.style.setProperty("--font-pj-nb", "20px 'garamond'");
       await r.style.setProperty("--font-pj-nb-color", "black");
       break;
-
-
   }
-  console.log("LUDIVERSE - Initialisation du système finie");
 
+  if (!SYSTEM.DEV_MODE) {
+    registerWorldCount("ludiverse");
+  }
+
+  console.log("LUDIVERSE - Initialisation du système finie");
 });
 
 Hooks.once("i18nInit", function () {
@@ -129,4 +139,34 @@ function preLocalizeConfig() {
   };
 
   localizeConfigObject(SYSTEM.DIFFICULTES, ["label"]);
+}
+
+// Register world usage statistics
+function registerWorldCount(registerKey) {
+  if (game.user.isGM) {
+    let worldKey = game.settings.get(registerKey, "worldKey");
+    if (worldKey == undefined || worldKey == "") {
+      worldKey = randomID(32);
+      game.settings.set(registerKey, "worldKey", worldKey);
+    }
+
+    // Simple API counter
+    const worldData = {
+      register_key: registerKey,
+      world_key: worldKey,
+      foundry_version: `${game.release.generation}.${game.release.build}`,
+      system_name: game.system.id,
+      system_version: game.system.version,
+    };
+
+    let apiURL = "https://worlds.qawstats.info/worlds-counter";
+    $.ajax({
+      url: apiURL,
+      type: "POST",
+      data: JSON.stringify(worldData),
+      contentType: "application/json; charset=utf-8",
+      dataType: "json",
+      async: false,
+    });
+  }
 }

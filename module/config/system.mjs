@@ -1,6 +1,7 @@
 import * as PJ from "./pj.mjs";
 
 export const SYSTEM_ID = "ludiverse";
+export const DEV_MODE = false;
 
 export const DIFFICULTES = Object.freeze({
     tresdifficile : {
@@ -46,7 +47,8 @@ export const DIFFICULTES = Object.freeze({
  */
 export const SYSTEM = {
   id: SYSTEM_ID,
+  DEV_MODE,
   DIFFICULTES,
   COMPOSANTES: PJ.COMPOSANTES,
-  MOYENS: PJ.MOYENS 
+  MOYENS: PJ.MOYENS
 };

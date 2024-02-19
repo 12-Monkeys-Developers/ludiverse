@@ -1,3 +1,6 @@
+1.0.3
+- Release technique pour ajouter le compteur de mondes
+
 1.0.2
 - Diverses améliorations visuelles et correction issue #1
 
