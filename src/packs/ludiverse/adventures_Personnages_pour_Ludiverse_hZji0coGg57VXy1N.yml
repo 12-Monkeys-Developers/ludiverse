@@ -1,0 +1,3441 @@
+name: Personnages pour Ludiverse
+img: systems/ludiverse/assets/banner.webp
+caption: Les personnages prêts-à-jouer des 3 univers de Ludiverse.
+sort: 0
+description: ''
+actors:
+  - name: Nigelle
+    type: pj
+    img: systems/ludiverse/assets/pjs/nigelle.webp
+    system:
+      composantes:
+        corps:
+          valeur: 5
+        coeur:
+          valeur: 5
+        esprit:
+          valeur: 3
+      moyens:
+        action:
+          valeur: 4
+        perception:
+          valeur: 2
+        resistance:
+          valeur: 2
+      pv:
+        valeur: 5
+        max: 5
+      ps:
+        valeur: 5
+        max: 5
+      metier:
+        valeur: 1
+        nom: Danseuse-acrobate
+      talent1:
+        valeur: 1
+        nom: Charme
+      talent2:
+        valeur: 1
+        nom: Escrime
+      talent3:
+        valeur: 1
+        nom: Furtivité
+      capacites:
+        capacite1:
+          cout: 1
+          description: >-
+            <p><span style="font-family: garamond">DÈS LE 1ER SCÉNARIO. Votre
+            personnage donne le meilleur de lui-même. S’il effectue une action
+            qui utilise son métier ou un des talents, effectuez le test avec 3d6
+            et gardez les deux de votre choix. En combat, + 1 aux dégâts. En
+            situation de soins, + 1 point de guérison.</span></p>
+          nom: EN PISTE
+        capacite2:
+          cout: 1
+          description: >-
+            <p><span style="font-family: garamond">À PARTIR DU 2E SCÉNARIO.
+            Votre personnage tente le tout pour le tout. Lors d’une action,
+            après le jet de dés, relancez le dé de votre choix : vous gardez la
+            valeur la plus faible des deux lancers.</span></p>
+          nom: SANS FILET
+        capacite3:
+          cout: 0
+          description: >-
+            <p><span style="font-family: garamond">À PARTIR DU 3E SCÉNARIO.
+            SCÉNARIO. Une fois par scénario, 0 PS pour utiliser En piste ou Sans
+            filet</span></p>
+          nom: MAESTRIA
+        nom: Chapeau bas !
+      equipement: >-
+        <p><strong>Parapluie-épée</strong> (1 PV), <strong>pistolet</strong> (2
+        PV, arme à feu à quatre coups, recharge en 30 secondes par balle, portée
+        de vingt mètres), balles</p><p>Bourse avec quelques francs, baluchon et
+        quelques affaires de rechange</p>
+      description: >-
+        <p>Nigelle est une humaine originaire de la région d’Illium, la seconde
+        plus grande ville française après Panam. Ou plutôt presque une humaine,
+        car sa grand-mère fut le fruit des amours rares entre un elfe et une
+        humaine. Abandonnée par ses parents alors qu’elle n’était qu’une enfant,
+        elle a appris à survivre toute seule, utilisant sa grâce naturelle pour
+        donner des spectacles de danse et d’acrobatie improvisés dans des
+        auberges. </p><p>Elle est arrivée à Panam il y a quelques jours, à la
+        requête de Mandrake, le propriétaire du Browning Circus, pour enrichir
+        cette troupe de ses talents artistiques.</p>
+      indications: Indépendante, imprévisible, loyale
+    prototypeToken:
+      name: Nigelle
+      displayName: 0
+      actorLink: false
+      appendNumber: false
+      prependAdjective: false
+      texture:
+        src: systems/ludiverse/assets/pjs/token_nigelle.png
+        scaleX: 1
+        scaleY: 1
+        offsetX: 0
+        offsetY: 0
+        rotation: 0
+        tint: '#ffffff'
+        anchorX: 0.5
+        anchorY: 0.5
+        fit: contain
+        alphaThreshold: 0.75
+      width: 1
+      height: 1
+      lockRotation: false
+      rotation: 0
+      alpha: 1
+      disposition: -1
+      displayBars: 0
+      bar1:
+        attribute: null
+      bar2:
+        attribute: null
+      light:
+        alpha: 0.5
+        angle: 360
+        bright: 0
+        coloration: 1
+        dim: 0
+        attenuation: 0.5
+        luminosity: 0.5
+        saturation: 0
+        contrast: 0
+        shadows: 0
+        animation:
+          type: null
+          speed: 5
+          intensity: 5
+          reverse: false
+        darkness:
+          min: 0
+          max: 1
+        color: null
+        negative: false
+        priority: 0
+      sight:
+        enabled: false
+        range: 0
+        angle: 360
+        visionMode: basic
+        attenuation: 0.1
+        brightness: 0
+        saturation: 0
+        contrast: 0
+        color: null
+      detectionModes: []
+      flags:
+        tagger: {}
+      randomImg: false
+      hexagonalShape: 0
+      occludable:
+        radius: 0
+      ring:
+        enabled: false
+        colors:
+          ring: null
+          background: null
+        effects: 1
+        subject:
+          scale: 1
+          texture: null
+    items: []
+    effects: []
+    folder: RpM3JEFvrHhaVhdb
+    ownership:
+      default: 0
+      Bj5GCzwwDSzlU8D5: 3
+      vvswVEtuFf5xh96N: 3
+    flags:
+      ludiverse: {}
+      core:
+        sourceId: Compendium.ludiverse.personnages.Actor.4Q5B4Y5NGxYBqjNE
+    _stats:
+      systemId: ludiverse
+      systemVersion: '#{VERSION}#'
+      coreVersion: '12.343'
+      createdTime: 1701888208756
+      modifiedTime: 1702232857080
+      lastModifiedBy: vvswVEtuFf5xh96N
+      compendiumSource: Compendium.ludiverse.personnages.Actor.4Q5B4Y5NGxYBqjNE
+      duplicateSource: null
+    _id: D5DjfQQKvPKJQskd
+    sort: 0
+  - name: Sharp
+    type: pj
+    img: systems/ludiverse/assets/pjs/sharp.webp
+    system:
+      composantes:
+        corps:
+          valeur: 5
+        coeur:
+          valeur: 4
+        esprit:
+          valeur: 4
+      moyens:
+        action:
+          valeur: 4
+        perception:
+          valeur: 4
+        resistance:
+          valeur: 2
+      pv:
+        valeur: 5
+        max: 4
+      ps:
+        valeur: 5
+        max: 4
+      metier:
+        valeur: 1
+        nom: Pickpocket
+      talent1:
+        valeur: 1
+        nom: Escalade
+      talent2:
+        valeur: 1
+        nom: Furtivité
+      talent3:
+        valeur: 1
+        nom: Lancer de couteaux
+      capacites:
+        capacite1:
+          cout: 1
+          description: >-
+            <p>DÈS LE 1ER SCÉNARIO. Votre personnage donne le meilleur de
+            lui-même. S’il effectue une action qui utilise son métier ou un des
+            talents, effectuez le test avec 3d6 et gardez les deux de votre
+            choix. En combat, + 1 aux dégâts. En situation de soins, + 1 point
+            de guérison.</p>
+          nom: EN PISTE
+        capacite2:
+          cout: 1
+          description: >-
+            <p>À PARTIR DU 2E SCÉNARIO. Votre personnage tente le tout pour le
+            tout. Lors d’une action, après le jet de dés, relancez le dé de
+            votre choix : vous gardez la valeur la plus faible des deux
+            lancers.</p>
+          nom: SANS FILET
+        capacite3:
+          cout: 0
+          description: >-
+            <p>À PARTIR DU 3E SCÉNARIO. SCÉNARIO. Une fois par scénario, 0 PS
+            pour utiliser En piste ou Sans filet.</p>
+          nom: MAESTRIA
+        nom: Chapeau bas !
+      equipement: >-
+        <p><strong>Dix poignards</strong> de lancer ou de corps à corps (1 PV,
+        portée de 5 mètres)</p><p>Lunettes noires, bracelet-bourse avec quelques
+        dizaines de francs, collier volé sur un chien de la reine d’Angleterre,
+        sac à dos et quelques affaires de rechange</p>
+      description: >-
+        <p>Sharp est une jeune lupronne (le féminin de lutin) qui vient des
+        bas-fonds de Londonium. Bien qu’elle ait la main leste, elle est
+        toutefois plus canaille que racaille. Elle vient d’arriver à Panam pour
+        rejoindre le Browning Circus, repérée par le propriétaire, Mandrake,
+        dans un bouge de Londonium pour son habileté au lancer de couteaux. Cela
+        lui permet de prendre un peu le large. En effet, elle s’est fait de
+        nombreuses inimitiés chez les policiers de la capitale pour quelques
+        tours pendables à leurs dépens, à commencer par le vol audacieux du
+        collier d’un chien de la Reine !</p>
+      indications: Féministe, intrépide, malicieuse
+    prototypeToken:
+      name: Sharp
+      displayName: 0
+      actorLink: true
+      appendNumber: false
+      prependAdjective: false
+      texture:
+        src: systems/ludiverse/assets/pjs/token_sharp.png
+        scaleX: 1
+        scaleY: 1
+        offsetX: 0
+        offsetY: 0
+        rotation: 0
+        tint: '#ffffff'
+        anchorX: 0.5
+        anchorY: 0.5
+        fit: contain
+        alphaThreshold: 0.75
+      width: 1
+      height: 1
+      lockRotation: false
+      rotation: 0
+      alpha: 1
+      disposition: -1
+      displayBars: 0
+      bar1:
+        attribute: null
+      bar2:
+        attribute: null
+      light:
+        alpha: 0.5
+        angle: 360
+        bright: 0
+        coloration: 1
+        dim: 0
+        attenuation: 0.5
+        luminosity: 0.5
+        saturation: 0
+        contrast: 0
+        shadows: 0
+        animation:
+          type: null
+          speed: 5
+          intensity: 5
+          reverse: false
+        darkness:
+          min: 0
+          max: 1
+        color: null
+        negative: false
+        priority: 0
+      sight:
+        enabled: false
+        range: 0
+        angle: 360
+        visionMode: basic
+        attenuation: 0.1
+        brightness: 0
+        saturation: 0
+        contrast: 0
+        color: null
+      detectionModes: []
+      flags: {}
+      randomImg: false
+      hexagonalShape: 0
+      occludable:
+        radius: 0
+      ring:
+        enabled: false
+        colors:
+          ring: null
+          background: null
+        effects: 1
+        subject:
+          scale: 1
+          texture: null
+    items: []
+    effects: []
+    folder: RpM3JEFvrHhaVhdb
+    flags:
+      ludiverse: {}
+      core:
+        sourceId: Compendium.ludiverse.personnages.Actor.CqxowDH9wDu4WNPY
+    _stats:
+      systemId: ludiverse
+      systemVersion: '#{VERSION}#'
+      coreVersion: '12.343'
+      createdTime: 1701023759782
+      modifiedTime: 1702232857080
+      lastModifiedBy: vvswVEtuFf5xh96N
+      compendiumSource: Compendium.ludiverse.personnages.Actor.CqxowDH9wDu4WNPY
+      duplicateSource: null
+    ownership:
+      default: 0
+      Bj5GCzwwDSzlU8D5: 3
+      vvswVEtuFf5xh96N: 3
+    _id: w9KnklZdY51tRuKJ
+    sort: 0
+  - name: Denys Trois-Monts
+    type: pj
+    img: systems/ludiverse/assets/pjs/denys.webp
+    system:
+      composantes:
+        corps:
+          valeur: 6
+        coeur:
+          valeur: 3
+        esprit:
+          valeur: 3
+      moyens:
+        action:
+          valeur: 3
+        perception:
+          valeur: 1
+        resistance:
+          valeur: 4
+      pv:
+        valeur: 6
+        max: 6
+      ps:
+        valeur: 6
+        max: 6
+      metier:
+        valeur: 1
+        nom: Bûcheron
+      talent1:
+        valeur: 1
+        nom: Force
+      talent2:
+        valeur: 1
+        nom: Mécanique
+      talent3:
+        valeur: 1
+        nom: Soins
+      capacites:
+        capacite1:
+          cout: 1
+          description: >-
+            <p><span style="font-family: garamond">DÈS LE 1ER SCÉNARIO. Votre
+            personnage donne le meilleur de lui-même. S’il effectue une action
+            qui utilise son métier ou un des talents, effectuez le test avec 3d6
+            et gardez les deux de votre choix. En combat, + 1 aux dégâts. En
+            situation de soins, + 1 point de guérison.</span></p>
+          nom: EN PISTE
+        capacite2:
+          cout: 1
+          description: >-
+            <p><span style="font-family: garamond">À PARTIR DU 2E SCÉNARIO.
+            Votre personnage tente le tout pour le tout. Lors d’une action,
+            après le jet de dés, relancez le dé de votre choix : vous gardez la
+            valeur la plus faible des deux lancers.</span></p>
+          nom: SANS FILET
+        capacite3:
+          cout: 0
+          description: >-
+            <p><span style="font-family: garamond">À PARTIR DU 3E SCÉNARIO.
+            SCÉNARIO. Une fois par scénario, 0 PS pour utiliser En piste ou Sans
+            filet</span></p>
+          nom: MAESTRIA
+        nom: Chapeau bas !
+      equipement: >-
+        <p><strong>Hache</strong> (1 PV, si lancée portée de 6
+        mètres)</p><p>Montre suisse, médaillon avec l’emblème familial, bourse
+        avec quelques dizaines de francs, sac à dos, paquetage et quelques
+        affaires de rechange</p>
+      description: >-
+        <p>Denys est un nain originaire des Alpes. Depuis des générations sa
+        famille travaille comme ouvriers forestiers pour un monastère isolé de
+        la région de Geneviève, la capitale suisse. </p><p>Curieux de découvrir
+        le monde, il vient de rejoindre Panam après que Mandrake, le
+        propriétaire du Browning Circus, l’a vu gagner un concours de lancer de
+        troncs dans la cour d’une taverne. Impressionné, le forain lui a proposé
+        d’intégrer sa troupe pour faire un numéro de fendage de bûches et autres
+        tours de force.</p>
+      indications: Calme, curieux, optimiste
+    prototypeToken:
+      name: Denys Trois-Monts
+      displayName: 0
+      actorLink: false
+      appendNumber: false
+      prependAdjective: false
+      texture:
+        src: systems/ludiverse/assets/pjs/token_denys.png
+        scaleX: 1
+        scaleY: 1
+        offsetX: 0
+        offsetY: 0
+        rotation: 0
+        tint: '#ffffff'
+        anchorX: 0.5
+        anchorY: 0.5
+        fit: contain
+        alphaThreshold: 0.75
+      width: 1
+      height: 1
+      lockRotation: false
+      rotation: 0
+      alpha: 1
+      disposition: -1
+      displayBars: 0
+      bar1:
+        attribute: null
+      bar2:
+        attribute: null
+      light:
+        alpha: 0.5
+        angle: 360
+        bright: 0
+        coloration: 1
+        dim: 0
+        attenuation: 0.5
+        luminosity: 0.5
+        saturation: 0
+        contrast: 0
+        shadows: 0
+        animation:
+          type: null
+          speed: 5
+          intensity: 5
+          reverse: false
+        darkness:
+          min: 0
+          max: 1
+        color: null
+        negative: false
+        priority: 0
+      sight:
+        enabled: false
+        range: 0
+        angle: 360
+        visionMode: basic
+        attenuation: 0.1
+        brightness: 0
+        saturation: 0
+        contrast: 0
+        color: null
+      detectionModes: []
+      flags:
+        tagger: {}
+      randomImg: false
+      hexagonalShape: 0
+      occludable:
+        radius: 0
+      ring:
+        enabled: false
+        colors:
+          ring: null
+          background: null
+        effects: 1
+        subject:
+          scale: 1
+          texture: null
+    items: []
+    effects: []
+    folder: RpM3JEFvrHhaVhdb
+    ownership:
+      default: 0
+      Bj5GCzwwDSzlU8D5: 3
+      vvswVEtuFf5xh96N: 3
+    flags:
+      ludiverse: {}
+      core:
+        sourceId: Compendium.ludiverse.personnages.Actor.LAOezxVnc6Rkbbnk
+    _stats:
+      systemId: ludiverse
+      systemVersion: '#{VERSION}#'
+      coreVersion: '12.343'
+      createdTime: 1701887635622
+      modifiedTime: 1702241428066
+      lastModifiedBy: vvswVEtuFf5xh96N
+      compendiumSource: Compendium.ludiverse.personnages.Actor.LAOezxVnc6Rkbbnk
+      duplicateSource: null
+    _id: OAZFMd0uaKmjzPJx
+    sort: 0
+  - name: Svetlana
+    type: pj
+    img: systems/ludiverse/assets/pjs/svetlana.webp
+    system:
+      composantes:
+        corps:
+          valeur: 4
+        coeur:
+          valeur: 3
+        esprit:
+          valeur: 5
+      moyens:
+        action:
+          valeur: 2
+        perception:
+          valeur: 1
+        resistance:
+          valeur: 4
+      pv:
+        valeur: 6
+        max: 6
+      ps:
+        valeur: 6
+        max: 6
+      metier:
+        valeur: 1
+        nom: Magicienne
+      talent1:
+        valeur: 1
+        nom: Force
+      talent2:
+        valeur: 1
+        nom: Lecture-écriture
+      talent3:
+        valeur: 1
+        nom: Soins
+      capacites:
+        capacite1:
+          cout: 1
+          description: <p>@UUID[JournalEntry.N2OVCTRaBQxn42cJ]{Liste des sortilèges}</p>
+          nom: Déclencher un sortilège
+        capacite2:
+          cout: 0
+          description: ''
+          nom: ''
+        capacite3:
+          cout: 0
+          description: ''
+          nom: ''
+        nom: Magie
+      equipement: >-
+        <p>Une potion de vie (restaurant 1 point de vie) et une potion de
+        souffle (restaurant 2 points de souffle), </p><p>Lunettes de vue, livres
+        sur la magie, bourse avec quelques francs, malle et quelques affaires de
+        rechange</p>
+      description: >-
+        <p>Svetlana est une orque, originaire des froides étendues de Sibémol.
+        Lors de son enfance, elle surprit sa famille en s’intéressant à la
+        magie, pour laquelle elle manifesta des prédispositions.</p><p>Après
+        avoir appris quelques rudiments auprès d’un sorcier local, elle voyagea
+        dans les grandes villes du continent dans l’espoir de devenir l’élève
+        d’un puissant mage. Peine perdue pour une orque… Elle vient d’arriver à
+        Paris pour rejoindre le Browning Circus, recrutée par le propriétaire
+        Mandrake, pour assurer la maintenance du dôme magique protégeant les
+        spectateurs lors du numéro du dresseur de griffons et de manticores.</p>
+      indications: Bienveillante, fière, réservée
+    prototypeToken:
+      name: Svetlana
+      displayName: 0
+      actorLink: false
+      appendNumber: false
+      prependAdjective: false
+      texture:
+        src: systems/ludiverse/assets/pjs/token_svetlana.png
+        scaleX: 1
+        scaleY: 1
+        offsetX: 0
+        offsetY: 0
+        rotation: 0
+        tint: '#ffffff'
+        anchorX: 0.5
+        anchorY: 0.5
+        fit: contain
+        alphaThreshold: 0.75
+      width: 1
+      height: 1
+      lockRotation: false
+      rotation: 0
+      alpha: 1
+      disposition: -1
+      displayBars: 0
+      bar1:
+        attribute: null
+      bar2:
+        attribute: null
+      light:
+        alpha: 0.5
+        angle: 360
+        bright: 0
+        coloration: 1
+        dim: 0
+        attenuation: 0.5
+        luminosity: 0.5
+        saturation: 0
+        contrast: 0
+        shadows: 0
+        animation:
+          type: null
+          speed: 5
+          intensity: 5
+          reverse: false
+        darkness:
+          min: 0
+          max: 1
+        color: null
+        negative: false
+        priority: 0
+      sight:
+        enabled: false
+        range: 0
+        angle: 360
+        visionMode: basic
+        attenuation: 0.1
+        brightness: 0
+        saturation: 0
+        contrast: 0
+        color: null
+      detectionModes: []
+      flags:
+        tagger: {}
+      randomImg: false
+      hexagonalShape: 0
+      occludable:
+        radius: 0
+      ring:
+        enabled: false
+        colors:
+          ring: null
+          background: null
+        effects: 1
+        subject:
+          scale: 1
+          texture: null
+    items: []
+    effects: []
+    folder: RpM3JEFvrHhaVhdb
+    ownership:
+      default: 0
+      Bj5GCzwwDSzlU8D5: 3
+      vvswVEtuFf5xh96N: 3
+    flags:
+      ludiverse: {}
+      core:
+        sourceId: Compendium.ludiverse.personnages.Actor.sUXntOWIZ2wobJcS
+    _stats:
+      systemId: ludiverse
+      systemVersion: '#{VERSION}#'
+      coreVersion: '12.343'
+      createdTime: 1701888596353
+      modifiedTime: 1702232857080
+      lastModifiedBy: vvswVEtuFf5xh96N
+      compendiumSource: Compendium.ludiverse.personnages.Actor.sUXntOWIZ2wobJcS
+      duplicateSource: null
+    _id: ILupCofLAXXHkoJw
+    sort: 0
+  - name: Alonzo
+    type: pj
+    img: systems/ludiverse/assets/pjs/alonzo.webp
+    system:
+      composantes:
+        corps:
+          valeur: 3
+        coeur:
+          valeur: 5
+        esprit:
+          valeur: 5
+      moyens:
+        action:
+          valeur: 2
+        perception:
+          valeur: 4
+        resistance:
+          valeur: 2
+      pv:
+        valeur: 5
+        max: 5
+      ps:
+        valeur: 5
+        max: 5
+      metier:
+        valeur: 1
+        nom: Vendeur
+      talent1:
+        valeur: 1
+        nom: Lecture-écriture
+      talent2:
+        valeur: 1
+        nom: Psychologie
+      talent3:
+        valeur: 1
+        nom: Tir
+      capacites:
+        capacite1:
+          cout: 1
+          description: >-
+            <p><span style="font-family: garamond">DÈS LE 1ER SCÉNARIO. Votre
+            personnage donne le meilleur de lui-même. S’il effectue une action
+            qui utilise son métier ou un des talents, effectuez le test avec 3d6
+            et gardez les deux de votre choix. En combat, + 1 aux dégâts. En
+            situation de soins, + 1 point de guérison.</span></p>
+          nom: EN PISTE
+        capacite2:
+          cout: 1
+          description: >-
+            <p><span style="font-family: garamond">À PARTIR DU 2E SCÉNARIO.
+            Votre personnage tente le tout pour le tout. Lors d’une action,
+            après le jet de dés, relancez le dé de votre choix : vous gardez la
+            valeur la plus faible des deux lancers.</span></p>
+          nom: SANS FILET
+        capacite3:
+          cout: 0
+          description: >-
+            <p><span style="font-family: garamond">À PARTIR DU 3E SCÉNARIO.
+            SCÉNARIO. Une fois par scénario, 0 PS pour utiliser En piste ou Sans
+            filet.</span></p>
+          nom: MAESTRIA
+        nom: Chapeau bas !
+      equipement: >-
+        <p><strong>Canne</strong> (1 PV), <strong>pistolet</strong> (2 PV, arme
+        à feu à 4 coups, recharge en 30 secondes par balle, portée de 40
+        mètres), balles,</p><p>Lunettes noires, bourse avec quelques centaines
+        de francs, sac de voyage et quelques affaires de rechange</p>
+      description: >-
+        <p>Alonzo est un humain venant de Ritalie. Apprenti chez un marchand de
+        tissus itinérant, il développa un bagout et un sens de la répartie
+        incomparables. Devenu adulte, il refusa de travailler, par idéal
+        révolutionnaire républicain.</p><p>Alonzo est venu récemment à Panam
+        après avoir rencontré Mandrake, le propriétaire du Browning Circus, en
+        tournée ritalienne. Alonzo impressionna Mandrake pour son talent à
+        deviner des choses sur ses interlocuteurs en les faisant parler de tout
+        et de rien. Il a donc été recruté pour faire un tour de « mentaliste
+        ».</p>
+      indications: ''
+    prototypeToken:
+      name: Alonzo
+      displayName: 0
+      actorLink: false
+      appendNumber: false
+      prependAdjective: false
+      texture:
+        src: systems/ludiverse/assets/pjs/token_alonzo.png
+        scaleX: 1
+        scaleY: 1
+        offsetX: 0
+        offsetY: 0
+        rotation: 0
+        tint: '#ffffff'
+        anchorX: 0.5
+        anchorY: 0.5
+        fit: contain
+        alphaThreshold: 0.75
+      width: 1
+      height: 1
+      lockRotation: false
+      rotation: 0
+      alpha: 1
+      disposition: -1
+      displayBars: 0
+      bar1:
+        attribute: null
+      bar2:
+        attribute: null
+      light:
+        alpha: 0.5
+        angle: 360
+        bright: 0
+        coloration: 1
+        dim: 0
+        attenuation: 0.5
+        luminosity: 0.5
+        saturation: 0
+        contrast: 0
+        shadows: 0
+        animation:
+          type: null
+          speed: 5
+          intensity: 5
+          reverse: false
+        darkness:
+          min: 0
+          max: 1
+        color: null
+        negative: false
+        priority: 0
+      sight:
+        enabled: false
+        range: 0
+        angle: 360
+        visionMode: basic
+        attenuation: 0.1
+        brightness: 0
+        saturation: 0
+        contrast: 0
+        color: null
+      detectionModes: []
+      flags:
+        tagger: {}
+      randomImg: false
+      hexagonalShape: 0
+      occludable:
+        radius: 0
+      ring:
+        enabled: false
+        colors:
+          ring: null
+          background: null
+        effects: 1
+        subject:
+          scale: 1
+          texture: null
+    items: []
+    effects: []
+    folder: RpM3JEFvrHhaVhdb
+    ownership:
+      default: 0
+      Bj5GCzwwDSzlU8D5: 3
+      vvswVEtuFf5xh96N: 3
+    flags:
+      ludiverse: {}
+      core:
+        sourceId: Compendium.ludiverse.personnages.Actor.v3K6TBXAMZDlnreU
+    _stats:
+      systemId: ludiverse
+      systemVersion: '#{VERSION}#'
+      coreVersion: '12.343'
+      createdTime: 1701887278377
+      modifiedTime: 1702232857080
+      lastModifiedBy: vvswVEtuFf5xh96N
+      compendiumSource: Compendium.ludiverse.personnages.Actor.v3K6TBXAMZDlnreU
+      duplicateSource: null
+    _id: Ey1zNjNnVse4Lh4R
+    sort: 0
+  - name: Graham Medoz
+    type: pj
+    img: systems/ludiverse/assets/pjs/graham.webp
+    system:
+      composantes:
+        corps:
+          valeur: 5
+        coeur:
+          valeur: 3
+        esprit:
+          valeur: 5
+      moyens:
+        action:
+          valeur: 3
+        perception:
+          valeur: 3
+        resistance:
+          valeur: 2
+      pv:
+        valeur: 6
+        max: 6
+      ps:
+        valeur: 5
+        max: 5
+      metier:
+        valeur: 1
+        nom: Serden gestler
+      talent1:
+        valeur: 1
+        nom: Furtivité
+      talent2:
+        valeur: 1
+        nom: Haute couture
+      talent3:
+        valeur: 1
+        nom: Sens en alerte
+      capacites:
+        capacite1:
+          cout: 1
+          description: >-
+            <p>DÈS LE PREMIER SCÉNARIO. Le maser accompagne un mouvement de tir.
+            Quand Graham effectue une action de tir avec son maser, effectuez le
+            test avec 3d6 et gardez les deux de votre choix. Et augmentez de 1
+            les dégâts.</p>
+          nom: TIR ASSISTÉ
+        capacite2:
+          cout: 1
+          description: >-
+            <p>À PARTIR DU DEUXIÈME SCÉNARIO.</p><p>Le maser accompagne un coup
+            de poing. Quand Graham effectue une action de corps à corps avec son
+            maser, effectuez le test avec 3d6 et gardez les deux de votre
+            choix.</p><p>Et augmentez de 1 les dégâts.</p>
+          nom: IMPACT ASSISTÉ
+        capacite3:
+          cout: 0
+          description: >-
+            <p>PARTIR DU TROISIÈME SCÉNARIO.</p><p>Une fois par scénario, 0 PS
+            pour utiliser Tir assisté ou Impact assisté.</p>
+          nom: SYMBIOSE
+        nom: Maser
+      equipement: >-
+        <p><strong>Maser</strong> (gant-pistolet laser au canon rétractible
+        pouvant être utilisé comme arme de tir ou comme arme contondante, 2 PV,
+        portée de 80 mètres, et voir ci-dessous)</p><p>Gilet-armure (+ 1 PV
+        compté ci-dessus), vêtements antisalissures et anti-déchirures,
+        micro-valise avec affaires de rechange, carte monétique chargée d’une
+        somme maigrelette de bit-assignats</p>
+      description: >-
+        <p>Graham Medoz est un humain, ancien soldat de l’infanterie des Forces,
+        l’armée de la Communauté.</p><p>Rompu à toutes les missions sur tous les
+        champs de bataille, c’est un vétéran qui en a trop vu. Il a quitté son
+        escouade après un massacre de trop. Il a rejoint l’agence de Marcia
+        Pompus et, grâce à des revenus confortables, il s’est découvert un goût
+        pour le luxe, notamment vestimentaire. Désormais, il considère Marcia
+        comme une amie. Il l’accompagne en tant que garde du corps et sert
+        d’atout offensif au groupe.</p>
+      indications: Réservé, loyal, intransigeant
+    prototypeToken:
+      name: Graham Medoz
+      displayName: 0
+      actorLink: false
+      appendNumber: false
+      prependAdjective: false
+      texture:
+        src: systems/ludiverse/assets/pjs/token_graham.png
+        scaleX: 1
+        scaleY: 1
+        offsetX: 0
+        offsetY: 0
+        rotation: 0
+        tint: '#ffffff'
+        anchorX: 0.5
+        anchorY: 0.5
+        fit: contain
+        alphaThreshold: 0.75
+      width: 1
+      height: 1
+      lockRotation: false
+      rotation: 0
+      alpha: 1
+      disposition: -1
+      displayBars: 0
+      bar1:
+        attribute: null
+      bar2:
+        attribute: null
+      light:
+        alpha: 0.5
+        angle: 360
+        bright: 0
+        coloration: 1
+        dim: 0
+        attenuation: 0.5
+        luminosity: 0.5
+        saturation: 0
+        contrast: 0
+        shadows: 0
+        animation:
+          type: null
+          speed: 5
+          intensity: 5
+          reverse: false
+        darkness:
+          min: 0
+          max: 1
+        color: null
+        negative: false
+        priority: 0
+      sight:
+        enabled: false
+        range: 0
+        angle: 360
+        visionMode: basic
+        attenuation: 0.1
+        brightness: 0
+        saturation: 0
+        contrast: 0
+        color: null
+      detectionModes: []
+      flags:
+        tagger: {}
+      randomImg: false
+      hexagonalShape: 0
+      occludable:
+        radius: 0
+      ring:
+        enabled: false
+        colors:
+          ring: null
+          background: null
+        effects: 1
+        subject:
+          scale: 1
+          texture: null
+    items: []
+    effects: []
+    folder: hZN9xlCW5spFqkp3
+    ownership:
+      default: 0
+      Bj5GCzwwDSzlU8D5: 3
+      vvswVEtuFf5xh96N: 3
+    flags:
+      ludiverse: {}
+      core:
+        sourceId: Compendium.ludiverse.personnages.Actor.epHiKwNffSymgfxx
+    _stats:
+      systemId: ludiverse
+      systemVersion: '#{VERSION}#'
+      coreVersion: '12.343'
+      createdTime: 1701812907402
+      modifiedTime: 1702232857080
+      lastModifiedBy: vvswVEtuFf5xh96N
+      compendiumSource: Compendium.ludiverse.personnages.Actor.epHiKwNffSymgfxx
+      duplicateSource: null
+    _id: lZVqnjvcF1H3XuH8
+    sort: 0
+  - name: Marcia Pompus
+    type: pj
+    img: systems/ludiverse/assets/pjs/marcia.webp
+    system:
+      composantes:
+        corps:
+          valeur: 4
+        coeur:
+          valeur: 5
+        esprit:
+          valeur: 4
+      moyens:
+        action:
+          valeur: 3
+        perception:
+          valeur: 4
+        resistance:
+          valeur: 1
+      pv:
+        valeur: 5
+        max: 5
+      ps:
+        valeur: 5
+        max: 5
+      metier:
+        valeur: 1
+        nom: Politicienne
+      talent1:
+        valeur: 1
+        nom: Furtivité
+      talent2:
+        valeur: 1
+        nom: Informatique
+      talent3:
+        valeur: 1
+        nom: Lancer de stylets
+      capacites:
+        capacite1:
+          cout: 1
+          description: >-
+            <p>DÈS LE 1ER SCÉNARIO. La couleur et la texture de la toge se
+            modifient pour se fondre dans l’environnement. Quand Marcia effectue
+            une action impliquant la dissimulation, effectuez le test avec 3d6
+            et gardez les deux de votre choix.</p>
+          nom: CAMÉLÉON
+        capacite2:
+          cout: 1
+          description: >-
+            <p>À PARTIR DU 2E SCÉNARIO. La forme et le poids de la toge se
+            modifient pour aider le mouvement de Marcia. Quand elle effectue une
+            action impliquant le mouvement, effectuez le test avec 3d6 et gardez
+            les deux de votre choix. S’il s’agit d’une attaque au corps à corps,
+            augmentez de 1 les dégâts.</p>
+          nom: VAGUE
+        capacite3:
+          cout: 0
+          description: >-
+            <p>À PARTIR DU 3E SCÉNARIO. Une fois par scénario, 0 PS pour
+            utiliser Caméléon ou Vague.</p>
+          nom: SYMBIOSE
+        nom: Toge alvéolaire
+      equipement: >-
+        <p><strong>Toge alvéolaire</strong> (voir ci-dessous), deux stylets de
+        lancer ou de corps à corps (1 PV, portée de 4
+        mètres),</p><p>Tablette-ordinateur souple en forme de parchemin, bijoux
+        de valeur, micro-valise avec affaires de rechange, bague monétique
+        chargée d’une somme conséquente de bit-assignats</p>
+      description: >-
+        <p>Marcia Pompus est une humaine vraie née, issue d’une puissante
+        lignée, dont plusieurs membres dirigent des planètes secondaires du
+        système Epsilon Eridani en tant que padishahs. Contrairement au reste de
+        sa famille, elle n’a pas de goût pour les affaires et la politique :
+        bien que rusée, elle a une certaine morale… Elle a fondé une agence
+        itinérante de vidocqs, ces prestataires qui oscillent entre enquêteurs
+        et gardes du corps, qui lui assure son indépendance financière. Cheffe
+        naturelle, elle a la confiance du petit groupe qui l’accompagne et se
+        charge des négociations et des interrogatoires.</p>
+      indications: Rusée, intègre, fière
+    prototypeToken:
+      name: Marcia Pompus
+      displayName: 0
+      actorLink: true
+      appendNumber: false
+      prependAdjective: false
+      texture:
+        src: systems/ludiverse/assets/pjs/token_marcia.png
+        scaleX: 1
+        scaleY: 1
+        offsetX: 0
+        offsetY: 0
+        rotation: 0
+        tint: '#ffffff'
+        anchorX: 0.5
+        anchorY: 0.5
+        fit: contain
+        alphaThreshold: 0.75
+      width: 1
+      height: 1
+      lockRotation: false
+      rotation: 0
+      alpha: 1
+      disposition: -1
+      displayBars: 0
+      bar1:
+        attribute: null
+      bar2:
+        attribute: null
+      light:
+        alpha: 0.5
+        angle: 360
+        bright: 0
+        coloration: 1
+        dim: 0
+        attenuation: 0.5
+        luminosity: 0.5
+        saturation: 0
+        contrast: 0
+        shadows: 0
+        animation:
+          type: null
+          speed: 5
+          intensity: 5
+          reverse: false
+        darkness:
+          min: 0
+          max: 1
+        color: null
+        negative: false
+        priority: 0
+      sight:
+        enabled: false
+        range: 0
+        angle: 360
+        visionMode: basic
+        attenuation: 0.1
+        brightness: 0
+        saturation: 0
+        contrast: 0
+        color: null
+      detectionModes: []
+      flags: {}
+      randomImg: false
+      hexagonalShape: 0
+      occludable:
+        radius: 0
+      ring:
+        enabled: false
+        colors:
+          ring: null
+          background: null
+        effects: 1
+        subject:
+          scale: 1
+          texture: null
+    items: []
+    effects: []
+    folder: hZN9xlCW5spFqkp3
+    flags:
+      ludiverse: {}
+      core:
+        sourceId: Compendium.ludiverse.personnages.Actor.FvuY3fONLIQSMALC
+    _stats:
+      systemId: ludiverse
+      systemVersion: '#{VERSION}#'
+      coreVersion: '12.343'
+      createdTime: 1701023759782
+      modifiedTime: 1702232857080
+      lastModifiedBy: vvswVEtuFf5xh96N
+      compendiumSource: Compendium.ludiverse.personnages.Actor.FvuY3fONLIQSMALC
+      duplicateSource: null
+    ownership:
+      default: 0
+      Bj5GCzwwDSzlU8D5: 3
+      vvswVEtuFf5xh96N: 3
+    _id: BFdGFH8VzzEuoD1I
+    sort: 0
+  - name: Shirin Tajik
+    type: pj
+    img: systems/ludiverse/assets/pjs/shirin.webp
+    system:
+      composantes:
+        corps:
+          valeur: 3
+        coeur:
+          valeur: 5
+        esprit:
+          valeur: 5
+      moyens:
+        action:
+          valeur: 3
+        perception:
+          valeur: 4
+        resistance:
+          valeur: 1
+      pv:
+        valeur: 5
+        max: 5
+      ps:
+        valeur: 5
+        max: 5
+      metier:
+        valeur: 1
+        nom: Mystique
+      talent1:
+        valeur: 1
+        nom: Chant
+      talent2:
+        valeur: 1
+        nom: Danse martiale
+      talent3:
+        valeur: 1
+        nom: Soins
+      capacites:
+        capacite1:
+          cout: 1
+          description: <p>@UUID[JournalEntry.QPgsquSMvVHdN479]{Liste des sortilèges}</p>
+          nom: Déclencher un sortilège
+        capacite2:
+          cout: 0
+          description: ''
+          nom: ''
+        capacite3:
+          cout: 0
+          description: ''
+          nom: ''
+        nom: Magie
+      equipement: >-
+        <p><strong>Dague de cristal vivant</strong></p><p>Flûte, sac avec
+        affaires de rechange, bourse en cuir avec quelques fragments de pierres
+        semi-précieuses de faible valeur</p>
+      description: >-
+        <p>Shirin Tajik est une variant, une tybarène – ou symorgh comme ils se
+        nomment eux-mêmes –, dont la particularité est d’avoir des yeux dont on
+        ne distingue l’iris et la pupille que sous l’effet d’une très puissante
+        lumière. Cette mystique a rencontré Marcia sur l’exoplanète Khataï, et
+        suite à une vision, elle a décrété devoir accompagner la
+        vidocq.</p><p>D’abord surpris, le groupe s’est fait à la présence de
+        leur nouvelle équipière, d’une part en raison de sa gentillesse, mais
+        aussi parce que la magie de sa dague en cristal – qu’elle dit être
+        vivant – se révèle bien utile au cours de leurs missions !</p>
+      indications: Enigmatique, bienveillante
+    prototypeToken:
+      name: Shirin Tajik
+      displayName: 0
+      actorLink: false
+      appendNumber: false
+      prependAdjective: false
+      texture:
+        src: systems/ludiverse/assets/pjs/token_shirin.png
+        scaleX: 1
+        scaleY: 1
+        offsetX: 0
+        offsetY: 0
+        rotation: 0
+        tint: '#ffffff'
+        anchorX: 0.5
+        anchorY: 0.5
+        fit: contain
+        alphaThreshold: 0.75
+      width: 1
+      height: 1
+      lockRotation: false
+      rotation: 0
+      alpha: 1
+      disposition: -1
+      displayBars: 0
+      bar1:
+        attribute: null
+      bar2:
+        attribute: null
+      light:
+        alpha: 0.5
+        angle: 360
+        bright: 0
+        coloration: 1
+        dim: 0
+        attenuation: 0.5
+        luminosity: 0.5
+        saturation: 0
+        contrast: 0
+        shadows: 0
+        animation:
+          type: null
+          speed: 5
+          intensity: 5
+          reverse: false
+        darkness:
+          min: 0
+          max: 1
+        color: null
+        negative: false
+        priority: 0
+      sight:
+        enabled: false
+        range: 0
+        angle: 360
+        visionMode: basic
+        attenuation: 0.1
+        brightness: 0
+        saturation: 0
+        contrast: 0
+        color: null
+      detectionModes: []
+      flags:
+        tagger: {}
+      randomImg: false
+      hexagonalShape: 0
+      occludable:
+        radius: 0
+      ring:
+        enabled: false
+        colors:
+          ring: null
+          background: null
+        effects: 1
+        subject:
+          scale: 1
+          texture: null
+    items: []
+    effects: []
+    folder: hZN9xlCW5spFqkp3
+    ownership:
+      default: 0
+      Bj5GCzwwDSzlU8D5: 3
+      vvswVEtuFf5xh96N: 3
+    flags:
+      ludiverse: {}
+      core:
+        sourceId: Compendium.ludiverse.personnages.Actor.6JISukrGthUMcCa4
+    _stats:
+      systemId: ludiverse
+      systemVersion: '#{VERSION}#'
+      coreVersion: '12.343'
+      createdTime: 1701887019586
+      modifiedTime: 1702232857080
+      lastModifiedBy: vvswVEtuFf5xh96N
+      compendiumSource: Compendium.ludiverse.personnages.Actor.6JISukrGthUMcCa4
+      duplicateSource: null
+    _id: OF40hnoe0ifXqvHe
+    sort: 0
+  - name: Sol-Kal
+    type: pj
+    img: systems/ludiverse/assets/pjs/solkal.webp
+    system:
+      composantes:
+        corps:
+          valeur: 5
+        coeur:
+          valeur: 4
+        esprit:
+          valeur: 3
+      moyens:
+        action:
+          valeur: 4
+        perception:
+          valeur: 3
+        resistance:
+          valeur: 1
+      pv:
+        valeur: 5
+        max: 5
+      ps:
+        valeur: 5
+        max: 5
+      metier:
+        valeur: 1
+        nom: Cambrioleu.r.se
+      talent1:
+        valeur: 1
+        nom: Déguisement
+      talent2:
+        valeur: 1
+        nom: Escrime
+      talent3:
+        valeur: 1
+        nom: Furtivité
+      capacites:
+        capacite1:
+          cout: 1
+          description: >-
+            <p>DÈS LE PREMIER SCÉNARIO. Les capteurs de la robe analysent
+            l’environnement et envoient des stimuli à Sol-Kal. Quand ielle
+            effectue une action impliquant les sens, effectuez le test avec 3d6
+            et gardez les deux de votre choix.</p>
+          nom: STIMULI
+        capacite2:
+          cout: 1
+          description: >-
+            <p>À PARTIR DU DEUXIÈME SCÉNARIO. La forme et le poids de la robe
+            s’ajustent pour aider le mouvement de Sol-Kal. Quand ielle effectue
+            une action impliquant le mouvement, effectuez le test avec 3d6 et
+            gardez les deux de votre choix. S’il s’agit d’une attaque au corps à
+            corps, augmentez de 1 les dégâts.</p>
+          nom: ONDULATION
+        capacite3:
+          cout: 0
+          description: >-
+            <p>À PARTIR DU TROISIÈME SCÉNARIO. Une fois par scénario, 0 PS pour
+            utiliser Stimuli ou Ondulation.</p>
+          nom: SYMBIOSE
+        nom: Robe de capteurs
+      equipement: >-
+        <p><strong>Robe de capteurs</strong> (voir ci-dessous), <strong>sabres
+        électriques</strong> (1 PV)<br></p><p>Micro-valise avec affaires de
+        rechange, carte monétique intégrée dans la paume de la main et chargée
+        d’une somme confortable de bit-assignats<span style="font-family: 'Times
+        New Roman',serif">.</span></p>
+      description: >-
+        <p>Sol-Kal est un.e fluide, un.e variant hermaphrodite spécialement
+        créé.e pour des missions de terrain du Renseignement, le département
+        d’espionnage des Forces. Sol-Kal a repris sa liberté, de son propre
+        chef, si bien qu’ielle est dorénavant recherché.e.</p><p>Heureusement,
+        ielle a réussi à détruire son dossier et à acheter une identité factice
+        solide. Ielle a trouvé refuge auprès de Marcia. C’est désormais l’équipe
+        de vidocqs qui bénéficie de sa capacité à passer d’une apparence à une
+        autre – femme ou homme – et de son entraînement à pénétrer toutes sortes
+        de bâtiments.</p>
+      indications: Intrépide, indépendant.e, méfiant.e
+    prototypeToken:
+      name: Sol-Kal
+      displayName: 0
+      actorLink: false
+      appendNumber: false
+      prependAdjective: false
+      texture:
+        src: systems/ludiverse/assets/pjs/token_solkal.png
+        scaleX: 1
+        scaleY: 1
+        offsetX: 0
+        offsetY: 0
+        rotation: 0
+        tint: '#ffffff'
+        anchorX: 0.5
+        anchorY: 0.5
+        fit: contain
+        alphaThreshold: 0.75
+      width: 1
+      height: 1
+      lockRotation: false
+      rotation: 0
+      alpha: 1
+      disposition: -1
+      displayBars: 0
+      bar1:
+        attribute: null
+      bar2:
+        attribute: null
+      light:
+        alpha: 0.5
+        angle: 360
+        bright: 0
+        coloration: 1
+        dim: 0
+        attenuation: 0.5
+        luminosity: 0.5
+        saturation: 0
+        contrast: 0
+        shadows: 0
+        animation:
+          type: null
+          speed: 5
+          intensity: 5
+          reverse: false
+        darkness:
+          min: 0
+          max: 1
+        color: null
+        negative: false
+        priority: 0
+      sight:
+        enabled: false
+        range: 0
+        angle: 360
+        visionMode: basic
+        attenuation: 0.1
+        brightness: 0
+        saturation: 0
+        contrast: 0
+        color: null
+      detectionModes: []
+      flags:
+        tagger: {}
+      randomImg: false
+      hexagonalShape: 0
+      occludable:
+        radius: 0
+      ring:
+        enabled: false
+        colors:
+          ring: null
+          background: null
+        effects: 1
+        subject:
+          scale: 1
+          texture: null
+    items: []
+    effects: []
+    folder: hZN9xlCW5spFqkp3
+    ownership:
+      default: 0
+      Bj5GCzwwDSzlU8D5: 3
+      vvswVEtuFf5xh96N: 3
+    flags:
+      ludiverse: {}
+      core:
+        sourceId: Compendium.ludiverse.personnages.Actor.0Fwgw8BGwYqR4rXP
+    _stats:
+      systemId: ludiverse
+      systemVersion: '#{VERSION}#'
+      coreVersion: '12.343'
+      createdTime: 1701884132332
+      modifiedTime: 1702232943044
+      lastModifiedBy: vvswVEtuFf5xh96N
+      compendiumSource: Compendium.ludiverse.personnages.Actor.0Fwgw8BGwYqR4rXP
+      duplicateSource: null
+    _id: gtbYcN1zUTm5InOl
+    sort: 0
+  - name: Vorn Filbi
+    type: pj
+    img: systems/ludiverse/assets/pjs/vorn.webp
+    system:
+      composantes:
+        corps:
+          valeur: 6
+        coeur:
+          valeur: 4
+        esprit:
+          valeur: 3
+      moyens:
+        action:
+          valeur: 4
+        perception:
+          valeur: 2
+        resistance:
+          valeur: 1
+      pv:
+        valeur: 5
+        max: 5
+      ps:
+        valeur: 5
+        max: 5
+      metier:
+        valeur: 1
+        nom: Officier
+      talent1:
+        valeur: 1
+        nom: Déguisement
+      talent2:
+        valeur: 1
+        nom: Négociation
+      talent3:
+        valeur: 1
+        nom: Mécanique
+      capacites:
+        capacite1:
+          cout: 1
+          description: >-
+            <p>DÈS LE PREMIER SCÉNARIO. La prothèse sous forme de pique se
+            hérisse de protubérances acérées. Quand Vorn effectue une action
+            d’attaque au corps à corps, effectuez le test avec 3d6 et gardez les
+            deux de votre choix. Et augmentez de 1 les dégâts.</p>
+          nom: PROTUBÉRANCES
+        capacite2:
+          cout: 1
+          description: >-
+            <p>À PARTIR DU DEUXIÈME SCÉNARIO. La prothèse sous forme d’un outil
+            devient le nec le plus ultra de cet instrument. Quand Vorn effectue
+            une action utilisant cet outil, effectuez le test avec 3d6 et gardez
+            les deux de votre choix.</p>
+          nom: QUALITÉ
+        capacite3:
+          cout: 0
+          description: >-
+            <p><span style="font-family: garamond">À PARTIR DU TROISIÈME
+            SCÉNARIO. Une fois par scénario, 0 PS pour utiliser Stimuli ou
+            Ondulation.</span></p>
+          nom: SYMBIOSE
+        nom: Bras-prothèse
+      equipement: >-
+        <p><strong>Bras-prothèse</strong> capable de se transformer en divers
+        outils, dont une pique pouvant servir d’arme (2 PV), <br>Micro-valise
+        avec affaires de rechange, carte monétique et chargée d’une somme
+        confortable de bit-assignats</p>
+      description: >-
+        <p>Vorn Filbi est un gandard, un variant très proche des humains. Ancien
+        officier serden-gestler, le prestigieux corps d’élite des Forces, il
+        avait atteint la limite d’âge pour opérer sur le terrain et devait
+        poursuivre sa carrière dans la hiérarchie stratégique.</p><p>Son goût
+        pour l’action l’a amené à préférer quitter l’armée et il a fini par
+        rejoindre Marcia Pompus, dont il est devenu le second. Il n’a pas sa
+        finesse,mais il est habile avec ses interlocuteurs et c’est un
+        combattant terrible au corps à corps.</p>
+      indications: Autoritaire, violent, responsable
+    prototypeToken:
+      name: Vorn Filbi
+      displayName: 0
+      actorLink: false
+      appendNumber: false
+      prependAdjective: false
+      texture:
+        src: systems/ludiverse/assets/pjs/token_vorn.png
+        scaleX: 1
+        scaleY: 1
+        offsetX: 0
+        offsetY: 0
+        rotation: 0
+        tint: '#ffffff'
+        anchorX: 0.5
+        anchorY: 0.5
+        fit: contain
+        alphaThreshold: 0.75
+      width: 1
+      height: 1
+      lockRotation: false
+      rotation: 0
+      alpha: 1
+      disposition: -1
+      displayBars: 0
+      bar1:
+        attribute: null
+      bar2:
+        attribute: null
+      light:
+        alpha: 0.5
+        angle: 360
+        bright: 0
+        coloration: 1
+        dim: 0
+        attenuation: 0.5
+        luminosity: 0.5
+        saturation: 0
+        contrast: 0
+        shadows: 0
+        animation:
+          type: null
+          speed: 5
+          intensity: 5
+          reverse: false
+        darkness:
+          min: 0
+          max: 1
+        color: null
+        negative: false
+        priority: 0
+      sight:
+        enabled: false
+        range: 0
+        angle: 360
+        visionMode: basic
+        attenuation: 0.1
+        brightness: 0
+        saturation: 0
+        contrast: 0
+        color: null
+      detectionModes: []
+      flags:
+        tagger: {}
+      randomImg: false
+      hexagonalShape: 0
+      occludable:
+        radius: 0
+      ring:
+        enabled: false
+        colors:
+          ring: null
+          background: null
+        effects: 1
+        subject:
+          scale: 1
+          texture: null
+    items: []
+    effects: []
+    folder: hZN9xlCW5spFqkp3
+    ownership:
+      default: 0
+      Bj5GCzwwDSzlU8D5: 3
+      vvswVEtuFf5xh96N: 3
+    flags:
+      ludiverse: {}
+      core:
+        sourceId: Compendium.ludiverse.personnages.Actor.ZhCiclmtg8DScRqY
+    _stats:
+      systemId: ludiverse
+      systemVersion: '#{VERSION}#'
+      coreVersion: '12.343'
+      createdTime: 1701886613957
+      modifiedTime: 1702232857080
+      lastModifiedBy: vvswVEtuFf5xh96N
+      compendiumSource: Compendium.ludiverse.personnages.Actor.ZhCiclmtg8DScRqY
+      duplicateSource: null
+    _id: szw6fIe512WZ2okI
+    sort: 0
+  - name: Adalbert de Grifo
+    type: pj
+    img: systems/ludiverse/assets/pjs/adalbert.webp
+    system:
+      composantes:
+        corps:
+          valeur: 3
+        coeur:
+          valeur: 4
+        esprit:
+          valeur: 6
+      moyens:
+        action:
+          valeur: 4
+        perception:
+          valeur: 3
+        resistance:
+          valeur: 1
+      pv:
+        valeur: 5
+        max: 5
+      ps:
+        valeur: 5
+        max: 5
+      metier:
+        valeur: 1
+        nom: Mage-intercesseur
+      talent1:
+        valeur: 1
+        nom: Éloquence
+      talent2:
+        valeur: 1
+        nom: Lecture-écriture
+      talent3:
+        valeur: 1
+        nom: Soins
+      capacites:
+        capacite1:
+          cout: 1
+          description: <p>@UUID[JournalEntry.GoaAZRv1mw8B4j2r]{Liste des sortilèges}</p>
+          nom: Déclencher un sortilège
+        capacite2:
+          cout: 0
+          description: ''
+          nom: ''
+        capacite3:
+          cout: 0
+          description: ''
+          nom: ''
+        nom: Magie
+      equipement: >-
+        <p><strong>Bâton</strong> (2 PV), <strong>poignard</strong> (1 PV, si
+        lancé portée jusqu’à 10 pas)</p><p>Mulet, bourse avec quelques
+        piécettes, sac et nécessaire de voyage</p>
+      description: >-
+        <p>Cadet de la famille de Grifo, Adalbert était voué à une carrière
+        militaire ou cléricale, le titre seigneurial revenant à son frère aîné…
+        Au grand dam de son père, il préféra voyager pour découvrir le monde et
+        ses mystères, s’initiant aux arcanes</p><p>théoriques de la
+        magie.</p><p>En quelque sorte, il finit par rejoindre l’armée… au sein
+        des Chevauche-brumes, auprès de Baudry, son ami d’enfance. Jerod lui a
+        appris à donner vie à des sortilèges qu’il n’avait pas imaginé pouvoir
+        être tangibles.</p>
+      indications: Amical, curieux, optimiste
+    prototypeToken:
+      name: Adalbert de Grifo
+      displayName: 0
+      actorLink: false
+      appendNumber: false
+      prependAdjective: false
+      texture:
+        src: systems/ludiverse/assets/pjs/token_adalbert.png
+        scaleX: 1
+        scaleY: 1
+        offsetX: 0
+        offsetY: 0
+        rotation: 0
+        tint: '#ffffff'
+        anchorX: 0.5
+        anchorY: 0.5
+        fit: contain
+        alphaThreshold: 0.75
+      width: 1
+      height: 1
+      lockRotation: false
+      rotation: 0
+      alpha: 1
+      disposition: -1
+      displayBars: 0
+      bar1:
+        attribute: null
+      bar2:
+        attribute: null
+      light:
+        alpha: 0.5
+        angle: 360
+        bright: 0
+        coloration: 1
+        dim: 0
+        attenuation: 0.5
+        luminosity: 0.5
+        saturation: 0
+        contrast: 0
+        shadows: 0
+        animation:
+          type: null
+          speed: 5
+          intensity: 5
+          reverse: false
+        darkness:
+          min: 0
+          max: 1
+        color: null
+        negative: false
+        priority: 0
+      sight:
+        enabled: false
+        range: 0
+        angle: 360
+        visionMode: basic
+        attenuation: 0.1
+        brightness: 0
+        saturation: 0
+        contrast: 0
+        color: null
+      detectionModes: []
+      flags:
+        tagger: {}
+      randomImg: false
+      hexagonalShape: 0
+      occludable:
+        radius: 0
+      ring:
+        enabled: false
+        colors:
+          ring: null
+          background: null
+        effects: 1
+        subject:
+          scale: 1
+          texture: null
+    items: []
+    effects: []
+    folder: qFFkGqch9LfmwSEV
+    ownership:
+      default: 0
+      Bj5GCzwwDSzlU8D5: 3
+      vvswVEtuFf5xh96N: 3
+    flags:
+      ludiverse: {}
+      core:
+        sourceId: Compendium.ludiverse.personnages.Actor.m5F9NkMnMjzggLXu
+    _stats:
+      systemId: ludiverse
+      systemVersion: '#{VERSION}#'
+      coreVersion: '12.343'
+      createdTime: 1701812096936
+      modifiedTime: 1702232857080
+      lastModifiedBy: vvswVEtuFf5xh96N
+      compendiumSource: Compendium.ludiverse.personnages.Actor.m5F9NkMnMjzggLXu
+      duplicateSource: null
+    _id: C0iJ1UwNAUXNCJ3N
+    sort: 0
+  - name: Albellenda
+    type: pj
+    img: systems/ludiverse/assets/pjs/albellenda.webp
+    system:
+      composantes:
+        corps:
+          valeur: 6
+        coeur:
+          valeur: 4
+        esprit:
+          valeur: 3
+      moyens:
+        action:
+          valeur: 4
+        perception:
+          valeur: 1
+        resistance:
+          valeur: 3
+      pv:
+        valeur: 5
+        max: 5
+      ps:
+        valeur: 5
+        max: 5
+      metier:
+        valeur: 1
+        nom: Doryacte
+      talent1:
+        valeur: 1
+        nom: Agilité
+      talent2:
+        valeur: 1
+        nom: Discrétion
+      talent3:
+        valeur: 1
+        nom: Sur le qui-vive
+      capacites:
+        capacite1:
+          cout: 1
+          description: >-
+            <p>DÈS LE 1ER SCÉNARIO. Votre personnage harangue ses camarades.
+            Lancez 1d6. Lors d’un test pour une action de son personnage, chaque
+            autre joueur peut remplacer la valeur d’un de ses dés par la valeur
+            de ce dé.</p>
+          nom: HAUT-LES-COEURS
+        capacite2:
+          cout: 1
+          description: >-
+            <p>À PARTIR DU 2E SCÉNARIO. Lors d’une action de votre personnage
+            dans le but de venir en aide ou appui à un autre Chevauche-Brumes,
+            effectuez le test avec 3d6 et gardez les 2 de votre choix. En
+            combat, + 1 aux dégâts. En situation de soins, + 1 point de
+            guérison.</p>
+          nom: À LA RESCOUSSE
+        capacite3:
+          cout: 0
+          description: >-
+            <p>À PARTIR DU 3E SCÉNARIO. 1 fois par scénario, 0 PS pour utiliser
+            Haut-les-Coeurs ou À la rescousse.</p>
+          nom: VÉTÉRAN
+        nom: Camaraderie
+      equipement: >-
+        <p><strong>Épée bâtarde</strong> (2 PV, arme à deux mains ou 1 PV arme à
+        une main), <strong>épée courte</strong> (1 PV), <strong>poignard de
+        corps à corps</strong> (1 PV), <strong>poignard de lancer</strong> (1
+        PV, portée jusqu’à 6 pas), <strong>bouclier</strong> (le casser permet
+        d’éviter entièrement une attaque)</p><p>Bourse avec quelques piécettes,
+        cheval, sac et nécessaire de voyage.</p>
+      description: >-
+        <p>Albellenda est une doryacte, membre de l’escorte de Myrelle de
+        Vernes, représentante du Longemar au Bleu Royaume.</p><p>Elle fut élevée
+        dès le plus jeune âge pour tenir ce rang de farouche guerrière. Forte du
+        soutien de Myrelle de Vernes aux Chevauche-brumes, elle s’est jointe aux
+        anciens légionnaires dans leur combat contre les mélampyges.</p><p>Sa
+        puissance de frappe redoutable la place naturellement en première ligne
+        lors des combats des Chevauches-Brumes.</p>
+      indications: Energique, fière, téméraire
+    prototypeToken:
+      name: Albellenda
+      displayName: 0
+      actorLink: true
+      appendNumber: false
+      prependAdjective: false
+      texture:
+        src: systems/ludiverse/assets/pjs/token_albellenda.png
+        scaleX: 1
+        scaleY: 1
+        offsetX: 0
+        offsetY: 0
+        rotation: 0
+        tint: '#ffffff'
+        anchorX: 0.5
+        anchorY: 0.5
+        fit: contain
+        alphaThreshold: 0.75
+      width: 1
+      height: 1
+      lockRotation: false
+      rotation: 0
+      alpha: 1
+      disposition: -1
+      displayBars: 0
+      bar1:
+        attribute: null
+      bar2:
+        attribute: null
+      light:
+        alpha: 0.5
+        angle: 360
+        bright: 0
+        coloration: 1
+        dim: 0
+        attenuation: 0.5
+        luminosity: 0.5
+        saturation: 0
+        contrast: 0
+        shadows: 0
+        animation:
+          type: null
+          speed: 5
+          intensity: 5
+          reverse: false
+        darkness:
+          min: 0
+          max: 1
+        color: null
+        negative: false
+        priority: 0
+      sight:
+        enabled: false
+        range: 0
+        angle: 360
+        visionMode: basic
+        attenuation: 0.1
+        brightness: 0
+        saturation: 0
+        contrast: 0
+        color: null
+      detectionModes: []
+      flags: {}
+      randomImg: false
+      hexagonalShape: 0
+      occludable:
+        radius: 0
+      ring:
+        enabled: false
+        colors:
+          ring: null
+          background: null
+        effects: 1
+        subject:
+          scale: 1
+          texture: null
+    items: []
+    effects: []
+    folder: qFFkGqch9LfmwSEV
+    flags:
+      ludiverse: {}
+      core:
+        sourceId: Compendium.ludiverse.personnages.Actor.cOudrRUr910BmdIK
+    _stats:
+      systemId: ludiverse
+      systemVersion: '#{VERSION}#'
+      coreVersion: '12.343'
+      createdTime: 1701023759782
+      modifiedTime: 1702241679689
+      lastModifiedBy: vvswVEtuFf5xh96N
+      compendiumSource: Compendium.ludiverse.personnages.Actor.cOudrRUr910BmdIK
+      duplicateSource: null
+    ownership:
+      default: 0
+      Bj5GCzwwDSzlU8D5: 3
+      vvswVEtuFf5xh96N: 3
+    _id: cHCez07qFDEn6D3S
+    sort: 0
+  - name: Folmar
+    type: pj
+    img: systems/ludiverse/assets/pjs/folmar.webp
+    system:
+      composantes:
+        corps:
+          valeur: 6
+        coeur:
+          valeur: 3
+        esprit:
+          valeur: 4
+      moyens:
+        action:
+          valeur: 2
+        perception:
+          valeur: 4
+        resistance:
+          valeur: 2
+      pv:
+        valeur: 5
+        max: 5
+      ps:
+        valeur: 5
+        max: 5
+      metier:
+        valeur: 1
+        nom: Légionnaire
+      talent1:
+        valeur: 1
+        nom: Bricolage
+      talent2:
+        valeur: 1
+        nom: Concentration
+      talent3:
+        valeur: 1
+        nom: Vue
+      capacites:
+        capacite1:
+          cout: 1
+          description: >-
+            <p><span style="font-family: garamond">DÈS LE 1ER SCÉNARIO. Votre
+            personnage harangue ses camarades. Lancez 1d6. Lors d’un test pour
+            une action de son personnage, chaque autre joueur peut remplacer la
+            valeur d’un de ses dés par la valeur de ce dé.</span></p>
+          nom: HAUT-LES-COEURS
+        capacite2:
+          cout: 1
+          description: >-
+            <p><span style="font-family: garamond">À PARTIR DU 2E SCÉNARIO. Lors
+            d’une action de votre personnage dans le but de venir en aide ou
+            appui à un autre Chevauche-Brumes, effectuez le test avec 3d6 et
+            gardez les 2 de votre choix. En combat, + 1 aux dégâts. En situation
+            de soins, + 1 point de guérison.</span></p>
+          nom: À LA RESCOUSSE
+        capacite3:
+          cout: 0
+          description: >-
+            <p><span style="font-family: garamond">À PARTIR DU 3E SCÉNARIO. 1
+            fois par scénario, 0 PS pour utiliser Haut-les-Coeurs ou À la
+            rescousse.</span></p>
+          nom: VÉTÉRAN
+        nom: Camaraderie
+      equipement: >-
+        <p><strong>Haquebute</strong> (3 PV, arme à feu à un coup, recharge en 4
+        mn, portée jusqu’à 80 pas), <strong>2 pistoles</strong> (3 PV, arme à
+        feu à un coup, recharge en 4 mn, portée jusqu’à 40 pas), balles et
+        poudre, <strong>sabre</strong> (1 PV)</p><p>Bourse avec quelques
+        piécettes, sac et nécessaire de voyage.</p>
+      description: >-
+        <p>Fils d’un armurier, Folmar a hérité de la passion familiale pour les
+        armes à feu, mais davantage pour les utiliser que pour les
+        fabriquer.</p><p>Il a rejoint la légion comme haquebutier, en même temps
+        que Baudry, et depuis les deux hommes ont connu un chemin similaire,
+        même si Folmar resta un homme du rang. Baudry se lançant dans la lutte
+        contre les mélampyges, celle-ci fut naturellement une évidence pour
+        Folmar.</p><p>Fidèle d’entre les fidèles du lieutenant Baudry, Folmar
+        déclenche des déluges de poudre et d’acier contre les ennemis des
+        Chevauche-Brumes.</p>
+      indications: Bagarreur, fanfaron, fidèle
+    prototypeToken:
+      name: Folmar
+      displayName: 0
+      actorLink: false
+      appendNumber: false
+      prependAdjective: false
+      texture:
+        src: systems/ludiverse/assets/pjs/token_folmar.png
+        scaleX: 1
+        scaleY: 1
+        offsetX: 0
+        offsetY: 0
+        rotation: 0
+        tint: '#ffffff'
+        anchorX: 0.5
+        anchorY: 0.5
+        fit: contain
+        alphaThreshold: 0.75
+      width: 1
+      height: 1
+      lockRotation: false
+      rotation: 0
+      alpha: 1
+      disposition: -1
+      displayBars: 0
+      bar1:
+        attribute: null
+      bar2:
+        attribute: null
+      light:
+        alpha: 0.5
+        angle: 360
+        bright: 0
+        coloration: 1
+        dim: 0
+        attenuation: 0.5
+        luminosity: 0.5
+        saturation: 0
+        contrast: 0
+        shadows: 0
+        animation:
+          type: null
+          speed: 5
+          intensity: 5
+          reverse: false
+        darkness:
+          min: 0
+          max: 1
+        color: null
+        negative: false
+        priority: 0
+      sight:
+        enabled: false
+        range: 0
+        angle: 360
+        visionMode: basic
+        attenuation: 0.1
+        brightness: 0
+        saturation: 0
+        contrast: 0
+        color: null
+      detectionModes: []
+      flags:
+        tagger: {}
+      randomImg: false
+      hexagonalShape: 0
+      occludable:
+        radius: 0
+      ring:
+        enabled: false
+        colors:
+          ring: null
+          background: null
+        effects: 1
+        subject:
+          scale: 1
+          texture: null
+    items: []
+    effects: []
+    folder: qFFkGqch9LfmwSEV
+    ownership:
+      default: 0
+      Bj5GCzwwDSzlU8D5: 3
+      vvswVEtuFf5xh96N: 3
+    flags:
+      ludiverse: {}
+      core:
+        sourceId: Compendium.ludiverse.personnages.Actor.6S8kGo6SOUNye8Yh
+    _stats:
+      systemId: ludiverse
+      systemVersion: '#{VERSION}#'
+      coreVersion: '12.343'
+      createdTime: 1701811770386
+      modifiedTime: 1702232857080
+      lastModifiedBy: vvswVEtuFf5xh96N
+      compendiumSource: Compendium.ludiverse.personnages.Actor.6S8kGo6SOUNye8Yh
+      duplicateSource: null
+    _id: nE1lc1JhPJ7RsrPq
+    sort: 0
+  - name: Lieutenant Baudry
+    type: pj
+    img: systems/ludiverse/assets/pjs/baudry.webp
+    system:
+      composantes:
+        corps:
+          valeur: 5
+        coeur:
+          valeur: 4
+        esprit:
+          valeur: 4
+      moyens:
+        action:
+          valeur: 4
+        perception:
+          valeur: 2
+        resistance:
+          valeur: 2
+      pv:
+        valeur: 5
+        max: 5
+      ps:
+        valeur: 5
+        max: 5
+      metier:
+        valeur: 1
+        nom: Légionnaire
+      talent1:
+        valeur: 1
+        nom: Charisme
+      talent2:
+        valeur: 1
+        nom: Lecture-écriture
+      talent3:
+        valeur: 1
+        nom: Premiers soins
+      capacites:
+        capacite1:
+          cout: 1
+          description: >-
+            <p>DÈS LE 1ER SCÉNARIO. Votre personnage harangue ses camarades.
+            Lancez 1d6. Lors d’un test pour une action de son personnage, chaque
+            autre joueur peut remplacer la valeur d’un de ses dés par la valeur
+            de ce dé.</p>
+          nom: HAUT-LES-COEURS
+        capacite2:
+          cout: 1
+          description: >-
+            <p>À PARTIR DU 2E SCÉNARIO. Lors d’une action de votre personnage
+            dans le but de venir en aide ou appui à un autre Chevauche-Brumes,
+            effectuez le test avec 3d6 et gardez les 2 de votre choix. En
+            combat, + 1 aux dégâts. En situation de soins, + 1 point de
+            guérison.</p>
+          nom: À LA RESCOUSSE
+        capacite3:
+          cout: 0
+          description: >-
+            <p>À PARTIR DU 3E SCÉNARIO. 1 fois par scénario, 0 PS pour utiliser
+            Haut-les-Coeurs ou À la rescousse.</p>
+          nom: VÉTÉRAN
+        nom: Camaraderie
+      equipement: >-
+        <p><strong>Hache à deux mains</strong> (2 PV), <strong>épée</strong> (1
+        PV), <strong>2 pistoles</strong> (3 PV, arme à feu à un coup, recharge
+        en 4 mn, portée jusqu’à 10 pas), balles et poudre,
+        bouclier</p><p>Cheval, bourse avec quelques piécettes, sac et nécessaire
+        de voyage.</p>
+      description: >-
+        <p>Fils du maître d’armes du seigneur de Grifo, Baudry fut élevé avec
+        les enfants de la famille, dans le respect des meilleures valeurs
+        chevaleresques du Bleu-Royaume.</p><p>Il s’engagea comme légionnaire.
+        Ses qualités lui permirent de devenir sous-officier de Saléon,
+        commandant de la 9e.</p><p>Fidèle d’entre les fidèles de Saléon, il
+        s’est rangé à ses côtés contre les mélampyges.</p><p>Il est considéré
+        comme un bras droit de Saléon, à qui l’on confie volontiers les échanges
+        avec les interlocuteurs extérieurs et l’organisation des missions.</p>
+      indications: Chevaleresque, déterminé, meneur
+    prototypeToken:
+      name: Lieutenant Baudry
+      displayName: 0
+      actorLink: false
+      appendNumber: false
+      prependAdjective: false
+      texture:
+        src: systems/ludiverse/assets/pjs/token_baudry.png
+        scaleX: 1
+        scaleY: 1
+        offsetX: 0
+        offsetY: 0
+        rotation: 0
+        tint: '#ffffff'
+        anchorX: 0.5
+        anchorY: 0.5
+        fit: contain
+        alphaThreshold: 0.75
+      width: 1
+      height: 1
+      lockRotation: false
+      rotation: 0
+      alpha: 1
+      disposition: -1
+      displayBars: 0
+      bar1:
+        attribute: null
+      bar2:
+        attribute: null
+      light:
+        alpha: 0.5
+        angle: 360
+        bright: 0
+        coloration: 1
+        dim: 0
+        attenuation: 0.5
+        luminosity: 0.5
+        saturation: 0
+        contrast: 0
+        shadows: 0
+        animation:
+          type: null
+          speed: 5
+          intensity: 5
+          reverse: false
+        darkness:
+          min: 0
+          max: 1
+        color: null
+        negative: false
+        priority: 0
+      sight:
+        enabled: false
+        range: 0
+        angle: 360
+        visionMode: basic
+        attenuation: 0.1
+        brightness: 0
+        saturation: 0
+        contrast: 0
+        color: null
+      detectionModes: []
+      flags:
+        tagger: {}
+      randomImg: false
+      hexagonalShape: 0
+      occludable:
+        radius: 0
+      ring:
+        enabled: false
+        colors:
+          ring: null
+          background: null
+        effects: 1
+        subject:
+          scale: 1
+          texture: null
+    items: []
+    effects: []
+    folder: qFFkGqch9LfmwSEV
+    ownership:
+      default: 0
+      Bj5GCzwwDSzlU8D5: 3
+      vvswVEtuFf5xh96N: 3
+    flags:
+      ludiverse: {}
+      core:
+        sourceId: Compendium.ludiverse.personnages.Actor.uDiuNKI1yJkYfB4L
+    _stats:
+      systemId: ludiverse
+      systemVersion: '#{VERSION}#'
+      coreVersion: '12.343'
+      createdTime: 1701810346557
+      modifiedTime: 1702232857080
+      lastModifiedBy: vvswVEtuFf5xh96N
+      compendiumSource: Compendium.ludiverse.personnages.Actor.uDiuNKI1yJkYfB4L
+      duplicateSource: null
+    _id: btksImvpDb0MdH7Y
+    sort: 0
+  - name: Wirgitt
+    type: pj
+    img: systems/ludiverse/assets/pjs/wirgitt.webp
+    system:
+      composantes:
+        corps:
+          valeur: 6
+        coeur:
+          valeur: 3
+        esprit:
+          valeur: 4
+      moyens:
+        action:
+          valeur: 2
+        perception:
+          valeur: 4
+        resistance:
+          valeur: 2
+      pv:
+        valeur: 5
+        max: 5
+      ps:
+        valeur: 5
+        max: 5
+      metier:
+        valeur: 1
+        nom: Légionnaire
+      talent1:
+        valeur: 1
+        nom: Chasse
+      talent2:
+        valeur: 1
+        nom: Furtivité
+      talent3:
+        valeur: 1
+        nom: Orientation
+      capacites:
+        capacite1:
+          cout: 1
+          description: >-
+            <p><span style="font-family: garamond">DÈS LE 1ER SCÉNARIO. Votre
+            personnage harangue ses camarades. Lancez 1d6. Lors d’un test pour
+            une action de son personnage, chaque autre joueur peut remplacer la
+            valeur d’un de ses dés par la valeur de ce dé.</span></p>
+          nom: HAUT-LES-COEURS
+        capacite2:
+          cout: 1
+          description: >-
+            <p><span style="font-family: garamond">À PARTIR DU 2E SCÉNARIO. Lors
+            d’une action de votre personnage dans le but de venir en aide ou
+            appui à un autre Chevauche-Brumes, effectuez le test avec 3d6 et
+            gardez les 2 de votre choix. En combat, + 1 aux dégâts. En situation
+            de soins, + 1 point de guérison.</span></p>
+          nom: À LA RESCOUSSE
+        capacite3:
+          cout: 0
+          description: >-
+            <p><span style="font-family: garamond">À PARTIR DU 3E SCÉNARIO. 1
+            fois par scénario, 0 PS pour utiliser Haut-les-Coeurs ou À la
+            rescousse.</span></p>
+          nom: VÉTÉRAN
+        nom: Camaraderie
+      equipement: >-
+        <p><strong>Voulgue</strong> (2 PV, arme à deux mains), <strong>2
+        poignards</strong> de lancer ou de corps à corps (1 PV, portée jusqu’à 6
+        pas), <strong>haquebute</strong> (3 PV, arme à feu à deux mains et à un
+        coup, recharge en 6 mn, portée jusqu’à 80 pas), balles et
+        poudre<br><br>Bourse avec quelques piécettes, sac et nécessaire de
+        voyage.</p>
+      description: >-
+        <p>Wirgitt a été recueillie par la 9e légion alors qu’elle n’était
+        qu’une enfant. Un hiver trop rude avait emporté ses parents quand les
+        soldats la trouvèrent transie de froid. Habituée à la vie sauvage, elle
+        révéla vite son utilité malgré son jeune âge.</p><p>Dès lors elle ne
+        quitta plus la 9e légion et quand la plupart des soldats de la compagnie
+        se firent chasseurs de mélampyges, elle suivit naturellement ses frères
+        d’armes dans leur nouvelle quête.</p><p>Elle est un atout des
+        Chevauche-brumes dès qu’il s’agit de pister des mélampyges, avancer en
+        avant-garde ou explorer discrètement une zone. Et au besoin,  elle est
+        capable de faire face à l’ennemi de manière efficace !</p>
+      indications: Calme, courageuse, solitaire
+    prototypeToken:
+      name: Wirgitt
+      displayName: 0
+      actorLink: false
+      appendNumber: false
+      prependAdjective: false
+      texture:
+        src: systems/ludiverse/assets/pjs/token_wirgitt.png
+        scaleX: 1
+        scaleY: 1
+        offsetX: 0
+        offsetY: 0
+        rotation: 0
+        tint: '#ffffff'
+        anchorX: 0.5
+        anchorY: 0.5
+        fit: contain
+        alphaThreshold: 0.75
+      width: 1
+      height: 1
+      lockRotation: false
+      rotation: 0
+      alpha: 1
+      disposition: -1
+      displayBars: 0
+      bar1:
+        attribute: null
+      bar2:
+        attribute: null
+      light:
+        alpha: 0.5
+        angle: 360
+        bright: 0
+        coloration: 1
+        dim: 0
+        attenuation: 0.5
+        luminosity: 0.5
+        saturation: 0
+        contrast: 0
+        shadows: 0
+        animation:
+          type: null
+          speed: 5
+          intensity: 5
+          reverse: false
+        darkness:
+          min: 0
+          max: 1
+        color: null
+        negative: false
+        priority: 0
+      sight:
+        enabled: false
+        range: 0
+        angle: 360
+        visionMode: basic
+        attenuation: 0.1
+        brightness: 0
+        saturation: 0
+        contrast: 0
+        color: null
+      detectionModes: []
+      flags:
+        tagger: {}
+      randomImg: false
+      hexagonalShape: 0
+      occludable:
+        radius: 0
+      ring:
+        enabled: false
+        colors:
+          ring: null
+          background: null
+        effects: 1
+        subject:
+          scale: 1
+          texture: null
+    items: []
+    effects: []
+    folder: qFFkGqch9LfmwSEV
+    ownership:
+      default: 0
+      Bj5GCzwwDSzlU8D5: 3
+      vvswVEtuFf5xh96N: 3
+    flags:
+      ludiverse: {}
+      core:
+        sourceId: Compendium.ludiverse.personnages.Actor.e6twXo4JqO9YWAdw
+    _stats:
+      systemId: ludiverse
+      systemVersion: '#{VERSION}#'
+      coreVersion: '12.343'
+      createdTime: 1701810679456
+      modifiedTime: 1702241685737
+      lastModifiedBy: vvswVEtuFf5xh96N
+      compendiumSource: Compendium.ludiverse.personnages.Actor.e6twXo4JqO9YWAdw
+      duplicateSource: null
+    _id: 59k25qBkVEowT2D5
+    sort: 0
+combats: []
+items: []
+journal:
+  - name: Renaissance fantastique - Adalbert de Grifo
+    pages:
+      - sort: 500000
+        name: IMPACT
+        type: text
+        _id: ebotCufXKoTWnCx0
+        title:
+          show: true
+          level: 1
+        image: {}
+        text:
+          format: 1
+          content: >-
+            <p><span style="font-family:Signika, sans-serif"><strong
+            style="box-sizing:border-box;user-select:text">Dès le premier
+            scénario.</strong></span></p><p>L’impact d’une attaque qui touche et
+            que le mage intercesseur voit est amplifié et inflige 1 point de
+            dégâts supplémentaires.</p>
+        video:
+          controls: true
+          volume: 0.5
+        src: null
+        system: {}
+        ownership:
+          default: -1
+          FkVQv7LbhjjxcPDm: 3
+        flags: {}
+        _stats:
+          systemId: ludiverse
+          systemVersion: '#{VERSION}#'
+          coreVersion: '12.343'
+          createdTime: 1701895605033
+          modifiedTime: 1701895635650
+          lastModifiedBy: FkVQv7LbhjjxcPDm
+          compendiumSource: null
+          duplicateSource: null
+      - sort: 600000
+        name: ARMURE PROVIDENTIELLE
+        type: text
+        _id: ob0iQSTK8EXkXiSB
+        title:
+          show: true
+          level: 1
+        image: {}
+        text:
+          format: 1
+          content: >-
+            <p><span style="font-family:Signika, sans-serif"><strong
+            style="box-sizing:border-box;user-select:text">Dès le premier
+            scénario.</strong></span></p><p>Pendant 6 h, une armure invisible
+            enveloppe le mageintercesseur. La prochaine fois qu’il subit des
+            dégâts, par exemple à cause d’une attaque ou d’une chute, l’armure
+            vole en éclats et le protège entièrement.</p>
+        video:
+          controls: true
+          volume: 0.5
+        src: null
+        system: {}
+        ownership:
+          default: -1
+          FkVQv7LbhjjxcPDm: 3
+        flags: {}
+        _stats:
+          systemId: ludiverse
+          systemVersion: '#{VERSION}#'
+          coreVersion: '12.343'
+          createdTime: 1701895642007
+          modifiedTime: 1701895683446
+          lastModifiedBy: FkVQv7LbhjjxcPDm
+          compendiumSource: null
+          duplicateSource: null
+      - sort: 700000
+        name: TÉLÉKINÉSIE
+        type: text
+        _id: LKttkextu1NJTg0V
+        title:
+          show: true
+          level: 1
+        image: {}
+        text:
+          format: 1
+          content: >-
+            <p><strong>Dès le premier scénario.</strong><br />Pendant 6 passes
+            d’armes, le mage-intercesseur peut manier des objets à distance,
+            jusqu’à 6 m. Il les manipule comme s’il faisait normalement, y
+            compris avec des tests, par exemple s’il frappe quelqu’un avec une
+            arme.</p>
+        video:
+          controls: true
+          volume: 0.5
+        src: null
+        system: {}
+        ownership:
+          default: -1
+          FkVQv7LbhjjxcPDm: 3
+        flags: {}
+        _stats:
+          systemId: ludiverse
+          systemVersion: '#{VERSION}#'
+          coreVersion: '12.343'
+          createdTime: 1701895659090
+          modifiedTime: 1701895676864
+          lastModifiedBy: FkVQv7LbhjjxcPDm
+          compendiumSource: null
+          duplicateSource: null
+      - sort: 800000
+        name: GANGUE DE PARALYSIE
+        type: text
+        _id: e1tB6kJwYS1U6Xou
+        title:
+          show: true
+          level: 1
+        image: {}
+        text:
+          format: 1
+          content: >-
+            <p><span style="font-family:Signika, sans-serif"><strong
+            style="box-sizing:border-box;user-select:text">À partir du 2e
+            scénario.</strong></span></p><p>Le mage intercesseur désigne jusqu’à
+            6 êtres vivants qu’il voit. Une gangue invisible les enserre et gêne
+            leurs mouvements pendant les 6 prochaines passes d’armes. Leurs
+            adversaires obtiennent un + 1 lors des duels physiques.</p>
+        video:
+          controls: true
+          volume: 0.5
+        src: null
+        system: {}
+        ownership:
+          default: -1
+          FkVQv7LbhjjxcPDm: 3
+        flags: {}
+        _stats:
+          systemId: ludiverse
+          systemVersion: '#{VERSION}#'
+          coreVersion: '12.343'
+          createdTime: 1701895692714
+          modifiedTime: 1701895705002
+          lastModifiedBy: FkVQv7LbhjjxcPDm
+          compendiumSource: null
+          duplicateSource: null
+      - sort: 900000
+        name: CHOC
+        type: text
+        _id: 24bkor7dWn38Mtvv
+        title:
+          show: true
+          level: 1
+        image: {}
+        text:
+          format: 1
+          content: >-
+            <p><span style="font-family:Signika, sans-serif"><strong
+            style="box-sizing:border-box;user-select:text">À partir du 2e
+            scénario.</strong></span></p><p>Le mage intercesseur inflige un choc
+            à un être vivant ou un objet qui se trouve au plus à 60 m de lui.
+            Cet être vivant ou objet est repoussé de 6 m. Un être vivant chute.
+            Un objet fragile, comme en verre ou en terre, se brise.</p>
+        video:
+          controls: true
+          volume: 0.5
+        src: null
+        system: {}
+        ownership:
+          default: -1
+          FkVQv7LbhjjxcPDm: 3
+        flags: {}
+        _stats:
+          systemId: ludiverse
+          systemVersion: '#{VERSION}#'
+          coreVersion: '12.343'
+          createdTime: 1701895708754
+          modifiedTime: 1701895753445
+          lastModifiedBy: FkVQv7LbhjjxcPDm
+          compendiumSource: null
+          duplicateSource: null
+      - sort: 1000000
+        name: MAÎTRE INTERCESSEUR
+        type: text
+        _id: U3kmpUavQorohzBT
+        title:
+          show: true
+          level: 1
+        image: {}
+        text:
+          format: 1
+          content: >-
+            <p><span style="font-family:Signika, sans-serif"><strong
+            style="box-sizing:border-box;user-select:text">À partir du 3e
+            scénario.</strong></span></p><p><em>Maître intercesseur est une
+            aptitude et non un sortilège. L’utiliser ne coûte aucun point de
+            souffle.</em></p><p>Au cours d’un scénario, le maître intercesseur
+            peut utiliser 1 fois un sortilège sans dépenser de PS. (Si vous
+            décidez de poursuivre les aventures des personnages au-delà des
+            scénarios des pages suivantes, augmentez de 1 le nombre
+            d’utilisations possibles de Maître intercesseur : 2 au début du 4e
+            scénario, 3 au début du 5e scénario, etc.)</p>
+        video:
+          controls: true
+          volume: 0.5
+        src: null
+        system: {}
+        ownership:
+          default: -1
+          FkVQv7LbhjjxcPDm: 3
+        flags: {}
+        _stats:
+          systemId: ludiverse
+          systemVersion: '#{VERSION}#'
+          coreVersion: '12.343'
+          createdTime: 1701895734704
+          modifiedTime: 1701895751398
+          lastModifiedBy: FkVQv7LbhjjxcPDm
+          compendiumSource: null
+          duplicateSource: null
+    folder: goBroJyDKB7k6ysl
+    flags:
+      core:
+        sourceId: Compendium.ludiverse.sortileges.JournalEntry.aR3NbEIALbGwpwNm
+    _stats:
+      systemId: ludiverse
+      systemVersion: '#{VERSION}#'
+      coreVersion: '12.343'
+      createdTime: 1701888978865
+      modifiedTime: 1702232857126
+      lastModifiedBy: vvswVEtuFf5xh96N
+      compendiumSource: Compendium.ludiverse.sortileges.JournalEntry.aR3NbEIALbGwpwNm
+      duplicateSource: null
+    ownership:
+      default: 0
+      Bj5GCzwwDSzlU8D5: 3
+      vvswVEtuFf5xh96N: 3
+    _id: GoaAZRv1mw8B4j2r
+    sort: 0
+  - name: Steampunk Belle Epoque - Svetlana
+    pages:
+      - sort: 400000
+        name: MAIN DE FOUDRE
+        type: text
+        _id: iUyaY19Kp2bM51va
+        title:
+          show: true
+          level: 1
+        image: {}
+        text:
+          format: 1
+          content: >-
+            <p><strong>Dès le premier scénario.</strong></p><p>Des arcs
+            électriques jaillissent de la main de la magicienne et frappent
+            jusqu’à quatre êtres vivants distants d’au plus quatre mètres
+            d’elle. Chacun subit 1 point de dégâts (il est ensuite immunisé à
+            Paume de foudre).</p>
+        video:
+          controls: true
+          volume: 0.5
+        src: null
+        system: {}
+        ownership:
+          default: -1
+          FkVQv7LbhjjxcPDm: 3
+        flags: {}
+        _stats:
+          systemId: ludiverse
+          systemVersion: '#{VERSION}#'
+          coreVersion: '12.343'
+          createdTime: 1701895834859
+          modifiedTime: 1701895906930
+          lastModifiedBy: FkVQv7LbhjjxcPDm
+          compendiumSource: null
+          duplicateSource: null
+      - sort: 500000
+        name: BABIL DE BABEL
+        type: text
+        _id: IXDnO9KLJgUTCYcX
+        title:
+          show: true
+          level: 1
+        image: {}
+        text:
+          format: 1
+          content: >-
+            <p><span style="font-family:Signika, sans-serif"><strong
+            style="box-sizing:border-box;user-select:text">Dès le premier
+            scénario.</strong></span></p><p>La magicienne envoûte de un à quatre
+            êtres pensants qu’elle voit. Pendant quatre heures, quand l’un d’eux
+            parle ou écrit, aucun de ses interlocuteurs ne comprend la langue
+            qu’il baragouine. En outre, lui-même est incapable de comprendre ce
+            qu’il entend ou lit.</p>
+        video:
+          controls: true
+          volume: 0.5
+        src: null
+        system: {}
+        ownership:
+          default: -1
+          FkVQv7LbhjjxcPDm: 3
+        flags: {}
+        _stats:
+          systemId: ludiverse
+          systemVersion: '#{VERSION}#'
+          coreVersion: '12.343'
+          createdTime: 1701895841312
+          modifiedTime: 1701895874177
+          lastModifiedBy: FkVQv7LbhjjxcPDm
+          compendiumSource: null
+          duplicateSource: null
+      - sort: 600000
+        name: ALCHIMÉDECINE
+        type: text
+        _id: aQCDu6txwEZre5HN
+        title:
+          show: true
+          level: 1
+        image: {}
+        text:
+          format: 1
+          content: >-
+            <p><strong>Dès le premier scénario.</strong></p><p><span
+            style="font-family:Signika, sans-serif">La magicienne enchante des
+            préparations d’herbes médicinales, qui se transforment en potions de
+            soins. Elle crée ainsi quatre potions, à répartir entre potions de
+            vie et potions de souffle (voir équipement). Ce sortilège ne peut
+            être effectué qu’une seule fois par scénario.</span></p>
+        video:
+          controls: true
+          volume: 0.5
+        src: null
+        system: {}
+        ownership:
+          default: -1
+          FkVQv7LbhjjxcPDm: 3
+        flags: {}
+        _stats:
+          systemId: ludiverse
+          systemVersion: '#{VERSION}#'
+          coreVersion: '12.343'
+          createdTime: 1701895846566
+          modifiedTime: 1701896046696
+          lastModifiedBy: FkVQv7LbhjjxcPDm
+          compendiumSource: null
+          duplicateSource: null
+      - sort: 700000
+        name: MÉANDRES DE L’OUBLI
+        type: text
+        _id: Wg8J45uoE4DTDtBu
+        title:
+          show: true
+          level: 1
+        image: {}
+        text:
+          format: 1
+          content: >-
+            <p><strong>À partir du 2e scénario.</strong></p><p>Un être vivant
+            dont la magicienne touche la tête perd tout souvenir des quatre
+            dernières heures.</p>
+        video:
+          controls: true
+          volume: 0.5
+        src: null
+        system: {}
+        ownership:
+          default: -1
+          FkVQv7LbhjjxcPDm: 3
+        flags: {}
+        _stats:
+          systemId: ludiverse
+          systemVersion: '#{VERSION}#'
+          coreVersion: '12.343'
+          createdTime: 1701895916626
+          modifiedTime: 1701896067941
+          lastModifiedBy: FkVQv7LbhjjxcPDm
+          compendiumSource: null
+          duplicateSource: null
+      - sort: 800000
+        name: DOPPLEGANGER
+        type: text
+        _id: G0FDEkFeaDhd1uFM
+        title:
+          show: true
+          level: 1
+        image: {}
+        text:
+          format: 1
+          content: >-
+            <p><strong>À partir du 2e scénario.</strong></p><p>La magicienne
+            prend l’apparence d’un individu qu’elle a déjà touché. L’illusion
+            prend fin après quatre heures, ou dès que la magicienne est touchée
+            par un être vivant d’une taille supérieure ou égale à une
+            souris.</p>
+        video:
+          controls: true
+          volume: 0.5
+        src: null
+        system: {}
+        ownership:
+          default: -1
+          FkVQv7LbhjjxcPDm: 3
+        flags: {}
+        _stats:
+          systemId: ludiverse
+          systemVersion: '#{VERSION}#'
+          coreVersion: '12.343'
+          createdTime: 1701895923755
+          modifiedTime: 1701896017775
+          lastModifiedBy: FkVQv7LbhjjxcPDm
+          compendiumSource: null
+          duplicateSource: null
+      - sort: 900000
+        name: MAÎTRESSE MAGICIENNE
+        type: text
+        _id: KBnZzpjTCutpw6HE
+        title:
+          show: true
+          level: 1
+        image: {}
+        text:
+          format: 1
+          content: >-
+            <p><strong>À partir du 3e scénario.</strong></p><p><em>Maîtresse
+            magicienne est une aptitude et non un sortilège.</em>
+            </p><p>L’utiliser ne coûte aucun point de souffle.  Au cours d’un
+            scénario, la magicienne peut utiliser une fois un sortilège sans
+            dépenser de PS. </p><p>(Si vous décidez de poursuivre les aventures
+            des personnages au-delà des scénarios des pages suivantes, augmentez
+            de 1 le nombre d’utilisations possibles de Maîtresse magicienne : 2
+            au début du quatrième scénario, 3 au début du cinquième scénario,
+            etc.)</p>
+        video:
+          controls: true
+          volume: 0.5
+        src: null
+        system: {}
+        ownership:
+          default: -1
+          FkVQv7LbhjjxcPDm: 3
+        flags: {}
+        _stats:
+          systemId: ludiverse
+          systemVersion: '#{VERSION}#'
+          coreVersion: '12.343'
+          createdTime: 1701896085924
+          modifiedTime: 1701896136138
+          lastModifiedBy: FkVQv7LbhjjxcPDm
+          compendiumSource: null
+          duplicateSource: null
+    folder: goBroJyDKB7k6ysl
+    flags:
+      core:
+        sourceId: Compendium.ludiverse.sortileges.JournalEntry.nKqeyYDZCLiys4O8
+    _stats:
+      systemId: ludiverse
+      systemVersion: '#{VERSION}#'
+      coreVersion: '12.343'
+      createdTime: 1701888978865
+      modifiedTime: 1702241751741
+      lastModifiedBy: vvswVEtuFf5xh96N
+      compendiumSource: Compendium.ludiverse.sortileges.JournalEntry.nKqeyYDZCLiys4O8
+      duplicateSource: null
+    ownership:
+      default: 0
+      Bj5GCzwwDSzlU8D5: 3
+      vvswVEtuFf5xh96N: 3
+    _id: N2OVCTRaBQxn42cJ
+    sort: 0
+  - name: Science-fiction - Shirin Tajik
+    pages:
+      - sort: 300000
+        name: FACE D'EFFROI
+        type: text
+        _id: uG5oRT62Ox5AqvKO
+        title:
+          show: true
+          level: 1
+        image: {}
+        text:
+          format: 1
+          content: >-
+            <p><span style="font-family:Signika, sans-serif"><strong
+            style="box-sizing:border-box;user-select:text">Dès le premier
+            scénario.</strong></span></p><p>La mystique cible un à cinq êtres
+            pensants qui la voient. Elle leur fait voir fugitivement des
+            attributs monstrueux sur son propre visage. Le choc est tel que
+            leurs adversaires obtiennent un +1 lors des duels contre eux pendant
+            les cinq prochaines passes d’armes.</p>
+        video:
+          controls: true
+          volume: 0.5
+        src: null
+        system: {}
+        ownership:
+          default: -1
+          FkVQv7LbhjjxcPDm: 3
+        flags: {}
+        _stats:
+          systemId: ludiverse
+          systemVersion: '#{VERSION}#'
+          coreVersion: '12.343'
+          createdTime: 1701895349644
+          modifiedTime: 1701895484887
+          lastModifiedBy: FkVQv7LbhjjxcPDm
+          compendiumSource: null
+          duplicateSource: null
+      - sort: 400000
+        name: MANTEAU D’ABSENCE
+        type: text
+        _id: uzg8Z51dUjtijADe
+        title:
+          show: true
+          level: 1
+        image: {}
+        text:
+          format: 1
+          content: >-
+            <p><span style="font-family:Signika, sans-serif"><strong
+            style="box-sizing:border-box;user-select:text">Dès le premier
+            scénario.</strong></span></p><p>La mystique devient invisible
+            pendant une quinzaine de secondes (cinq passes d’armes). Elle
+            réapparait avant ce terme si elle fait un mouvement brusque ou si
+            quelqu’un la touche. Si elle attaque quelqu’un alors qu’elle est
+            invisible, elle réapparait, mais elle le surprend.</p>
+        video:
+          controls: true
+          volume: 0.5
+        src: null
+        system: {}
+        ownership:
+          default: -1
+          FkVQv7LbhjjxcPDm: 3
+        flags: {}
+        _stats:
+          systemId: ludiverse
+          systemVersion: '#{VERSION}#'
+          coreVersion: '12.343'
+          createdTime: 1701895374508
+          modifiedTime: 1701895492250
+          lastModifiedBy: FkVQv7LbhjjxcPDm
+          compendiumSource: null
+          duplicateSource: null
+      - sort: 500000
+        name: OEIL ÉGARÉ
+        type: text
+        _id: ECcGDzuXKA9bkvhn
+        title:
+          show: true
+          level: 1
+        image: {}
+        text:
+          format: 1
+          content: >-
+            <p><strong>Dès le premier scénario.</strong><br />La mystique cible
+            un à cinq êtres pensants distants d’au plus cinq mètres d’elle. Elle
+            trompe leur vue en leur montrant, dans sa main, l’image d’un objet
+            qu’elle a déjà vu (et qui peut être tenu avec une main). L’illusion
+            cesse si quelqu’un touche cet « objet » ou si la mystique cesse de
+            le « tenir ».</p>
+        video:
+          controls: true
+          volume: 0.5
+        src: null
+        system: {}
+        ownership:
+          default: -1
+          FkVQv7LbhjjxcPDm: 3
+        flags: {}
+        _stats:
+          systemId: ludiverse
+          systemVersion: '#{VERSION}#'
+          coreVersion: '12.343'
+          createdTime: 1701895386439
+          modifiedTime: 1701895509971
+          lastModifiedBy: FkVQv7LbhjjxcPDm
+          compendiumSource: null
+          duplicateSource: null
+      - sort: 600000
+        name: HORDE IMAGINAIRE
+        type: text
+        _id: iWfxEimyhxjmC62r
+        title:
+          show: true
+          level: 1
+        image: {}
+        text:
+          format: 1
+          content: >-
+            <p><span style="font-family:Signika, sans-serif"><strong
+            style="box-sizing:border-box;user-select:text">À partir du 2e
+            scénario.</strong></span></p><p>La mystique cible un à cinq êtres
+            pensants distants d’au plus cinq mètres d’elle. Elle leur fait
+            croire que des petits animaux comme des oiseaux et des rongeurs les
+            attaquent. Chacun subit 1 point de dégâts avant de comprendre qu’il
+            a été dupé (il est ensuite immunisé à Horde imaginaire).</p>
+          markdown: ''
+        video:
+          controls: true
+          volume: 0.5
+        src: null
+        system: {}
+        ownership:
+          default: -1
+          FkVQv7LbhjjxcPDm: 3
+        flags: {}
+        _stats:
+          systemId: ludiverse
+          systemVersion: '#{VERSION}#'
+          coreVersion: '12.343'
+          createdTime: 1701895400886
+          modifiedTime: 1701895519358
+          lastModifiedBy: FkVQv7LbhjjxcPDm
+          compendiumSource: null
+          duplicateSource: null
+      - sort: 700000
+        name: ESPRIT ÉGARÉ
+        type: text
+        _id: n9BYMbFkVX7T4nQA
+        title:
+          show: true
+          level: 1
+        image: {}
+        text:
+          format: 1
+          content: >-
+            <p><span style="font-family:Signika, sans-serif"><strong
+            style="box-sizing:border-box;user-select:text">À partir du 2e
+            scénario.</strong></span></p><p>La mystique cible un être pensant
+            distant d’au plus cinq mètres d’elle. Elle trompe sa vue et son
+            toucher en lui montrant, dans sa main, l’image d’un objet qu’elle a
+            déjà vu (et qui peut être tenu avec une main). L’illusion cesse
+            après une quinzaine de secondes (cinq passes d’armes) si la mystique
+            cesse de « tenir » l’objet. Pendant ce laps de temps, si la cible
+            prend l’objet, elle croit qu’il est réel.</p>
+        video:
+          controls: true
+          volume: 0.5
+        src: null
+        system: {}
+        ownership:
+          default: -1
+          FkVQv7LbhjjxcPDm: 3
+        flags: {}
+        _stats:
+          systemId: ludiverse
+          systemVersion: '#{VERSION}#'
+          coreVersion: '12.343'
+          createdTime: 1701895421130
+          modifiedTime: 1701895532007
+          lastModifiedBy: FkVQv7LbhjjxcPDm
+          compendiumSource: null
+          duplicateSource: null
+      - sort: 800000
+        name: SOEUR DU CRISTAL
+        type: text
+        _id: IVVhxF1HwVBOB8a9
+        title:
+          show: true
+          level: 1
+        image: {}
+        text:
+          format: 1
+          content: >-
+            <p><span style="font-family:Signika, sans-serif"><strong
+            style="box-sizing:border-box;user-select:text">À partir du 3e
+            scénario.</strong></span></p><p><em>Soeur du cristal est une
+            aptitude et non un sortilège.</em></p><p><em>L’utiliser ne coûte
+            aucun point de souffle.</em></p><p>Au cours d’un scénario, la
+            mystique peut utiliser une fois un sortilège sans dépenser de PS.
+            (Si vous décidez de poursuivre les aventures des personnages au-delà
+            des scénarios des pages suivantes, augmentez de 1 le nombre
+            d’utilisations possibles de Soeur de cristal : 2 au début du
+            quatrième scénario, 3 au début du cinquième scénario, etc.)</p>
+        video:
+          controls: true
+          volume: 0.5
+        src: null
+        system: {}
+        ownership:
+          default: -1
+          FkVQv7LbhjjxcPDm: 3
+        flags: {}
+        _stats:
+          systemId: ludiverse
+          systemVersion: '#{VERSION}#'
+          coreVersion: '12.343'
+          createdTime: 1701895441120
+          modifiedTime: 1701895547708
+          lastModifiedBy: FkVQv7LbhjjxcPDm
+          compendiumSource: null
+          duplicateSource: null
+    folder: goBroJyDKB7k6ysl
+    flags:
+      core:
+        sourceId: Compendium.ludiverse.sortileges.JournalEntry.uWjI4Baw5VLSJ5wu
+    _stats:
+      systemId: ludiverse
+      systemVersion: '#{VERSION}#'
+      coreVersion: '12.343'
+      createdTime: 1701888978865
+      modifiedTime: 1702241762865
+      lastModifiedBy: vvswVEtuFf5xh96N
+      compendiumSource: Compendium.ludiverse.sortileges.JournalEntry.uWjI4Baw5VLSJ5wu
+      duplicateSource: null
+    ownership:
+      default: 0
+      Bj5GCzwwDSzlU8D5: 3
+      vvswVEtuFf5xh96N: 3
+    _id: QPgsquSMvVHdN479
+    sort: 0
+scenes: []
+tables: []
+macros: []
+cards: []
+playlists: []
+folders:
+  - name: Personnages pour Ludiverse
+    type: Actor
+    color: null
+    folder: null
+    _id: gLlIbo9I7OceXBs8
+    sorting: a
+    sort: 0
+    flags:
+      core:
+        sourceId: Folder.gLlIbo9I7OceXBs8
+    _stats:
+      systemId: ludiverse
+      systemVersion: '#{VERSION}#'
+      coreVersion: '12.343'
+      createdTime: 1702026734119
+      modifiedTime: 1702232857149
+      lastModifiedBy: vvswVEtuFf5xh96N
+      compendiumSource: null
+      duplicateSource: null
+    description: ''
+  - name: Steampunk Belle Epoque
+    sorting: a
+    folder: gLlIbo9I7OceXBs8
+    type: Actor
+    _id: RpM3JEFvrHhaVhdb
+    sort: 0
+    color: null
+    flags: {}
+    _stats:
+      systemId: ludiverse
+      systemVersion: '#{VERSION}#'
+      coreVersion: '12.343'
+      createdTime: 1701777972272
+      modifiedTime: 1702241660846
+      lastModifiedBy: vvswVEtuFf5xh96N
+      compendiumSource: null
+      duplicateSource: null
+    description: ''
+  - name: Science-fiction
+    sorting: a
+    folder: gLlIbo9I7OceXBs8
+    type: Actor
+    _id: hZN9xlCW5spFqkp3
+    sort: 0
+    color: null
+    flags:
+      core:
+        sourceId: Folder.hZN9xlCW5spFqkp3
+    _stats:
+      systemId: ludiverse
+      systemVersion: '#{VERSION}#'
+      coreVersion: '12.343'
+      createdTime: 1701777960586
+      modifiedTime: 1702241652651
+      lastModifiedBy: vvswVEtuFf5xh96N
+      compendiumSource: null
+      duplicateSource: null
+    description: ''
+  - name: Renaissance fantastique
+    sorting: a
+    folder: gLlIbo9I7OceXBs8
+    type: Actor
+    _id: qFFkGqch9LfmwSEV
+    sort: 0
+    color: null
+    flags:
+      core:
+        sourceId: Folder.qFFkGqch9LfmwSEV
+    _stats:
+      systemId: ludiverse
+      systemVersion: '#{VERSION}#'
+      coreVersion: '12.343'
+      createdTime: 1701778003536
+      modifiedTime: 1702026734150
+      lastModifiedBy: Bj5GCzwwDSzlU8D5
+      compendiumSource: null
+      duplicateSource: null
+    description: ''
+  - name: Sortilèges pour Ludiverse
+    type: JournalEntry
+    color: null
+    folder: null
+    _id: goBroJyDKB7k6ysl
+    sorting: a
+    sort: 0
+    flags:
+      core:
+        sourceId: Folder.goBroJyDKB7k6ysl
+    _stats:
+      systemId: ludiverse
+      systemVersion: '#{VERSION}#'
+      coreVersion: '12.343'
+      createdTime: 1702026756237
+      modifiedTime: 1702232857149
+      lastModifiedBy: vvswVEtuFf5xh96N
+      compendiumSource: null
+      duplicateSource: null
+    description: ''
+_id: hZji0coGg57VXy1N
+folder: null
+flags: {}
+_stats:
+  systemId: ludiverse
+  systemVersion: '#{VERSION}#'
+  coreVersion: '12.343'
+  createdTime: 1702027392646
+  modifiedTime: 1702241785641
+  lastModifiedBy: vvswVEtuFf5xh96N
+  compendiumSource: null
+  duplicateSource: null
+_key: '!adventures!hZji0coGg57VXy1N'

@@ -1,3 +1,6 @@
+1.1.1
+- Release technique : ajout de src/
+
 1.1.0
 - Compatibilité V12
 
