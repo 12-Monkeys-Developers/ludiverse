@@ -5,13 +5,13 @@
       <div class="comp-block">
         <div class="comp-titre">Choisir une composante :</div>
         <div class="comp-elem">
-          <img src="/systems/ludiverse/assets/corps.png" title="Corps" />
+          <img src="/systems/ludiverse/assets/corps.png" data-tooltip="Corps" />
         </div>
         <div class="comp-elem">
-          <img src="/systems/ludiverse/assets/coeur.png" title="Coeur" />
+          <img src="/systems/ludiverse/assets/coeur.png" data-tooltip="Coeur" />
         </div>
         <div class="comp-elem">
-          <img src="/systems/ludiverse/assets/esprit.png" title="Esprit" />
+          <img src="/systems/ludiverse/assets/esprit.png" data-tooltip="Esprit" />
         </div>
         <div class="choix">
           <label class="labelchk">{{radioBoxes groupName_comp choices_composante checked=composante localize=true}}</label>
@@ -20,13 +20,13 @@
       <div class="comp-block">
         <div class="comp-titre">Choisir un moyen :</div>
         <div class="comp-elem">
-          <img src="/systems/ludiverse/assets/action.png" title="Action" />
+          <img src="/systems/ludiverse/assets/action.png" data-tooltip="Action" />
         </div>
         <div class="comp-elem">
-          <img src="/systems/ludiverse/assets/perception.png" title="Perception" />
+          <img src="/systems/ludiverse/assets/perception.png" data-tooltip="Perception" />
         </div>
         <div class="comp-elem">
-          <img src="/systems/ludiverse/assets/resistance.png" title="Résistance" />
+          <img src="/systems/ludiverse/assets/resistance.png" data-tooltip="Résistance" />
         </div>
         <div class="choix">
           <label class="labelchk">{{radioBoxes groupName_moyen choices_moyen checked=moyen localize=true}}</label>
@@ -70,7 +70,7 @@
     <div class="difficulte">
       <label>Difficulté (optionnelle)</label>
       <select name="difficulte">
-        {{selectOptions difficultes selected=difficulte nameAttr="id" labelAttr="label" blank=""}}
+        {{selectOptions difficultes selected=difficulte valueAttr="id" labelAttr="label" blank=""}}
       </select>
     </div>
     <button type="button" class="dialog-button" data-button="ok">

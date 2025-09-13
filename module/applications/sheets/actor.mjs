@@ -16,7 +16,11 @@ export default class LudiverseActorSheet extends ActorSheet {
     context.editable = true;
     context.actor = this.document;
     context.system = this.document.system;
+    context.unlocked = this.actor.isUnlocked;
+    context.locked = !this.actor.isUnlocked;
+    context.descriptionHTML = await TextEditor.enrichHTML(this.document.system.description);
 
+    console.log("Ludiverse | ActorSheet context", context);
     return context;
   }
 

@@ -3,7 +3,7 @@
   <div class="intro">
     {{#if (ne data.actingCharImg "icons/svg/mystery-man.svg")}}
       <div class="introImg">
-        <img src="{{data.actingCharImg}}" title="{{data.actingCharName}}" />
+        <img src="{{data.actingCharImg}}" data-tooltip="{{data.actingCharName}}" />
       </div>
     {{/if}}
     <div class="intro_right">

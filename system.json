@@ -4,8 +4,9 @@
     "description": "Ludiverse",
     "version": "#{VERSION}#",
     "compatibility": {
-      "minimum": "11",
-      "verified": "11"
+      "minimum": "12",
+      "maximum": "12",
+      "verified": "12"
     },
     "authors": [
       {
@@ -56,6 +57,10 @@
     },
     "gridDistance": 1.5,
     "gridUnits": "m",
+    "grid": {
+      "distance": 1.5,
+      "units": "m"
+    },
     "primaryTokenAttribute": "",
     "initiative": "",
     "url": "#{URL}#",

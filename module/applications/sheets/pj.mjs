@@ -24,12 +24,10 @@ export default class PJSheet extends LudiverseActorSheet {
   async getData(options) {
     const context = await super.getData(options);
 
-    context.system = this.document.system;
-    context.descriptionHTML = TextEditor.enrichHTML(this.actor.system.description, { async: false });
-    context.equipementHTML = TextEditor.enrichHTML(this.actor.system.equipement, { async: false });
-    context.capacites1HTML = TextEditor.enrichHTML(this.actor.system.capacites.capacite1.description, { async: false });
-    context.capacites2HTML = TextEditor.enrichHTML(this.actor.system.capacites.capacite2.description, { async: false });
-    context.capacites3HTML = TextEditor.enrichHTML(this.actor.system.capacites.capacite3.description, { async: false });
+    context.equipementHTML = await TextEditor.enrichHTML(this.actor.system.equipement);
+    context.capacites1HTML = await TextEditor.enrichHTML(this.actor.system.capacites.capacite1.description);
+    context.capacites2HTML = await TextEditor.enrichHTML(this.actor.system.capacites.capacite2.description);
+    context.capacites3HTML = await TextEditor.enrichHTML(this.actor.system.capacites.capacite3.description);
     context.unlocked = this.actor.isUnlocked;
     context.locked = !this.actor.isUnlocked;
 

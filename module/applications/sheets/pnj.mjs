@@ -4,7 +4,7 @@ import LudiverseActorSheet from "./actor.mjs";
  * Represents a character sheet for a non player character (PNJ).
  * Extends the LudiverseActorSheet class.
  */
-export default class PJSheet extends LudiverseActorSheet {
+export default class PNJSheet extends LudiverseActorSheet {
   /** @inheritdoc */
   static get defaultOptions() {
     const options = super.defaultOptions;
@@ -18,18 +18,6 @@ export default class PJSheet extends LudiverseActorSheet {
    * @type {string}
    */
   static actorType = "pnj";
-
-  /** @override */
-  async getData(options) {
-    const context = await super.getData(options);
-
-    context.system = this.document.system;
-    context.descriptionHTML = TextEditor.enrichHTML(this.actor.system.description, { async: false });
-    context.unlocked = this.actor.isUnlocked;
-    context.locked = !this.actor.isUnlocked;
-
-    return context;
-  }
 
   /**
    * Activates event listeners for the sheet's HTML elements.

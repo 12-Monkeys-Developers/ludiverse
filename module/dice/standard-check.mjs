@@ -208,8 +208,8 @@ export default class StandardCheck extends Roll {
     return super.toMessage(messageData, options);
   }
   /** @override */
-  async evaluate({ minimize = false, maximize = false, async = true } = {}) {
-    await super.evaluate({ minimize, maximize, async });
+  async evaluate({minimize=false, maximize=false, allowStrings=false, allowInteractive=true, ...options}={}) {
+    await super.evaluate({minimize, maximize, allowStrings, allowInteractive, ...options});
     if (this._total === 2) this.data.reussiteCritique = true;
     else if (this.data.metierOuTalent && this._total === 3) this.data.reussiteCritique = true;
     else if (this._total === 12) this.data.echecCritique = true;
