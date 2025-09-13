@@ -40,23 +40,6 @@
         "path": "lang/fr.json"
       }
     ],
-    "flags": {
-      "hotReload": {
-        "extensions": [
-          "css",
-          "hbs",
-          "json"
-        ],
-        "paths": [
-          "lang/",
-          "assets/",
-          "templates/",
-          "css/"
-        ]
-      }
-    },
-    "gridDistance": 1.5,
-    "gridUnits": "m",
     "grid": {
       "distance": 1.5,
       "units": "m"

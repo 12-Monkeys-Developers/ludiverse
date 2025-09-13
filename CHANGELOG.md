@@ -1,3 +1,6 @@
+1.1.0
+- Compatibilité V12
+
 1.0.3
 - Release technique pour ajouter le compteur de mondes
 
