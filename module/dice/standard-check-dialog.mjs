@@ -5,6 +5,10 @@ import { SYSTEM } from "../config/system.mjs";
  * @extends {Dialog}
  */
 export default class ActionDialog extends Dialog {
+    // TODO : A supprimer avant la V16 lors de la conversion vers appV2
+  static _warnedAppV1 = true
+  
+
   /**
    * A StandardCheck dice instance which organizes the data for this dialog
    * @type {StandardCheck}
@@ -56,7 +60,7 @@ export default class ActionDialog extends Dialog {
    */
   _onSubmit(html) {
     const form = html.querySelector("form");
-    const fd = new FormDataExtended(form);
+    const fd = new foundry.applications.ux.FormDataExtended(form);
 
     this.roll.initialize(fd.object);
     return this.roll;

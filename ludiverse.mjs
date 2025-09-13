@@ -17,9 +17,9 @@ Hooks.once("init", async function () {
     pj: models.LudiversePJ,
     pnj: models.LudiversePNJ,
   };
-  Actors.unregisterSheet("core", ActorSheet);
-  Actors.registerSheet(SYSTEM.id, applications.PJSheet, { types: ["pj"], makeDefault: true });
-  Actors.registerSheet(SYSTEM.id, applications.PNJSheet, { types: ["pnj"], makeDefault: true });
+  foundry.documents.collections.Actors.unregisterSheet("core", foundry.appv1.sheets.ActorSheet);
+  foundry.documents.collections.Actors.registerSheet(SYSTEM.id, applications.PJSheet, { types: ["pj"], makeDefault: true });
+  foundry.documents.collections.Actors.registerSheet(SYSTEM.id, applications.PNJSheet, { types: ["pnj"], makeDefault: true });
 
   // Dice system configuration
   CONFIG.Dice.rolls.push(dice.StandardCheck);

@@ -79,15 +79,14 @@
   clip-path: polygon(25% 0, 75% 0, 100% 25%, 100% 75%, 75% 100%, 25% 100%, 0 75%, 0 25%);
   padding: 5px;
   margin-bottom: 8px;
-  box-shadow:0px 0px 0.2rem rgba(0, 0, 0, 0.425) inset,0px 0px 0.2rem rgba(255, 255, 255, 0.425) ;
-  background-color: rgba(255, 255, 255, 0.342),;
+  box-shadow: 0px 0px 0.2rem rgba(0, 0, 0, 0.425) inset, 0px 0px 0.2rem rgba(255, 255, 255, 0.425);
+  background-color: rgba(255, 255, 255, 0.342);
   text-align: center;
   font-size: x-large;
-  transition:0.4s;
+  transition: 0.4s;
   &:active,
-  &:focus{
-      box-shadow:0px 0px 0.8rem rgb(255, 255, 255) inset;
-
+  &:focus {
+    box-shadow: 0px 0px 0.8rem rgb(255, 255, 255) inset;
   }
 }
 
@@ -107,37 +106,32 @@
 /** Fin Mixins **/
 
 .ludiverse.sheet.actor.pj {
-
-    
-       input[type="text"], 
-      input[type="number"], 
-      input[type="password"], 
-      input[type="date"], 
-      input[type="time"], 
-      input[type="search"] {
-        transition:0.3s;
-        border-top:1px solid rgba(128, 128, 128, 0.267);
-        border-bottom:1px solid rgba(128, 128, 128, 0.267);
-        border-left:1px solid transparent;
-        border-right:1px solid transparent;
-        border-radius: 0;
-        &:focus,
-        &:active{
-          box-shadow: 0px 0px 10px gray;
-           border-left:1px solid rgba(128, 128, 128, 0.267);
-        border-right:1px solid rgba(128, 128, 128, 0.267);
-        border-radius: 0.3rem;
-          
-        }
-      }
-  .window-content{
-    background: var(--background_pj) ;
+  input[type="text"],
+  input[type="number"],
+  input[type="password"],
+  input[type="date"],
+  input[type="time"],
+  input[type="search"] {
+    transition: 0.3s;
+    border-top: 1px solid rgba(128, 128, 128, 0.267);
+    border-bottom: 1px solid rgba(128, 128, 128, 0.267);
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
+    border-radius: 0;
+    &:focus,
+    &:active {
+      box-shadow: 0px 0px 10px gray;
+      border-left: 1px solid rgba(128, 128, 128, 0.267);
+      border-right: 1px solid rgba(128, 128, 128, 0.267);
+      border-radius: 0.3rem;
+    }
+  }
+  .window-content {
+    background: var(--background_pj);
     background-size: cover;
     font-size: 0.8rem;
-      line-height: 0.7rem;
-      font-size:0.8em;
-           
-
+    line-height: 0.7rem;
+    font-size: 0.8em;
   }
   .editor {
     width: 100%;
@@ -151,23 +145,22 @@
     padding-left: 5px;
     padding-right: 5px;
     font-size: 0.8rem;
-    
   }
   .editor-content {
     min-height: 3em;
     margin: 0px 5px 0px 5px;
-     }
-    .editor-container{
-      min-height: 5rem;
-    }
+  }
+  .editor-container {
+    min-height: 5rem;
+  }
   .pj-sheet {
     display: grid;
     gap: 5px;
     color: var(--font-pj-color);
   }
   .pj-header {
-    >*{
-      box-shadow:0px 0px 35px rgba(128, 128, 128, 0.37);
+    > * {
+      box-shadow: 0px 0px 35px rgba(128, 128, 128, 0.37);
       padding: 0.3rem;
     }
     display: grid;
@@ -175,14 +168,14 @@
     grid-template-columns: 1.8fr 1fr 1fr;
     grid-template-rows: 1fr 2fr 2fr;
     .charname {
-      grid-row: 1 / 2;
-      grid-column: 1 / span 3;
+      grid-row: ~"1 / 2";
+      grid-column: ~"1 / span 3";
       display: flex;
-      input[type="text"], 
-      input[type="number"], 
-      input[type="password"], 
-      input[type="date"], 
-      input[type="time"], 
+      input[type="text"],
+      input[type="number"],
+      input[type="password"],
+      input[type="date"],
+      input[type="time"],
       input[type="search"] {
         font: var(--font-pj-name);
         color: var(--font-pj-name-color);
@@ -190,11 +183,10 @@
         border: none;
         height: 100%;
         &:focus,
-        &:active{
+        &:active {
           box-shadow: none;
-          border:3px solid;
+          border: 3px solid;
         }
-
       }
       .change-lock {
         width: 50px;
@@ -213,8 +205,8 @@
       }
     }
     .description {
-      grid-row: 2 / span 2;
-      grid-column: 1 / 2;
+      grid-row: ~"2 / span 2";
+      grid-column: ~"1 / 2";
       display: flex;
       flex-direction: column;
     }
@@ -277,24 +269,24 @@
     }
 
     .composantes {
-      grid-row: 2 / 4;
-      grid-column: 2 / 3;
+      grid-row: ~"2 / 4";
+      grid-column: ~"2 / 3";
       display: grid;
       grid-template-rows: 30px 1fr;
       text-align: center;
       font-size: larger;
     }
     .moyens {
-      grid-row: 2 / 4;
-      grid-column: 3 / 4;
+      grid-row: ~"2 / 4";
+      grid-column: ~"3 / 4";
       display: grid;
       grid-template-rows: 30px 1fr;
       text-align: center;
       font-size: larger;
     }
     .metier {
-      grid-row: 3 / 4;
-      grid-column: 2 / 3;
+      grid-row: ~"3 / 4";
+      grid-column: ~"2 / 3";
       input {
         color: var(--font-pj-color);
       }
@@ -321,8 +313,8 @@
       }
     }
     .talents {
-      grid-row: 3 / 4;
-      grid-column: 3 / 4;
+      grid-row: ~"3 / 4";
+      grid-column: ~"3 / 4";
       input {
         color: var(--font-pj-color);
       }
@@ -359,8 +351,8 @@
     }
   }
   .pj-main {
-    >*{
-      box-shadow:0px 0px 35px rgba(128, 128, 128, 0.37);
+    > * {
+      box-shadow: 0px 0px 35px rgba(128, 128, 128, 0.37);
       padding: 0.3rem;
     }
     display: grid;
@@ -369,8 +361,8 @@
     grid-template-rows: 100px 140px;
 
     .points {
-      grid-row: 1 / 2;
-      grid-column: 3 / 5;
+      grid-row: ~"1 / 2";
+      grid-column: ~"3 / 5";
       display: flex;
       flex-direction: column;
 
@@ -383,16 +375,16 @@
         .ligne-vie,
         .ligne-souffle {
           margin-left: 25px;
-          a{
-            display:inline-flex;
+          a {
+            display: inline-flex;
             font-size: 1rem;
             transition: 0.3s;
             &:hover {
-            text-shadow: 0 0 8px rgb(83, 13, 13);   
-            font-size: 1.1rem;
+              text-shadow: 0 0 8px rgb(83, 13, 13);
+              font-size: 1.1rem;
+            }
           }
         }
-          }
 
         label {
           text-transform: uppercase;
@@ -423,26 +415,25 @@
     }
 
     .equipement {
-      grid-row: 1 / 3;
-      grid-column: 1 / 3;
+      grid-row: ~"1 / 3";
+      grid-column: ~"1 / 3";
       .equipement-titre {
         font: var(--font-pj-titre);
         color: var(--font-pj-titre-color);
         margin-bottom: 5px;
       }
-      .equipement-details{
+      .equipement-details {
         min-height: max-content;
         display: flex;
-        .editor{
-         
-          min-height:12rem
+        .editor {
+          min-height: 12rem;
         }
       }
     }
 
     .capacites {
-      grid-row: 3 / 4;
-      grid-column: 1 / 3;
+      grid-row: ~"3 / 4";
+      grid-column: ~"1 / 3";
       .capacites-titre {
         font: var(--font-pj-titre);
         color: var(--font-pj-titre-color);
@@ -479,15 +470,15 @@
     }
 
     .image {
-      grid-row: 2 / 4;
-      grid-column: 3 / 5;
+      grid-row: ~"2 / 4";
+      grid-column: ~"3 / 5";
       justify-content: center; /* Centre horizontalement l'image dans la div */
       align-items: center; /* Centre verticalement l'image dans la div */
       img {
         border: none;
         max-width: 100%; /* Assure que l'image ne dépasse pas la largeur de la div */
         height: auto; /* Garde le ratio de l'image */
-        filter:drop-shadow(10px 0px 25px black)
+        filter: drop-shadow(10px 0px 25px black);
       }
       .regles {
         display: flex;
@@ -535,8 +526,8 @@
     grid-template-columns: 1fr 1fr 2fr;
     color: var(--font-pj-color);
     .charname {
-      grid-row: 1 / 2;
-      grid-column: 1 / 4;
+      grid-row: ~"1 / 2";
+      grid-column: ~"1 / 4";
       display: flex;
       input {
         font: var(--font-pj-name);
@@ -562,12 +553,12 @@
       }
     }
     .description {
-      grid-row: 2 / 4;
-      grid-column: 1 / 3;
+      grid-row: ~"2 / 4";
+      grid-column: ~"1 / 3";
     }
     .difficulte {
-      grid-row: 2 / 3;
-      grid-column: 3 / 4;
+      grid-row: ~"2 / 3";
+      grid-column: ~"3 / 4";
       display: flex;
       flex: 1;
       padding: 5px;
@@ -594,8 +585,8 @@
       }
     }
     .points-vie {
-      grid-row: 3 / 4;
-      grid-column: 3 / 4;
+      grid-row: ~"3 / 4";
+      grid-column: ~"3 / 4";
       display: grid;
       grid-template-columns: 1.1fr 1fr;
       flex: 1;
@@ -648,7 +639,7 @@
       border: 2px solid black;
       margin: 4px;
       .comp-titre {
-        grid-column: 1 / 4;
+        grid-column: ~"1 / 4";
         text-align: center;
         font-size: medium;
         font-weight: bold;
@@ -667,7 +658,7 @@
       }
       .choix {
         .labelchk {
-          grid-column: 1 / 4;
+          grid-column: ~"1 / 4";
           display: grid;
           grid-template-columns: 70px 70px 70px;
           .checkbox {
@@ -682,7 +673,7 @@
       }
     }
     .metier-talent-block {
-      grid-column: 1 / 3;
+      grid-column: ~"1 / 3";
       display: grid;
       grid-template-columns: 140px 70px 240px;
       grid-template-rows: 25px 25px 25px 25px;

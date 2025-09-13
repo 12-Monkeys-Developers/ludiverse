@@ -1,4 +1,7 @@
-export default class LudiverseActorSheet extends ActorSheet {
+export default class LudiverseActorSheet extends foundry.appv1.sheets.ActorSheet {
+  // TODO : A supprimer avant la V16 lors de la conversion vers appV2
+  static _warnedAppV1 = true
+  
   /** @inheritdoc */
   static get defaultOptions() {
     const options = super.defaultOptions;
@@ -18,7 +21,7 @@ export default class LudiverseActorSheet extends ActorSheet {
     context.system = this.document.system;
     context.unlocked = this.actor.isUnlocked;
     context.locked = !this.actor.isUnlocked;
-    context.descriptionHTML = await TextEditor.enrichHTML(this.document.system.description);
+    context.descriptionHTML = await foundry.applications.ux.TextEditor.implementation.enrichHTML(this.document.system.description);
 
     console.log("Ludiverse | ActorSheet context", context);
     return context;

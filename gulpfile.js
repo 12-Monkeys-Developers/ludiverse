@@ -1,21 +1,37 @@
-// Less configuration
-var gulp = require('gulp');
-var less = require('gulp-less');
+import gulp from "gulp"
+import less from "gulp-less"
 
-gulp.task('less', function(cb) {
-  gulp
-    .src('style/ludiverse.less')
-    .pipe(less())
+/* ----------------------------------------- */
+/*  Compile LESS
+/* ----------------------------------------- */
+const LESS_SRC = "./style/ludiverse.less"
+const CSS_DEST = "./css"
+const LESS_WATCH = ["./style/**/*.less"]
+
+function compileLESS() {
+  console.log("Compiling LESS files from:", LESS_SRC, "to:", CSS_DEST)
+  return gulp
+    .src(LESS_SRC)
     .pipe(
-      gulp.dest("./css")
-    );
-  cb();
-});
+      less().on("error", function (err) {
+        console.error("LESS Error:", err.message)
+        this.emit("end")
+      }),
+    )
+    .pipe(gulp.dest(CSS_DEST))
+}
+const css = gulp.series(compileLESS)
 
-gulp.task(
-  'default',
-  gulp.series('less', function(cb) {
-    gulp.watch('style/*.less', gulp.series('less'));
-    cb();
-  })
-);
+/* ----------------------------------------- */
+/*  Watch Updates
+/* ----------------------------------------- */
+function watchUpdates() {
+  gulp.watch(LESS_WATCH, css)
+}
+
+/* ----------------------------------------- */
+/*  Export Tasks
+/* ----------------------------------------- */
+
+export { css }
+export default gulp.series(gulp.parallel(css), watchUpdates)

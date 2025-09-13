@@ -24,10 +24,10 @@ export default class PJSheet extends LudiverseActorSheet {
   async getData(options) {
     const context = await super.getData(options);
 
-    context.equipementHTML = await TextEditor.enrichHTML(this.actor.system.equipement);
-    context.capacites1HTML = await TextEditor.enrichHTML(this.actor.system.capacites.capacite1.description);
-    context.capacites2HTML = await TextEditor.enrichHTML(this.actor.system.capacites.capacite2.description);
-    context.capacites3HTML = await TextEditor.enrichHTML(this.actor.system.capacites.capacite3.description);
+    context.equipementHTML = await foundry.applications.ux.TextEditor.implementation.enrichHTML(this.actor.system.equipement);
+    context.capacites1HTML = await foundry.applications.ux.TextEditor.implementation.enrichHTML(this.actor.system.capacites.capacite1.description);
+    context.capacites2HTML = await foundry.applications.ux.TextEditor.implementation.enrichHTML(this.actor.system.capacites.capacite2.description);
+    context.capacites3HTML = await foundry.applications.ux.TextEditor.implementation.enrichHTML(this.actor.system.capacites.capacite3.description);
     context.unlocked = this.actor.isUnlocked;
     context.locked = !this.actor.isUnlocked;
 

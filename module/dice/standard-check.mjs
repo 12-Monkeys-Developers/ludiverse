@@ -147,7 +147,7 @@ export default class StandardCheck extends Roll {
   /** @override */
   async render(chatOptions = {}) {
     if (chatOptions.isPrivate) return "";
-    return renderTemplate(this.constructor.htmlTemplate, this._getChatCardData());
+    return foundry.applications.handlebars.renderTemplate(this.constructor.htmlTemplate, this._getChatCardData());
   }
 
   /**
@@ -215,6 +215,7 @@ export default class StandardCheck extends Roll {
     else if (this._total === 12) this.data.echecCritique = true;
     this.data.diceTooltip = await this.getTooltip();
     this.data.result = this._total;
+    console.log("StandardCheck | evaluate |data ", this.data);
     return this;
   }
 }

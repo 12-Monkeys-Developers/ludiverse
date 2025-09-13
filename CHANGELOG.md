@@ -1,3 +1,6 @@
+2.0.0
+- Compatibilité V13
+
 1.1.1
 - Release technique : ajout de src/
 
